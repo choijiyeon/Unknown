@@ -2,15 +2,55 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class test : MonoBehaviour {
+public class test : MonoBehaviour
+{
+    public float movePower = 1f;
+    public float jumpPower = 1f;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
+    Rigidbody2D rigid;
+    Vector3 movement;
+    bool isJumping = false;
+
+    private void Start()
+    {
+        rigid = gameObject.GetComponent<Rigidbody2D>();
+    }
+
+    private void Update()
+    {
+        if (Input.GetButtonDown("Jump"))
+            isJumping = true;
+    }
+
+    private void FixedUpdate()
+    {
+        Move();
+        Jump();
+    }
+
+    private void Move()
+    {
+        Vector3 moveVelocity = Vector3.zero;
+
+        if (Input.GetAxisRaw("Horizontal") < 0)
+            moveVelocity = Vector3.left;
+        else if (Input.GetAxisRaw("Horizontal") > 0)
+            moveVelocity = Vector3.right;
+
+        transform.position += moveVelocity * movePower * Time.deltaTime;
+    }
+
+    private void Jump()
+    {
+        if (!isJumping)
+            return;
+
+        rigid.velocity = Vector2.zero;
+
+        Vector2 jumpVelocity = new Vector2(0, jumpPower);
+        rigid.AddForce(jumpVelocity, ForceMode2D.Impulse);
+
+        isJumping = false;
+    }
 	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 }
