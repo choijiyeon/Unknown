@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class test : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
     public float movePower = 1f;
     public float jumpPower = 1f;
