@@ -6,10 +6,11 @@ public class PlayerController : MonoBehaviour
 {
     public float movePower = 1f;
     public float jumpPower = 1f;
+    public Transform mainCamera;
 
-    Rigidbody2D rigid;
-    Vector3 movement;
-    bool isJumping = false;
+    private Rigidbody2D rigid;
+    private Vector3 movement;
+    private bool isJumping = false;
 
     private void Start()
     {
@@ -19,13 +20,12 @@ public class PlayerController : MonoBehaviour
     private void Update()
     {
         if (Input.GetButtonDown("Jump"))
-            isJumping = true;
+            Jump();
     }
 
     private void FixedUpdate()
     {
         Move();
-        Jump();
     }
 
     private void Move()
@@ -38,18 +38,22 @@ public class PlayerController : MonoBehaviour
             moveVelocity = Vector3.right;
 
         transform.position += moveVelocity * movePower * Time.deltaTime;
+        //mainCamera.position += transform.position;
     }
 
     private void Jump()
     {
-        if (!isJumping)
-            return;
+        if (isJumping != true)
+        {
+            rigid.AddForce(Vector3.up * jumpPower);
 
-        rigid.velocity = Vector2.zero;
+            isJumping = true;
+        }
+    }
 
-        Vector2 jumpVelocity = new Vector2(0, jumpPower);
-        rigid.AddForce(jumpVelocity, ForceMode2D.Impulse);
-
+    private void OnCollisionEnter2D()
+    {
+        Debug.LogError("jump fal;");
         isJumping = false;
     }
 	
