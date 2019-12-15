@@ -1,0 +1,39 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class JYDefines
+{
+    public const string mainCamera = "MainCamera";
+
+    public enum Layer
+    {
+        PLAYER = 8,
+        MONSER = 9,
+        BULLET = 10,
+    }
+
+    public enum ActorState
+    {
+        Idle = 0,
+        Walk = 13,
+        Damage = 7,
+        Attack = 9,
+        Die
+    }
+
+    public enum ActorType
+    {
+        None,
+        Character,
+        Monster,
+    }
+
+    public enum UISection
+    {
+        None,
+        UIStart,    //임시
+        UIPad,        //패드
+        UIPlayerHP,
+    }
+}

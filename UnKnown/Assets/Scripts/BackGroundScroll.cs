@@ -9,29 +9,29 @@ public class BackGroundScroll : MonoBehaviour
     public Transform cam;
 
     private bool wichone = true;
-    private float currenth = 15;
+    private float currenth = 1;
 
 	void Update ()
     {
 		if(currenth < cam.position.x)
         {
             if (wichone)
-                BackGround1.localPosition = new Vector3((BackGround1.localPosition.x + 30), -3, 0);
+                BackGround1.localPosition = new Vector3((BackGround1.localPosition.x + 3), -0.5f, 0);
             else
-                BackGround2.localPosition = new Vector3((BackGround2.localPosition.x + 30), -3, 0);
+                BackGround2.localPosition = new Vector3((BackGround2.localPosition.x + 3), -0.5f, 0);
 
-            currenth += 15;
+            currenth += 1;
 
             wichone = !wichone;
         }
-        if(currenth > cam.position.x + 15)
+        if(currenth > cam.position.x + 1)
         {
             if (wichone)
-                BackGround2.localPosition = new Vector3((BackGround2.localPosition.x - 30), -3, 0);
+                BackGround2.localPosition = new Vector3((BackGround2.localPosition.x - 3), -0.5f, 0);
             else
-                BackGround1.localPosition = new Vector3((BackGround1.localPosition.x - 30), -3, 0);
+                BackGround1.localPosition = new Vector3((BackGround1.localPosition.x - 3), -0.5f, 0);
 
-            currenth -= 15;
+            currenth -= 1;
 
             wichone = !wichone;
         }
