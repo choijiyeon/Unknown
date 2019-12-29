@@ -4,13 +4,11 @@ using UnityEngine;
 
 public class JYActor : MonoBehaviour
 {
-
-    //애니메이터
-    public Animator m_ActorAnimator = null;
     protected JYDefines.ActorState m_ActorState = JYDefines.ActorState.Idle;
     protected float m_Rot = 0;
     public float m_Speed = 0.03f;
-    public Transform m_SkillParent = null;
+
+    private float movePower = 0.7f;
     //-------------------------------------------------------------------------
     protected JYDefines.ActorType m_ActorType = JYDefines.ActorType.None;
     int m_Level = 0;
@@ -27,11 +25,6 @@ public class JYActor : MonoBehaviour
 
     protected virtual void Awake()
     {
-        m_ActorAnimator = this.GetComponentInChildren<Animator>();
-        if (null == m_ActorAnimator)
-        {
-            Debug.LogError("ActorAnimator is null!!");
-        }
     }
 
     private void Update()
@@ -41,13 +34,16 @@ public class JYActor : MonoBehaviour
         //DoMove();
     }
 
-    public virtual void DoMove()
+    public virtual void DoMove(bool isRight)
     {
-        float keyHorizontal = Input.GetAxis("Horizontal");
-        float keyVertical = Input.GetAxis("Vertical");
+        Vector3 moveVelocity = Vector3.zero;
 
-        transform.Translate(Vector3.right * 1f * Time.smoothDeltaTime * keyHorizontal, Space.World);
-        transform.Translate(Vector3.forward * 1f * Time.smoothDeltaTime * keyVertical, Space.World);
+        if (isRight == true)
+            moveVelocity = Vector3.right;
+        else if (isRight == false)
+            moveVelocity = Vector3.left;
+
+        transform.position += moveVelocity * movePower * Time.deltaTime;
     }
 
     public virtual void DoCreate()
@@ -72,11 +68,14 @@ public class JYActor : MonoBehaviour
     {
 
     }
+    public virtual void DoJump()
+    {
+
+    }
 
     public virtual void DoAttack()
     {
         m_ActorState = JYDefines.ActorState.Attack;
-        m_ActorAnimator.SetInteger("animation", (int)m_ActorState);
     }
 
     public virtual void DoDamage(float aDamageValue)
@@ -102,24 +101,23 @@ public class JYActor : MonoBehaviour
     IEnumerator SetState(JYDefines.ActorState aActorState)
     {
         m_ActorState = aActorState;
-        m_ActorAnimator.SetInteger("animation", (int)m_ActorState);
 
         if (m_ActorState != JYDefines.ActorState.Damage)
         {
             yield break;
         }
 
-        AnimatorStateInfo asi = m_ActorAnimator.GetCurrentAnimatorStateInfo((int)m_ActorState);
-        yield return new WaitForSeconds(asi.length);
+       // AnimatorStateInfo asi = m_ActorAnimator.GetCurrentAnimatorStateInfo((int)m_ActorState);
+       // yield return new WaitForSeconds(asi.length);
 
         m_ActorState = JYDefines.ActorState.Idle;
-        m_ActorAnimator.SetInteger("animation", (int)m_ActorState);
+       // m_ActorAnimator.SetInteger("animation", (int)m_ActorState);
     }
 
     public virtual IEnumerator DoDie()
     {
         m_ActorState = JYDefines.ActorState.Die;
-        m_ActorAnimator.SetInteger("animation", (int)m_ActorState);
+        //m_ActorAnimator.SetInteger("animation", (int)m_ActorState);
         yield return null;
         DestroyObject(gameObject);
     }
@@ -128,6 +126,21 @@ public class JYActor : MonoBehaviour
     {
         Debug.Log("Call_DoIdle");
         m_ActorState = JYDefines.ActorState.Idle;
-        m_ActorAnimator.SetInteger("animation", (int)m_ActorState);
+        //m_ActorAnimator.SetInteger("animation", (int)m_ActorState);
     }
+
+    public void SetACurrentAniSprite(GameObject targetObj, JYDefines.ActorAniSpriteState state)
+    {
+        UISprite[] sprites = targetObj.transform.GetComponentsInChildren<UISprite>();
+        for (int i = 0; i < sprites.Length; i++)
+        {
+            sprites[i].gameObject.SetActive(false);
+        }
+
+        UISprite sprite = targetObj.transform.Find(state.ToString()).GetComponent<UISprite>();
+        if (sprite != null )
+            sprite.gameObject.SetActive(true);
+    }
+
+
 }

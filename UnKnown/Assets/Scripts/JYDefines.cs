@@ -21,6 +21,15 @@ public class JYDefines
         Attack = 9,
         Die
     }
+    public enum ActorAniSpriteState
+    {
+        idle = 0,
+        run,
+        damage,
+        attack,
+        dead,
+        jump
+    }
 
     public enum ActorType
     {
