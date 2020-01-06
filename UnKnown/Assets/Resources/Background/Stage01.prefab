@@ -233,6 +233,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7198380083030174261}
   - component: {fileID: 2220800344430578095}
+  - component: {fileID: 6250721154088994212}
   m_Layer: 0
   m_Name: Sprite (2)
   m_TagString: Untagged
@@ -289,7 +290,7 @@ MonoBehaviour:
   mHeight: 80
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
@@ -309,6 +310,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: Bg_01
   mFillCenter: 1
+--- !u!61 &6250721154088994212
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 719751177363569804}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 80}
+  m_EdgeRadius: 0
 --- !u!1 &860448090802236771
 GameObject:
   m_ObjectHideFlags: 0
@@ -628,6 +655,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6456667754292901576}
   - component: {fileID: 8730923055034407508}
+  - component: {fileID: 4657512107299290727}
   m_Layer: 0
   m_Name: Sprite (22)
   m_TagString: Untagged
@@ -684,7 +712,7 @@ MonoBehaviour:
   mHeight: 80
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
@@ -704,6 +732,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: Bg_01
   mFillCenter: 1
+--- !u!61 &4657512107299290727
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1323944428110825117}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 80}
+  m_EdgeRadius: 0
 --- !u!1 &1384388157538230722
 GameObject:
   m_ObjectHideFlags: 0
@@ -714,6 +768,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5790799273960651835}
   - component: {fileID: 1997906186111505235}
+  - component: {fileID: 1160127992834129344}
   m_Layer: 0
   m_Name: Sprite (13)
   m_TagString: Untagged
@@ -770,7 +825,7 @@ MonoBehaviour:
   mHeight: 80
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
@@ -790,6 +845,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: Bg_01
   mFillCenter: 1
+--- !u!61 &1160127992834129344
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1384388157538230722}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 80}
+  m_EdgeRadius: 0
 --- !u!1 &1405992349554678379
 GameObject:
   m_ObjectHideFlags: 0
@@ -800,6 +881,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7529719326865107689}
   - component: {fileID: 7173318135628737550}
+  - component: {fileID: 8965420291406130125}
   m_Layer: 0
   m_Name: Sprite (8)
   m_TagString: Untagged
@@ -856,7 +938,7 @@ MonoBehaviour:
   mHeight: 80
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
@@ -876,6 +958,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: Bg_01
   mFillCenter: 1
+--- !u!61 &8965420291406130125
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1405992349554678379}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 80}
+  m_EdgeRadius: 0
 --- !u!1 &1442913314563168509
 GameObject:
   m_ObjectHideFlags: 0
@@ -886,6 +994,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7960816373329329521}
   - component: {fileID: 1177752759590664931}
+  - component: {fileID: 729652651237508225}
   m_Layer: 0
   m_Name: Sprite (23)
   m_TagString: Untagged
@@ -942,7 +1051,7 @@ MonoBehaviour:
   mHeight: 80
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
@@ -962,6 +1071,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: Bg_01
   mFillCenter: 1
+--- !u!61 &729652651237508225
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1442913314563168509}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 80}
+  m_EdgeRadius: 0
 --- !u!1 &1459783008664507691
 GameObject:
   m_ObjectHideFlags: 0
@@ -4210,7 +4345,7 @@ MonoBehaviour:
   anchorOffset: 0
   softBorderPadding: 1
   renderQueue: 0
-  startingRenderQueue: 3005
+  startingRenderQueue: 3006
   mClipTexture: {fileID: 0}
   mAlpha: 1
   mClipping: 0
@@ -4448,7 +4583,7 @@ MonoBehaviour:
   anchorOffset: 0
   softBorderPadding: 1
   renderQueue: 0
-  startingRenderQueue: 3004
+  startingRenderQueue: 3005
   mClipTexture: {fileID: 0}
   mAlpha: 1
   mClipping: 0
@@ -4549,7 +4684,7 @@ MonoBehaviour:
   anchorOffset: 0
   softBorderPadding: 1
   renderQueue: 0
-  startingRenderQueue: 3003
+  startingRenderQueue: 3004
   mClipTexture: {fileID: 0}
   mAlpha: 1
   mClipping: 0
@@ -5153,7 +5288,7 @@ Transform:
   m_GameObject: {fileID: 1568290012564628489}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1459783009946822908}
   - {fileID: 1459783010223536115}
@@ -5203,7 +5338,7 @@ MonoBehaviour:
   anchorOffset: 0
   softBorderPadding: 1
   renderQueue: 0
-  startingRenderQueue: 3001
+  startingRenderQueue: 3007
   mClipTexture: {fileID: 0}
   mAlpha: 1
   mClipping: 0
@@ -5912,6 +6047,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3333116476314546317}
   - component: {fileID: 6397411413791041533}
+  - component: {fileID: 6653156325392808582}
   m_Layer: 0
   m_Name: Sprite (5)
   m_TagString: Untagged
@@ -5968,7 +6104,7 @@ MonoBehaviour:
   mHeight: 80
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
@@ -5988,6 +6124,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: Bg_01
   mFillCenter: 1
+--- !u!61 &6653156325392808582
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3300889070577712464}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 80}
+  m_EdgeRadius: 0
 --- !u!1 &3342022938417636207
 GameObject:
   m_ObjectHideFlags: 0
@@ -5998,6 +6160,7 @@ GameObject:
   m_Component:
   - component: {fileID: 766105510131308402}
   - component: {fileID: 2530055243215031425}
+  - component: {fileID: 4102702018790059075}
   m_Layer: 0
   m_Name: Sprite (24)
   m_TagString: Untagged
@@ -6054,7 +6217,7 @@ MonoBehaviour:
   mHeight: 80
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
@@ -6074,6 +6237,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: Bg_01
   mFillCenter: 1
+--- !u!61 &4102702018790059075
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3342022938417636207}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 80}
+  m_EdgeRadius: 0
 --- !u!1 &3502559085990512764
 GameObject:
   m_ObjectHideFlags: 0
@@ -6084,6 +6273,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3477720525427558787}
   - component: {fileID: 1040630362634972567}
+  - component: {fileID: 5006958060853004199}
   m_Layer: 0
   m_Name: Sprite (1)
   m_TagString: Untagged
@@ -6140,7 +6330,7 @@ MonoBehaviour:
   mHeight: 80
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
@@ -6160,6 +6350,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: Bg_01
   mFillCenter: 1
+--- !u!61 &5006958060853004199
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3502559085990512764}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 80}
+  m_EdgeRadius: 0
 --- !u!1 &3597871270393501075
 GameObject:
   m_ObjectHideFlags: 0
@@ -6342,6 +6558,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8860579880967002590}
   - component: {fileID: 8076672618883288613}
+  - component: {fileID: 9065745259480593259}
   m_Layer: 0
   m_Name: Sprite (4)
   m_TagString: Untagged
@@ -6398,7 +6615,7 @@ MonoBehaviour:
   mHeight: 80
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
@@ -6418,6 +6635,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: Bg_01
   mFillCenter: 1
+--- !u!61 &9065745259480593259
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3671269746121335417}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 80}
+  m_EdgeRadius: 0
 --- !u!1 &3687488139330844253
 GameObject:
   m_ObjectHideFlags: 0
@@ -6428,6 +6671,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6177850930660392023}
   - component: {fileID: 4798660062641959159}
+  - component: {fileID: 1003313648958845810}
   m_Layer: 0
   m_Name: Sprite (15)
   m_TagString: Untagged
@@ -6484,7 +6728,7 @@ MonoBehaviour:
   mHeight: 80
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
@@ -6504,6 +6748,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: Bg_01
   mFillCenter: 1
+--- !u!61 &1003313648958845810
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3687488139330844253}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 80}
+  m_EdgeRadius: 0
 --- !u!1 &3810268233987325319
 GameObject:
   m_ObjectHideFlags: 0
@@ -6514,6 +6784,7 @@ GameObject:
   m_Component:
   - component: {fileID: 275126491083566025}
   - component: {fileID: 3733976416710513916}
+  - component: {fileID: 319876776656961823}
   m_Layer: 0
   m_Name: Sprite (18)
   m_TagString: Untagged
@@ -6570,7 +6841,7 @@ MonoBehaviour:
   mHeight: 80
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
@@ -6590,6 +6861,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: Bg_01
   mFillCenter: 1
+--- !u!61 &319876776656961823
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3810268233987325319}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 80}
+  m_EdgeRadius: 0
 --- !u!1 &3946459135345644236
 GameObject:
   m_ObjectHideFlags: 0
@@ -7425,6 +7722,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4013742018081546110}
   - component: {fileID: 4013742018081546097}
+  - component: {fileID: 223429898969117090}
   m_Layer: 0
   m_Name: Sprite (19)
   m_TagString: Untagged
@@ -7481,7 +7779,7 @@ MonoBehaviour:
   mHeight: 80
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
@@ -7501,6 +7799,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: Bg_01
   mFillCenter: 1
+--- !u!61 &223429898969117090
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4013742018081546111}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 80}
+  m_EdgeRadius: 0
 --- !u!1 &4013742018130828438
 GameObject:
   m_ObjectHideFlags: 0
@@ -7597,6 +7921,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4013742018148527011}
   - component: {fileID: 4013742018148527010}
+  - component: {fileID: 7907533162998649779}
   m_Layer: 0
   m_Name: Sprite (22)
   m_TagString: Untagged
@@ -7653,7 +7978,7 @@ MonoBehaviour:
   mHeight: 80
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
@@ -7673,6 +7998,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: Bg_01
   mFillCenter: 1
+--- !u!61 &7907533162998649779
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4013742018148527008}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 80}
+  m_EdgeRadius: 0
 --- !u!1 &4013742018159252713
 GameObject:
   m_ObjectHideFlags: 0
@@ -8447,7 +8798,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4013742018287490022}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 639, y: -203, z: 0}
+  m_LocalPosition: {x: 651, y: -203, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4013742018199537562}
@@ -8518,6 +8869,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4013742018288498837}
   - component: {fileID: 4013742018288498836}
+  - component: {fileID: 790548619634316846}
   m_Layer: 0
   m_Name: Sprite (8)
   m_TagString: Untagged
@@ -8574,7 +8926,7 @@ MonoBehaviour:
   mHeight: 80
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
@@ -8594,6 +8946,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: Bg_01
   mFillCenter: 1
+--- !u!61 &790548619634316846
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4013742018288498834}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 80}
+  m_EdgeRadius: 0
 --- !u!1 &4013742018288894633
 GameObject:
   m_ObjectHideFlags: 0
@@ -8604,6 +8982,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4013742018288894632}
   - component: {fileID: 4013742018288894635}
+  - component: {fileID: 95784007770940420}
   m_Layer: 0
   m_Name: Sprite (18)
   m_TagString: Untagged
@@ -8660,7 +9039,7 @@ MonoBehaviour:
   mHeight: 80
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
@@ -8680,6 +9059,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: Bg_01
   mFillCenter: 1
+--- !u!61 &95784007770940420
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4013742018288894633}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 80}
+  m_EdgeRadius: 0
 --- !u!1 &4013742018294602042
 GameObject:
   m_ObjectHideFlags: 0
@@ -9171,6 +9576,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4013742018331260232}
   - component: {fileID: 4013742018331260235}
+  - component: {fileID: 1329457984789870140}
   m_Layer: 0
   m_Name: Sprite (2)
   m_TagString: Untagged
@@ -9227,7 +9633,7 @@ MonoBehaviour:
   mHeight: 80
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
@@ -9247,6 +9653,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: Bg_01
   mFillCenter: 1
+--- !u!61 &1329457984789870140
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4013742018331260233}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 80}
+  m_EdgeRadius: 0
 --- !u!1 &4013742018337512212
 GameObject:
   m_ObjectHideFlags: 0
@@ -9343,6 +9775,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4013742018355668155}
   - component: {fileID: 4013742018355668154}
+  - component: {fileID: 4622547972462484843}
   m_Layer: 0
   m_Name: Sprite (1)
   m_TagString: Untagged
@@ -9399,7 +9832,7 @@ MonoBehaviour:
   mHeight: 80
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
@@ -9419,6 +9852,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: Bg_01
   mFillCenter: 1
+--- !u!61 &4622547972462484843
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4013742018355668152}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 80}
+  m_EdgeRadius: 0
 --- !u!1 &4013742018367676836
 GameObject:
   m_ObjectHideFlags: 0
@@ -9429,6 +9888,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4013742018367676839}
   - component: {fileID: 4013742018367676838}
+  - component: {fileID: 5257109888491825961}
   m_Layer: 0
   m_Name: Sprite (10)
   m_TagString: Untagged
@@ -9485,7 +9945,7 @@ MonoBehaviour:
   mHeight: 80
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
@@ -9505,6 +9965,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: Bg_01
   mFillCenter: 1
+--- !u!61 &5257109888491825961
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4013742018367676836}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 80}
+  m_EdgeRadius: 0
 --- !u!1 &4013742018378688126
 GameObject:
   m_ObjectHideFlags: 0
@@ -9515,6 +10001,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4013742018378688113}
   - component: {fileID: 4013742018378688112}
+  - component: {fileID: 8070460833594925610}
   m_Layer: 0
   m_Name: Sprite (13)
   m_TagString: Untagged
@@ -9571,7 +10058,7 @@ MonoBehaviour:
   mHeight: 80
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
@@ -9591,6 +10078,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: Bg_01
   mFillCenter: 1
+--- !u!61 &8070460833594925610
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4013742018378688126}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 80}
+  m_EdgeRadius: 0
 --- !u!1 &4013742018380318659
 GameObject:
   m_ObjectHideFlags: 0
@@ -9859,6 +10372,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4013742018433691654}
   - component: {fileID: 4013742018433691673}
+  - component: {fileID: 6568968192581129049}
   m_Layer: 0
   m_Name: Sprite (24)
   m_TagString: Untagged
@@ -9915,7 +10429,7 @@ MonoBehaviour:
   mHeight: 80
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
@@ -9935,6 +10449,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: Bg_01
   mFillCenter: 1
+--- !u!61 &6568968192581129049
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4013742018433691655}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 80}
+  m_EdgeRadius: 0
 --- !u!1 &4013742018471857202
 GameObject:
   m_ObjectHideFlags: 0
@@ -9945,6 +10485,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4013742018471857205}
   - component: {fileID: 4013742018471857204}
+  - component: {fileID: 8764690571555950279}
   m_Layer: 0
   m_Name: Sprite (11)
   m_TagString: Untagged
@@ -10001,7 +10542,7 @@ MonoBehaviour:
   mHeight: 194
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 5.716495
@@ -10021,6 +10562,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: bod_box01
   mFillCenter: 1
+--- !u!61 &8764690571555950279
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4013742018471857202}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 554.5, y: -97}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1109, y: 194}
+  m_EdgeRadius: 0
 --- !u!1 &4013742018498009072
 GameObject:
   m_ObjectHideFlags: 0
@@ -11059,6 +11626,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4013742018636332746}
   - component: {fileID: 4013742018636332749}
+  - component: {fileID: 5075987860920686750}
   m_Layer: 0
   m_Name: Sprite (23)
   m_TagString: Untagged
@@ -11115,7 +11683,7 @@ MonoBehaviour:
   mHeight: 80
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
@@ -11135,6 +11703,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: Bg_01
   mFillCenter: 1
+--- !u!61 &5075987860920686750
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4013742018636332747}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 80}
+  m_EdgeRadius: 0
 --- !u!1 &4013742018641816822
 GameObject:
   m_ObjectHideFlags: 0
@@ -11145,6 +11739,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4013742018641816585}
   - component: {fileID: 4013742018641816584}
+  - component: {fileID: 218272663687440455}
   m_Layer: 0
   m_Name: Sprite (2)
   m_TagString: Untagged
@@ -11201,7 +11796,7 @@ MonoBehaviour:
   mHeight: 80
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
@@ -11221,6 +11816,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: Bg_01
   mFillCenter: 1
+--- !u!61 &218272663687440455
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4013742018641816822}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 80}
+  m_EdgeRadius: 0
 --- !u!1 &4013742018649757817
 GameObject:
   m_ObjectHideFlags: 0
@@ -11542,6 +12163,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4013742018674651023}
   - component: {fileID: 4013742018674651022}
+  - component: {fileID: 7977163986303537943}
   m_Layer: 0
   m_Name: Sprite (5)
   m_TagString: Untagged
@@ -11598,7 +12220,7 @@ MonoBehaviour:
   mHeight: 80
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
@@ -11618,6 +12240,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: Bg_01
   mFillCenter: 1
+--- !u!61 &7977163986303537943
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4013742018674651020}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 80}
+  m_EdgeRadius: 0
 --- !u!1 &4013742018679074834
 GameObject:
   m_ObjectHideFlags: 0
@@ -11628,6 +12276,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4013742018679074837}
   - component: {fileID: 4013742018679074836}
+  - component: {fileID: 8495246034837653174}
   m_Layer: 0
   m_Name: Sprite (21)
   m_TagString: Untagged
@@ -11684,7 +12333,7 @@ MonoBehaviour:
   mHeight: 80
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
@@ -11704,6 +12353,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: Bg_01
   mFillCenter: 1
+--- !u!61 &8495246034837653174
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4013742018679074834}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 80}
+  m_EdgeRadius: 0
 --- !u!1 &4013742018679625293
 GameObject:
   m_ObjectHideFlags: 0
@@ -11714,6 +12389,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4013742018679625292}
   - component: {fileID: 4013742018679625295}
+  - component: {fileID: 1303024610860079497}
   m_Layer: 0
   m_Name: Sprite (14)
   m_TagString: Untagged
@@ -11770,7 +12446,7 @@ MonoBehaviour:
   mHeight: 80
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
@@ -11790,6 +12466,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: Bg_01
   mFillCenter: 1
+--- !u!61 &1303024610860079497
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4013742018679625293}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 80}
+  m_EdgeRadius: 0
 --- !u!1 &4013742018679645824
 GameObject:
   m_ObjectHideFlags: 0
@@ -11800,6 +12502,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4013742018679645827}
   - component: {fileID: 4013742018679645826}
+  - component: {fileID: 5519520927625456185}
   m_Layer: 0
   m_Name: Sprite (1)
   m_TagString: Untagged
@@ -11856,7 +12559,7 @@ MonoBehaviour:
   mHeight: 80
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
@@ -11876,6 +12579,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: Bg_01
   mFillCenter: 1
+--- !u!61 &5519520927625456185
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4013742018679645824}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 80}
+  m_EdgeRadius: 0
 --- !u!1 &4013742018701463752
 GameObject:
   m_ObjectHideFlags: 0
@@ -12230,6 +12959,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4013742018744989378}
   - component: {fileID: 4013742018744989381}
+  - component: {fileID: 3545853232998250798}
   m_Layer: 0
   m_Name: Sprite (3)
   m_TagString: Untagged
@@ -12286,7 +13016,7 @@ MonoBehaviour:
   mHeight: 80
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
@@ -12306,6 +13036,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: Bg_01
   mFillCenter: 1
+--- !u!61 &3545853232998250798
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4013742018744989379}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 80}
+  m_EdgeRadius: 0
 --- !u!1 &4013742018751704518
 GameObject:
   m_ObjectHideFlags: 0
@@ -12660,6 +13416,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4013742018773333995}
   - component: {fileID: 4013742018773333994}
+  - component: {fileID: 3196485994891128063}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
@@ -12716,7 +13473,7 @@ MonoBehaviour:
   mHeight: 80
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
@@ -12736,6 +13493,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: Bg_01
   mFillCenter: 1
+--- !u!61 &3196485994891128063
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4013742018773333992}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 80}
+  m_EdgeRadius: 0
 --- !u!1 &4013742018773870692
 GameObject:
   m_ObjectHideFlags: 0
@@ -12746,6 +13529,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4013742018773870695}
   - component: {fileID: 4013742018773870694}
+  - component: {fileID: 2768777178052105513}
   m_Layer: 0
   m_Name: Sprite (10)
   m_TagString: Untagged
@@ -12802,7 +13586,7 @@ MonoBehaviour:
   mHeight: 80
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
@@ -12822,6 +13606,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: Bg_01
   mFillCenter: 1
+--- !u!61 &2768777178052105513
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4013742018773870692}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 80}
+  m_EdgeRadius: 0
 --- !u!1 &4013742018778192876
 GameObject:
   m_ObjectHideFlags: 0
@@ -12896,7 +13706,7 @@ MonoBehaviour:
   anchorOffset: 0
   softBorderPadding: 1
   renderQueue: 0
-  startingRenderQueue: 3002
+  startingRenderQueue: 3003
   mClipTexture: {fileID: 0}
   mAlpha: 1
   mClipping: 0
@@ -13156,6 +13966,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4013742018813736394}
   - component: {fileID: 4013742018813736397}
+  - component: {fileID: 7535931861696320961}
   m_Layer: 0
   m_Name: Sprite (24)
   m_TagString: Untagged
@@ -13212,7 +14023,7 @@ MonoBehaviour:
   mHeight: 80
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
@@ -13232,6 +14043,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: Bg_01
   mFillCenter: 1
+--- !u!61 &7535931861696320961
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4013742018813736395}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 80}
+  m_EdgeRadius: 0
 --- !u!1 &4013742018817370719
 GameObject:
   m_ObjectHideFlags: 0
@@ -13844,6 +14681,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4013742018863922945}
   - component: {fileID: 4013742018863922944}
+  - component: {fileID: 530873606001729434}
   m_Layer: 0
   m_Name: Sprite (16)
   m_TagString: Untagged
@@ -13900,7 +14738,7 @@ MonoBehaviour:
   mHeight: 80
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
@@ -13920,6 +14758,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: Bg_01
   mFillCenter: 1
+--- !u!61 &530873606001729434
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4013742018863922958}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 80}
+  m_EdgeRadius: 0
 --- !u!1 &4013742018869770560
 GameObject:
   m_ObjectHideFlags: 0
@@ -14067,6 +14931,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4013742018876966200}
   - component: {fileID: 4013742018876966203}
+  - component: {fileID: 1803519297684821257}
   m_Layer: 0
   m_Name: Sprite (15)
   m_TagString: Untagged
@@ -14123,7 +14988,7 @@ MonoBehaviour:
   mHeight: 80
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
@@ -14143,6 +15008,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: Bg_01
   mFillCenter: 1
+--- !u!61 &1803519297684821257
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4013742018876966201}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 80}
+  m_EdgeRadius: 0
 --- !u!1 &4013742018899433818
 GameObject:
   m_ObjectHideFlags: 0
@@ -14153,6 +15044,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4013742018899433821}
   - component: {fileID: 4013742018899433820}
+  - component: {fileID: 5347614648602224928}
   m_Layer: 0
   m_Name: Sprite (14)
   m_TagString: Untagged
@@ -14209,7 +15101,7 @@ MonoBehaviour:
   mHeight: 194
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 3.1185567
@@ -14229,6 +15121,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: bod_box01
   mFillCenter: 1
+--- !u!61 &5347614648602224928
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4013742018899433818}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -302.5, y: -97}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 605, y: 194}
+  m_EdgeRadius: 0
 --- !u!1 &4013742018923484396
 GameObject:
   m_ObjectHideFlags: 0
@@ -14239,6 +15157,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4013742018923484399}
   - component: {fileID: 4013742018923484398}
+  - component: {fileID: 3238850658811842014}
   m_Layer: 0
   m_Name: Sprite (23)
   m_TagString: Untagged
@@ -14295,7 +15214,7 @@ MonoBehaviour:
   mHeight: 80
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
@@ -14315,6 +15234,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: Bg_01
   mFillCenter: 1
+--- !u!61 &3238850658811842014
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4013742018923484396}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 80}
+  m_EdgeRadius: 0
 --- !u!1 &4013742018931188992
 GameObject:
   m_ObjectHideFlags: 0
@@ -14325,6 +15270,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4013742018931188995}
   - component: {fileID: 4013742018931188994}
+  - component: {fileID: 7424775928373731721}
   m_Layer: 0
   m_Name: Sprite (8)
   m_TagString: Untagged
@@ -14381,7 +15327,7 @@ MonoBehaviour:
   mHeight: 80
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
@@ -14401,6 +15347,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: Bg_01
   mFillCenter: 1
+--- !u!61 &7424775928373731721
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4013742018931188992}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 80}
+  m_EdgeRadius: 0
 --- !u!1 &4013742018935155250
 GameObject:
   m_ObjectHideFlags: 0
@@ -14411,6 +15383,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4013742018935155253}
   - component: {fileID: 4013742018935155252}
+  - component: {fileID: 8948218879651487073}
   m_Layer: 0
   m_Name: Sprite (19)
   m_TagString: Untagged
@@ -14467,7 +15440,7 @@ MonoBehaviour:
   mHeight: 80
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
@@ -14487,6 +15460,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: Bg_01
   mFillCenter: 1
+--- !u!61 &8948218879651487073
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4013742018935155250}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 80}
+  m_EdgeRadius: 0
 --- !u!1 &4013742018935194185
 GameObject:
   m_ObjectHideFlags: 0
@@ -14927,6 +15926,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4013742018980175509}
   - component: {fileID: 4013742018980175508}
+  - component: {fileID: 2394969052896508407}
   m_Layer: 0
   m_Name: Sprite (13)
   m_TagString: Untagged
@@ -14983,7 +15983,7 @@ MonoBehaviour:
   mHeight: 80
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
@@ -15003,6 +16003,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: Bg_01
   mFillCenter: 1
+--- !u!61 &2394969052896508407
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4013742018980175506}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 80}
+  m_EdgeRadius: 0
 --- !u!1 &4013742019002704484
 GameObject:
   m_ObjectHideFlags: 0
@@ -15580,6 +16606,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4013742019078532960}
   - component: {fileID: 4013742019078532963}
+  - component: {fileID: 3757659342118297728}
   m_Layer: 0
   m_Name: Sprite (10)
   m_TagString: Untagged
@@ -15636,7 +16663,7 @@ MonoBehaviour:
   mHeight: 80
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
@@ -15656,6 +16683,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: Bg_01
   mFillCenter: 1
+--- !u!61 &3757659342118297728
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4013742019078532961}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 80}
+  m_EdgeRadius: 0
 --- !u!1 &4013742019109554696
 GameObject:
   m_ObjectHideFlags: 0
@@ -15666,6 +16719,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4013742019109554699}
   - component: {fileID: 4013742019109554698}
+  - component: {fileID: 7550278813614231751}
   m_Layer: 0
   m_Name: Sprite (18)
   m_TagString: Untagged
@@ -15722,7 +16776,7 @@ MonoBehaviour:
   mHeight: 80
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
@@ -15742,6 +16796,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: Bg_01
   mFillCenter: 1
+--- !u!61 &7550278813614231751
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4013742019109554696}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 80}
+  m_EdgeRadius: 0
 --- !u!1 &4013742019114151062
 GameObject:
   m_ObjectHideFlags: 0
@@ -15752,6 +16832,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4013742019114151081}
   - component: {fileID: 4013742019114151080}
+  - component: {fileID: 2900047485151631856}
   m_Layer: 0
   m_Name: Sprite (6)
   m_TagString: Untagged
@@ -15808,7 +16889,7 @@ MonoBehaviour:
   mHeight: 80
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
@@ -15828,6 +16909,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: Bg_01
   mFillCenter: 1
+--- !u!61 &2900047485151631856
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4013742019114151062}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 80}
+  m_EdgeRadius: 0
 --- !u!1 &4013742019117068693
 GameObject:
   m_ObjectHideFlags: 0
@@ -15838,6 +16945,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4013742019117068692}
   - component: {fileID: 4013742019117068695}
+  - component: {fileID: 8621047284666189191}
   m_Layer: 0
   m_Name: Sprite (12)
   m_TagString: Untagged
@@ -15894,7 +17002,7 @@ MonoBehaviour:
   mHeight: 80
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
@@ -15914,6 +17022,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: Bg_01
   mFillCenter: 1
+--- !u!61 &8621047284666189191
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4013742019117068693}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 80}
+  m_EdgeRadius: 0
 --- !u!1 &4013742019125641675
 GameObject:
   m_ObjectHideFlags: 0
@@ -15924,6 +17058,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4013742019125641674}
   - component: {fileID: 4013742019125641677}
+  - component: {fileID: 6771695565356698332}
   m_Layer: 0
   m_Name: Sprite (5)
   m_TagString: Untagged
@@ -15980,7 +17115,7 @@ MonoBehaviour:
   mHeight: 80
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
@@ -16000,6 +17135,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: Bg_01
   mFillCenter: 1
+--- !u!61 &6771695565356698332
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4013742019125641675}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 80}
+  m_EdgeRadius: 0
 --- !u!1 &4013742019135158904
 GameObject:
   m_ObjectHideFlags: 0
@@ -16490,6 +17651,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4013742019160942433}
   - component: {fileID: 4013742019160942432}
+  - component: {fileID: 528179501742236364}
   m_Layer: 0
   m_Name: Sprite (17)
   m_TagString: Untagged
@@ -16546,7 +17708,7 @@ MonoBehaviour:
   mHeight: 80
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
@@ -16566,6 +17728,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: Bg_01
   mFillCenter: 1
+--- !u!61 &528179501742236364
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4013742019160942446}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 80}
+  m_EdgeRadius: 0
 --- !u!1 &4013742019164683299
 GameObject:
   m_ObjectHideFlags: 0
@@ -16662,6 +17850,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4013742019167246328}
   - component: {fileID: 4013742019167246331}
+  - component: {fileID: 1325555210598498880}
   m_Layer: 0
   m_Name: Sprite (22)
   m_TagString: Untagged
@@ -16718,7 +17907,7 @@ MonoBehaviour:
   mHeight: 80
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
@@ -16738,6 +17927,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: Bg_01
   mFillCenter: 1
+--- !u!61 &1325555210598498880
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4013742019167246329}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 80}
+  m_EdgeRadius: 0
 --- !u!1 &4013742019180509934
 GameObject:
   m_ObjectHideFlags: 0
@@ -16748,6 +17963,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4013742019180509921}
   - component: {fileID: 4013742019180509920}
+  - component: {fileID: 6161346321955808070}
   m_Layer: 0
   m_Name: Sprite (3)
   m_TagString: Untagged
@@ -16804,7 +18020,7 @@ MonoBehaviour:
   mHeight: 80
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
@@ -16824,6 +18040,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: Bg_01
   mFillCenter: 1
+--- !u!61 &6161346321955808070
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4013742019180509934}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 80}
+  m_EdgeRadius: 0
 --- !u!1 &4013742019181714287
 GameObject:
   m_ObjectHideFlags: 0
@@ -16834,6 +18076,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4013742019181714286}
   - component: {fileID: 4013742019181714273}
+  - component: {fileID: 6926135789775350294}
   m_Layer: 0
   m_Name: Sprite (16)
   m_TagString: Untagged
@@ -16890,7 +18133,7 @@ MonoBehaviour:
   mHeight: 80
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
@@ -16910,6 +18153,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: Bg_01
   mFillCenter: 1
+--- !u!61 &6926135789775350294
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4013742019181714287}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 80}
+  m_EdgeRadius: 0
 --- !u!1 &4013742019191222336
 GameObject:
   m_ObjectHideFlags: 0
@@ -17522,6 +18791,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4013742019275153352}
   - component: {fileID: 4013742019275153355}
+  - component: {fileID: 5265633510212079678}
   m_Layer: 0
   m_Name: Sprite (3)
   m_TagString: Untagged
@@ -17578,7 +18848,7 @@ MonoBehaviour:
   mHeight: 80
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
@@ -17598,6 +18868,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: Bg_01
   mFillCenter: 1
+--- !u!61 &5265633510212079678
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4013742019275153353}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 80}
+  m_EdgeRadius: 0
 --- !u!1 &4013742019283187046
 GameObject:
   m_ObjectHideFlags: 0
@@ -17694,6 +18990,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4013742019310689244}
   - component: {fileID: 4013742019310689247}
+  - component: {fileID: 6680229453936836099}
   m_Layer: 0
   m_Name: Sprite (7)
   m_TagString: Untagged
@@ -17750,7 +19047,7 @@ MonoBehaviour:
   mHeight: 80
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
@@ -17770,6 +19067,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: Bg_01
   mFillCenter: 1
+--- !u!61 &6680229453936836099
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4013742019310689245}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 80}
+  m_EdgeRadius: 0
 --- !u!1 &4013742019316700882
 GameObject:
   m_ObjectHideFlags: 0
@@ -17780,6 +19103,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4013742019316700885}
   - component: {fileID: 4013742019316700884}
+  - component: {fileID: 720472399348303711}
   m_Layer: 0
   m_Name: Sprite (14)
   m_TagString: Untagged
@@ -17836,7 +19160,7 @@ MonoBehaviour:
   mHeight: 194
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1.0463917
@@ -17856,6 +19180,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: bod_box01
   mFillCenter: 1
+--- !u!61 &720472399348303711
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4013742019316700882}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -97}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 203, y: 194}
+  m_EdgeRadius: 0
 --- !u!1 &4013742019318929065
 GameObject:
   m_ObjectHideFlags: 0
@@ -18210,6 +19560,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4013742019428492269}
   - component: {fileID: 4013742019428492268}
+  - component: {fileID: 1333536838003069609}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
@@ -18266,7 +19617,7 @@ MonoBehaviour:
   mHeight: 80
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
@@ -18286,6 +19637,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: Bg_01
   mFillCenter: 1
+--- !u!61 &1333536838003069609
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4013742019428492266}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 80}
+  m_EdgeRadius: 0
 --- !u!1 &4013742019429485393
 GameObject:
   m_ObjectHideFlags: 0
@@ -18640,6 +20017,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4013742019452662923}
   - component: {fileID: 4013742019452662922}
+  - component: {fileID: 5027309712613802981}
   m_Layer: 0
   m_Name: Sprite (6)
   m_TagString: Untagged
@@ -18696,7 +20074,7 @@ MonoBehaviour:
   mHeight: 80
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
@@ -18716,6 +20094,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: Bg_01
   mFillCenter: 1
+--- !u!61 &5027309712613802981
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4013742019452662920}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 80}
+  m_EdgeRadius: 0
 --- !u!1 &4013742019466656998
 GameObject:
   m_ObjectHideFlags: 0
@@ -18898,6 +20302,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4013742019472686805}
   - component: {fileID: 4013742019472686804}
+  - component: {fileID: 566324983944674855}
   m_Layer: 0
   m_Name: Sprite (9)
   m_TagString: Untagged
@@ -18954,7 +20359,7 @@ MonoBehaviour:
   mHeight: 80
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
@@ -18974,6 +20379,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: Bg_01
   mFillCenter: 1
+--- !u!61 &566324983944674855
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4013742019472686802}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 80}
+  m_EdgeRadius: 0
 --- !u!1 &4013742019475422324
 GameObject:
   m_ObjectHideFlags: 0
@@ -18984,6 +20415,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4013742019475422327}
   - component: {fileID: 4013742019475422326}
+  - component: {fileID: 4313679684670471376}
   m_Layer: 0
   m_Name: Sprite (9)
   m_TagString: Untagged
@@ -19040,7 +20472,7 @@ MonoBehaviour:
   mHeight: 80
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
@@ -19060,6 +20492,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: Bg_01
   mFillCenter: 1
+--- !u!61 &4313679684670471376
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4013742019475422324}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 80}
+  m_EdgeRadius: 0
 --- !u!1 &4013742019480177915
 GameObject:
   m_ObjectHideFlags: 0
@@ -19412,6 +20870,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4013742019547020150}
   - component: {fileID: 4013742019547019913}
+  - component: {fileID: 335228325939277345}
   m_Layer: 0
   m_Name: Sprite (8)
   m_TagString: Untagged
@@ -19468,7 +20927,7 @@ MonoBehaviour:
   mHeight: 80
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
@@ -19488,6 +20947,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: Bg_01
   mFillCenter: 1
+--- !u!61 &335228325939277345
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4013742019547020151}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 80}
+  m_EdgeRadius: 0
 --- !u!1 &4013742019555191487
 GameObject:
   m_ObjectHideFlags: 0
@@ -19498,6 +20983,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4013742019555191486}
   - component: {fileID: 4013742019555191473}
+  - component: {fileID: 2833521537332295585}
   m_Layer: 0
   m_Name: Sprite (15)
   m_TagString: Untagged
@@ -19554,7 +21040,7 @@ MonoBehaviour:
   mHeight: 80
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
@@ -19574,6 +21060,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: Bg_01
   mFillCenter: 1
+--- !u!61 &2833521537332295585
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4013742019555191487}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 80}
+  m_EdgeRadius: 0
 --- !u!1 &4013742019555869522
 GameObject:
   m_ObjectHideFlags: 0
@@ -19840,6 +21352,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4013742019575054418}
   - component: {fileID: 4013742019575054421}
+  - component: {fileID: 132843512858290491}
   m_Layer: 0
   m_Name: Sprite (22)
   m_TagString: Untagged
@@ -19896,7 +21409,7 @@ MonoBehaviour:
   mHeight: 80
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
@@ -19916,6 +21429,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: Bg_01
   mFillCenter: 1
+--- !u!61 &132843512858290491
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4013742019575054419}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 80}
+  m_EdgeRadius: 0
 --- !u!1 &4013742019579259788
 GameObject:
   m_ObjectHideFlags: 0
@@ -20184,6 +21723,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4013742019613559957}
   - component: {fileID: 4013742019613559956}
+  - component: {fileID: 7172409864149053660}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
@@ -20240,7 +21780,7 @@ MonoBehaviour:
   mHeight: 80
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
@@ -20260,6 +21800,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: Bg_01
   mFillCenter: 1
+--- !u!61 &7172409864149053660
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4013742019613559954}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 80}
+  m_EdgeRadius: 0
 --- !u!1 &4013742019616357176
 GameObject:
   m_ObjectHideFlags: 0
@@ -20407,6 +21973,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4013742019636795338}
   - component: {fileID: 4013742019636795341}
+  - component: {fileID: 3406619694574999054}
   m_Layer: 0
   m_Name: Sprite (20)
   m_TagString: Untagged
@@ -20463,7 +22030,7 @@ MonoBehaviour:
   mHeight: 80
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
@@ -20483,6 +22050,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: Bg_02
   mFillCenter: 1
+--- !u!61 &3406619694574999054
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4013742019636795339}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 80}
+  m_EdgeRadius: 0
 --- !u!1 &4013742019647167475
 GameObject:
   m_ObjectHideFlags: 0
@@ -20493,6 +22086,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4013742019647167474}
   - component: {fileID: 4013742019647167477}
+  - component: {fileID: 84280741844521138}
   m_Layer: 0
   m_Name: Sprite (23)
   m_TagString: Untagged
@@ -20549,7 +22143,7 @@ MonoBehaviour:
   mHeight: 80
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
@@ -20569,6 +22163,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: Bg_01
   mFillCenter: 1
+--- !u!61 &84280741844521138
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4013742019647167475}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 80}
+  m_EdgeRadius: 0
 --- !u!1 &4013742019649764435
 GameObject:
   m_ObjectHideFlags: 0
@@ -20579,6 +22199,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4013742019649764434}
   - component: {fileID: 4013742019649764437}
+  - component: {fileID: 6499315087888900938}
   m_Layer: 0
   m_Name: Sprite (20)
   m_TagString: Untagged
@@ -20635,7 +22256,7 @@ MonoBehaviour:
   mHeight: 80
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
@@ -20655,6 +22276,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: Bg_01
   mFillCenter: 1
+--- !u!61 &6499315087888900938
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4013742019649764435}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 80}
+  m_EdgeRadius: 0
 --- !u!1 &4013742019689163325
 GameObject:
   m_ObjectHideFlags: 0
@@ -20751,6 +22398,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4013742019695401969}
   - component: {fileID: 4013742019695401968}
+  - component: {fileID: 4024345952838119160}
   m_Layer: 0
   m_Name: Sprite (5)
   m_TagString: Untagged
@@ -20807,7 +22455,7 @@ MonoBehaviour:
   mHeight: 80
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
@@ -20827,6 +22475,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: Bg_01
   mFillCenter: 1
+--- !u!61 &4024345952838119160
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4013742019695401982}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 80}
+  m_EdgeRadius: 0
 --- !u!1 &4013742019695555616
 GameObject:
   m_ObjectHideFlags: 0
@@ -20837,6 +22511,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4013742019695555619}
   - component: {fileID: 4013742019695555618}
+  - component: {fileID: 7009635739443354774}
   m_Layer: 0
   m_Name: Sprite (6)
   m_TagString: Untagged
@@ -20893,7 +22568,7 @@ MonoBehaviour:
   mHeight: 80
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
@@ -20913,6 +22588,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: Bg_01
   mFillCenter: 1
+--- !u!61 &7009635739443354774
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4013742019695555616}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 80}
+  m_EdgeRadius: 0
 --- !u!1 &4013742019702292764
 GameObject:
   m_ObjectHideFlags: 0
@@ -21009,6 +22710,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4013742019710744706}
   - component: {fileID: 4013742019710744709}
+  - component: {fileID: 7393300544740644949}
   m_Layer: 0
   m_Name: Sprite (4)
   m_TagString: Untagged
@@ -21065,7 +22767,7 @@ MonoBehaviour:
   mHeight: 80
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
@@ -21085,6 +22787,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: Bg_01
   mFillCenter: 1
+--- !u!61 &7393300544740644949
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4013742019710744707}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 80}
+  m_EdgeRadius: 0
 --- !u!1 &4013742019712363561
 GameObject:
   m_ObjectHideFlags: 0
@@ -21181,6 +22909,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4013742019718572191}
   - component: {fileID: 4013742019718572190}
+  - component: {fileID: 3279166963047897887}
   m_Layer: 0
   m_Name: Sprite (18)
   m_TagString: Untagged
@@ -21237,7 +22966,7 @@ MonoBehaviour:
   mHeight: 80
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
@@ -21257,6 +22986,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: Bg_01
   mFillCenter: 1
+--- !u!61 &3279166963047897887
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4013742019718572188}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 80}
+  m_EdgeRadius: 0
 --- !u!1 &4013742019721968915
 GameObject:
   m_ObjectHideFlags: 0
@@ -21576,6 +23331,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4013742019756322100}
   - component: {fileID: 4013742019756322103}
+  - component: {fileID: 4390386315200518580}
   m_Layer: 0
   m_Name: Sprite (17)
   m_TagString: Untagged
@@ -21632,7 +23388,7 @@ MonoBehaviour:
   mHeight: 80
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
@@ -21652,6 +23408,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: Bg_01
   mFillCenter: 1
+--- !u!61 &4390386315200518580
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4013742019756322101}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 80}
+  m_EdgeRadius: 0
 --- !u!1 &4013742019756935189
 GameObject:
   m_ObjectHideFlags: 0
@@ -22006,6 +23788,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4013742019789103354}
   - component: {fileID: 4013742019789103357}
+  - component: {fileID: 3446134008967496039}
   m_Layer: 0
   m_Name: Sprite (24)
   m_TagString: Untagged
@@ -22062,7 +23845,7 @@ MonoBehaviour:
   mHeight: 80
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
@@ -22082,6 +23865,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: Bg_01
   mFillCenter: 1
+--- !u!61 &3446134008967496039
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4013742019789103355}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 80}
+  m_EdgeRadius: 0
 --- !u!1 &4013742019789176556
 GameObject:
   m_ObjectHideFlags: 0
@@ -22350,6 +24159,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4013742019807119451}
   - component: {fileID: 4013742019807119450}
+  - component: {fileID: 7868928757832504572}
   m_Layer: 0
   m_Name: Sprite (19)
   m_TagString: Untagged
@@ -22406,7 +24216,7 @@ MonoBehaviour:
   mHeight: 80
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
@@ -22426,6 +24236,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: Bg_01
   mFillCenter: 1
+--- !u!61 &7868928757832504572
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4013742019807119448}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 80}
+  m_EdgeRadius: 0
 --- !u!1 &4013742019820381532
 GameObject:
   m_ObjectHideFlags: 0
@@ -22694,6 +24530,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4013742019842661744}
   - component: {fileID: 4013742019842661747}
+  - component: {fileID: 7237008999258214015}
   m_Layer: 0
   m_Name: Sprite (4)
   m_TagString: Untagged
@@ -22750,7 +24587,7 @@ MonoBehaviour:
   mHeight: 80
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
@@ -22770,6 +24607,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: Bg_01
   mFillCenter: 1
+--- !u!61 &7237008999258214015
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4013742019842661745}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 80}
+  m_EdgeRadius: 0
 --- !u!1 &4013742019863563714
 GameObject:
   m_ObjectHideFlags: 0
@@ -22866,6 +24729,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4013742019864495314}
   - component: {fileID: 4013742019864495317}
+  - component: {fileID: 2086862297434601327}
   m_Layer: 0
   m_Name: Sprite (7)
   m_TagString: Untagged
@@ -22922,7 +24786,7 @@ MonoBehaviour:
   mHeight: 80
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
@@ -22942,6 +24806,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: Bg_01
   mFillCenter: 1
+--- !u!61 &2086862297434601327
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4013742019864495315}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 80}
+  m_EdgeRadius: 0
 --- !u!1 &4013742019870148458
 GameObject:
   m_ObjectHideFlags: 0
@@ -23102,6 +24992,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4013742019900602619}
   - component: {fileID: 4013742019900602618}
+  - component: {fileID: 8515908348648668887}
   m_Layer: 0
   m_Name: Sprite (1)
   m_TagString: Untagged
@@ -23158,7 +25049,7 @@ MonoBehaviour:
   mHeight: 80
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
@@ -23178,6 +25069,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: Bg_01
   mFillCenter: 1
+--- !u!61 &8515908348648668887
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4013742019900602616}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 80}
+  m_EdgeRadius: 0
 --- !u!1 &4013742019906330894
 GameObject:
   m_ObjectHideFlags: 0
@@ -23188,6 +25105,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4013742019906330881}
   - component: {fileID: 4013742019906330880}
+  - component: {fileID: 5029122312303255103}
   m_Layer: 0
   m_Name: Sprite (17)
   m_TagString: Untagged
@@ -23244,7 +25162,7 @@ MonoBehaviour:
   mHeight: 80
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
@@ -23264,6 +25182,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: Bg_01
   mFillCenter: 1
+--- !u!61 &5029122312303255103
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4013742019906330894}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 80}
+  m_EdgeRadius: 0
 --- !u!1 &4013742019908637232
 GameObject:
   m_ObjectHideFlags: 0
@@ -23360,6 +25304,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4013742019916611779}
   - component: {fileID: 4013742019916611778}
+  - component: {fileID: 2177192491953796591}
   m_Layer: 0
   m_Name: Sprite (16)
   m_TagString: Untagged
@@ -23416,7 +25361,7 @@ MonoBehaviour:
   mHeight: 80
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
@@ -23436,6 +25381,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: Bg_01
   mFillCenter: 1
+--- !u!61 &2177192491953796591
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4013742019916611776}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 80}
+  m_EdgeRadius: 0
 --- !u!1 &4013742019916773940
 GameObject:
   m_ObjectHideFlags: 0
@@ -23446,6 +25417,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4013742019916773943}
   - component: {fileID: 4013742019916773942}
+  - component: {fileID: 1805083922486404355}
   m_Layer: 0
   m_Name: Sprite (11)
   m_TagString: Untagged
@@ -23502,7 +25474,7 @@ MonoBehaviour:
   mHeight: 194
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 6.597938
@@ -23522,6 +25494,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: bod_box01
   mFillCenter: 1
+--- !u!61 &1805083922486404355
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4013742019916773940}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -97}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1280, y: 194}
+  m_EdgeRadius: 0
 --- !u!1 &4013742019928117770
 GameObject:
   m_ObjectHideFlags: 0
@@ -23532,6 +25530,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4013742019928117773}
   - component: {fileID: 4013742019928117772}
+  - component: {fileID: 6494197816459166032}
   m_Layer: 0
   m_Name: Sprite (12)
   m_TagString: Untagged
@@ -23588,7 +25587,7 @@ MonoBehaviour:
   mHeight: 80
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
@@ -23608,6 +25607,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: Bg_01
   mFillCenter: 1
+--- !u!61 &6494197816459166032
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4013742019928117770}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 80}
+  m_EdgeRadius: 0
 --- !u!1 &4013742019929642802
 GameObject:
   m_ObjectHideFlags: 0
@@ -24099,6 +26124,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4013742019990458082}
   - component: {fileID: 4013742019990458085}
+  - component: {fileID: 6282153920825618861}
   m_Layer: 0
   m_Name: Sprite (15)
   m_TagString: Untagged
@@ -24155,7 +26181,7 @@ MonoBehaviour:
   mHeight: 80
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
@@ -24175,6 +26201,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: Bg_01
   mFillCenter: 1
+--- !u!61 &6282153920825618861
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4013742019990458083}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 80}
+  m_EdgeRadius: 0
 --- !u!1 &4013742019994341742
 GameObject:
   m_ObjectHideFlags: 0
@@ -24529,6 +26581,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4013742020015576993}
   - component: {fileID: 4013742020015576992}
+  - component: {fileID: 6983844509030831936}
   m_Layer: 0
   m_Name: Sprite (13)
   m_TagString: Untagged
@@ -24585,7 +26638,7 @@ MonoBehaviour:
   mHeight: 80
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
@@ -24605,6 +26658,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: Bg_01
   mFillCenter: 1
+--- !u!61 &6983844509030831936
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4013742020015577006}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 80}
+  m_EdgeRadius: 0
 --- !u!1 &4013742020066951080
 GameObject:
   m_ObjectHideFlags: 0
@@ -24615,6 +26694,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4013742020066951083}
   - component: {fileID: 4013742020066951082}
+  - component: {fileID: 8240854122436376393}
   m_Layer: 0
   m_Name: Sprite (2)
   m_TagString: Untagged
@@ -24671,7 +26751,7 @@ MonoBehaviour:
   mHeight: 80
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
@@ -24691,6 +26771,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: Bg_01
   mFillCenter: 1
+--- !u!61 &8240854122436376393
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4013742020066951080}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 80}
+  m_EdgeRadius: 0
 --- !u!1 &4013742020073733434
 GameObject:
   m_ObjectHideFlags: 0
@@ -24701,6 +26807,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4013742020073733437}
   - component: {fileID: 4013742020073733436}
+  - component: {fileID: 5266290315840935533}
   m_Layer: 0
   m_Name: Sprite (11)
   m_TagString: Untagged
@@ -24757,7 +26864,7 @@ MonoBehaviour:
   mHeight: 194
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 6.597938
@@ -24777,6 +26884,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: bod_box01
   mFillCenter: 1
+--- !u!61 &5266290315840935533
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4013742020073733434}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -97}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1280, y: 194}
+  m_EdgeRadius: 0
 --- !u!1 &4013742020074489916
 GameObject:
   m_ObjectHideFlags: 0
@@ -24787,6 +26920,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4013742020074489919}
   - component: {fileID: 4013742020074489918}
+  - component: {fileID: 2511707023312443464}
   m_Layer: 0
   m_Name: Sprite (9)
   m_TagString: Untagged
@@ -24843,7 +26977,7 @@ MonoBehaviour:
   mHeight: 80
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
@@ -24863,6 +26997,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: Bg_01
   mFillCenter: 1
+--- !u!61 &2511707023312443464
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4013742020074489916}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 80}
+  m_EdgeRadius: 0
 --- !u!1 &4013742020086599343
 GameObject:
   m_ObjectHideFlags: 0
@@ -25303,6 +27463,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6334756111506153777}
   - component: {fileID: 3641236110472668571}
+  - component: {fileID: 8481703806402646357}
   m_Layer: 0
   m_Name: Sprite (9)
   m_TagString: Untagged
@@ -25359,7 +27520,7 @@ MonoBehaviour:
   mHeight: 80
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
@@ -25379,6 +27540,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: Bg_01
   mFillCenter: 1
+--- !u!61 &8481703806402646357
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4079134799063023076}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 80}
+  m_EdgeRadius: 0
 --- !u!1 &4134812705212903375
 GameObject:
   m_ObjectHideFlags: 0
@@ -25475,6 +27662,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9195142286746643869}
   - component: {fileID: 2943202772015824227}
+  - component: {fileID: 1849418227501249302}
   m_Layer: 0
   m_Name: Sprite (7)
   m_TagString: Untagged
@@ -25531,7 +27719,7 @@ MonoBehaviour:
   mHeight: 80
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
@@ -25551,6 +27739,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: Bg_01
   mFillCenter: 1
+--- !u!61 &1849418227501249302
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4247392757963363989}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 80}
+  m_EdgeRadius: 0
 --- !u!1 &4304801403416584117
 GameObject:
   m_ObjectHideFlags: 0
@@ -25797,6 +28011,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4743745371045425591}
   - component: {fileID: 6291806167921736516}
+  - component: {fileID: 5372885257845279859}
   m_Layer: 0
   m_Name: Sprite (3)
   m_TagString: Untagged
@@ -25853,7 +28068,7 @@ MonoBehaviour:
   mHeight: 80
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
@@ -25873,6 +28088,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: Bg_01
   mFillCenter: 1
+--- !u!61 &5372885257845279859
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4994503669181347455}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 80}
+  m_EdgeRadius: 0
 --- !u!1 &5060059675986929442
 GameObject:
   m_ObjectHideFlags: 0
@@ -25969,6 +28210,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2449286798765896015}
   - component: {fileID: 5640278830855186007}
+  - component: {fileID: 5989925351364731286}
   m_Layer: 0
   m_Name: Sprite (11)
   m_TagString: Untagged
@@ -26025,7 +28267,7 @@ MonoBehaviour:
   mHeight: 194
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 6.597938
@@ -26045,6 +28287,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: bod_box01
   mFillCenter: 1
+--- !u!61 &5989925351364731286
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5466119356471210193}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 640, y: -97}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1280, y: 194}
+  m_EdgeRadius: 0
 --- !u!1 &5855255987315541604
 GameObject:
   m_ObjectHideFlags: 0
@@ -26141,6 +28409,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4431160767789529238}
   - component: {fileID: 7210788383096823594}
+  - component: {fileID: 1141840969709493555}
   m_Layer: 0
   m_Name: Sprite (17)
   m_TagString: Untagged
@@ -26197,7 +28466,7 @@ MonoBehaviour:
   mHeight: 80
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
@@ -26217,6 +28486,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: Bg_01
   mFillCenter: 1
+--- !u!61 &1141840969709493555
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5994477319017912452}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 80}
+  m_EdgeRadius: 0
 --- !u!1 &5995886973113114686
 GameObject:
   m_ObjectHideFlags: 0
@@ -26227,6 +28522,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2989389412237443493}
   - component: {fileID: 408318412716715701}
+  - component: {fileID: 4389687982149608691}
   m_Layer: 0
   m_Name: Sprite (6)
   m_TagString: Untagged
@@ -26283,7 +28579,7 @@ MonoBehaviour:
   mHeight: 80
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
@@ -26303,6 +28599,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: Bg_01
   mFillCenter: 1
+--- !u!61 &4389687982149608691
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5995886973113114686}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 80}
+  m_EdgeRadius: 0
 --- !u!1 &6010020195086562805
 GameObject:
   m_ObjectHideFlags: 0
@@ -26485,6 +28807,7 @@ GameObject:
   m_Component:
   - component: {fileID: 798183068708649729}
   - component: {fileID: 4678673366484562926}
+  - component: {fileID: 2768625632526810203}
   m_Layer: 0
   m_Name: Sprite (10)
   m_TagString: Untagged
@@ -26541,7 +28864,7 @@ MonoBehaviour:
   mHeight: 80
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
@@ -26561,6 +28884,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: Bg_01
   mFillCenter: 1
+--- !u!61 &2768625632526810203
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6297860113995455251}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 80}
+  m_EdgeRadius: 0
 --- !u!1 &6781600906002903122
 GameObject:
   m_ObjectHideFlags: 0
@@ -26571,6 +28920,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1054632067742004250}
   - component: {fileID: 1217224710404216450}
+  - component: {fileID: 4074107065495383652}
   m_Layer: 0
   m_Name: Sprite (16)
   m_TagString: Untagged
@@ -26627,7 +28977,7 @@ MonoBehaviour:
   mHeight: 80
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
@@ -26647,6 +28997,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: Bg_01
   mFillCenter: 1
+--- !u!61 &4074107065495383652
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6781600906002903122}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 80}
+  m_EdgeRadius: 0
 --- !u!1 &6891015624047950472
 GameObject:
   m_ObjectHideFlags: 0
@@ -27116,7 +29492,7 @@ MonoBehaviour:
   anchorOffset: 0
   softBorderPadding: 1
   renderQueue: 0
-  startingRenderQueue: 3001
+  startingRenderQueue: 3002
   mClipTexture: {fileID: 0}
   mAlpha: 1
   mClipping: 0
@@ -27411,6 +29787,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4353187492819241918}
   - component: {fileID: 2192138978158548722}
+  - component: {fileID: 222099028304672614}
   m_Layer: 0
   m_Name: Sprite (12)
   m_TagString: Untagged
@@ -27467,7 +29844,7 @@ MonoBehaviour:
   mHeight: 80
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
@@ -27487,6 +29864,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: Bg_01
   mFillCenter: 1
+--- !u!61 &222099028304672614
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7882050940700818341}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 80}
+  m_EdgeRadius: 0
 --- !u!1 &8002798058866988866
 GameObject:
   m_ObjectHideFlags: 0
@@ -27722,6 +30125,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7334909670103809418}
   - component: {fileID: 2424198285377794086}
+  - component: {fileID: 434887752277062124}
   m_Layer: 0
   m_Name: Sprite (19)
   m_TagString: Untagged
@@ -27778,7 +30182,7 @@ MonoBehaviour:
   mHeight: 80
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
@@ -27798,6 +30202,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: Bg_01
   mFillCenter: 1
+--- !u!61 &434887752277062124
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8502471323318713931}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 80}
+  m_EdgeRadius: 0
 --- !u!1 &8529288283264740996
 GameObject:
   m_ObjectHideFlags: 0
@@ -27894,6 +30324,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1041711738468830232}
   - component: {fileID: 5705231917751426156}
+  - component: {fileID: 3485954733367836572}
   m_Layer: 0
   m_Name: Sprite (14)
   m_TagString: Untagged
@@ -27950,7 +30381,7 @@ MonoBehaviour:
   mHeight: 194
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 3.1185567
@@ -27970,6 +30401,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: bod_box01
   mFillCenter: 1
+--- !u!61 &3485954733367836572
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9021961005176055874}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -302.5, y: -97}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 605, y: 194}
+  m_EdgeRadius: 0
 --- !u!1 &9023920967578974643
 GameObject:
   m_ObjectHideFlags: 0
@@ -28152,6 +30609,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7366447823379676679}
   - component: {fileID: 255539397961348952}
+  - component: {fileID: 2994384298300741280}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
@@ -28208,7 +30666,7 @@ MonoBehaviour:
   mHeight: 80
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
@@ -28228,6 +30686,32 @@ MonoBehaviour:
   mAtlas: {fileID: 9175589700261132899, guid: f6dfc9b42917b1b449d9bb048e50a80d, type: 3}
   mSpriteName: Bg_01
   mFillCenter: 1
+--- !u!61 &2994384298300741280
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9055294766411833260}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 80}
+  m_EdgeRadius: 0
 --- !u!1 &9122890825186908681
 GameObject:
   m_ObjectHideFlags: 0
