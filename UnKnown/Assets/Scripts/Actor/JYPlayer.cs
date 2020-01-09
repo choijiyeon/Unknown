@@ -5,7 +5,7 @@ using UnityEngine;
 public class JYPlayer : JYActor
 {
     private bool isJumping = false;
-    private float jumpPower = 85f;
+    private float jumpPower = 160f;
     private Rigidbody2D rigid;
     private Vector3 movement;
     private JYDefines.ActorAniSpriteState playerCurState = JYDefines.ActorAniSpriteState.idle;
