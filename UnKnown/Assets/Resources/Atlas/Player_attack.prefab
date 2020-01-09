@@ -46,32 +46,6 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: c22925aa0b5f18d4384d3c1d72f5bcf2, type: 2}
   mSprites:
   - name: player_attack_01
-    x: 0
-    y: 0
-    width: 240
-    height: 170
-    borderLeft: 0
-    borderRight: 0
-    borderTop: 0
-    borderBottom: 0
-    paddingLeft: 0
-    paddingRight: 0
-    paddingTop: 0
-    paddingBottom: 0
-  - name: player_attack_02
-    x: 241
-    y: 171
-    width: 240
-    height: 170
-    borderLeft: 0
-    borderRight: 0
-    borderTop: 0
-    borderBottom: 0
-    paddingLeft: 0
-    paddingRight: 0
-    paddingTop: 0
-    paddingBottom: 0
-  - name: player_attack_03
     x: 241
     y: 342
     width: 240
@@ -84,7 +58,7 @@ MonoBehaviour:
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
-  - name: player_attack_04
+  - name: player_attack_02
     x: 0
     y: 171
     width: 240
@@ -97,7 +71,7 @@ MonoBehaviour:
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
-  - name: player_attack_05
+  - name: player_attack_03
     x: 0
     y: 342
     width: 240

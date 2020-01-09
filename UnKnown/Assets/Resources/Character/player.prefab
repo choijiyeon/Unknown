@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   frameIndex: 0
-  mFPS: 6
+  mFPS: 8
   mPrefix: 
   mLoop: 1
   mSnap: 1
@@ -712,7 +712,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   frameIndex: 0
-  mFPS: 10
+  mFPS: 12
   mPrefix: 
   mLoop: 1
   mSnap: 1
