@@ -46,46 +46,7 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: 18eea1f679a8d1b4091e0b7df00e3059, type: 2}
   mSprites:
   - name: Bg_01
-    x: 638
-    y: 264
-    width: 80
-    height: 80
-    borderLeft: 0
-    borderRight: 0
-    borderTop: 0
-    borderBottom: 0
-    paddingLeft: 0
-    paddingRight: 0
-    paddingTop: 0
-    paddingBottom: 0
-  - name: Bg_02
-    x: 945
-    y: 433
-    width: 77
-    height: 79
-    borderLeft: 0
-    borderRight: 0
-    borderTop: 0
-    borderBottom: 0
-    paddingLeft: 0
-    paddingRight: 0
-    paddingTop: 0
-    paddingBottom: 0
-  - name: bod_box01
-    x: 438
-    y: 69
-    width: 20
-    height: 20
-    borderLeft: 5
-    borderRight: 5
-    borderTop: 5
-    borderBottom: 5
-    paddingLeft: 0
-    paddingRight: 0
-    paddingTop: 0
-    paddingBottom: 0
-  - name: bod_box02
-    x: 864
+    x: 840
     y: 432
     width: 80
     height: 80
@@ -97,9 +58,48 @@ MonoBehaviour:
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
+  - name: Bg_02
+    x: 840
+    y: 271
+    width: 77
+    height: 79
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: bod_box01
+    x: 716
+    y: 63
+    width: 20
+    height: 20
+    borderLeft: 5
+    borderRight: 5
+    borderTop: 5
+    borderBottom: 5
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: bod_box02
+    x: 840
+    y: 351
+    width: 80
+    height: 80
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
   - name: Bod_cicle01
-    x: 438
-    y: 90
+    x: 465
+    y: 23
     width: 100
     height: 100
     borderLeft: 0
@@ -111,8 +111,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Bod_cicle02
-    x: 638
-    y: 345
+    x: 566
+    y: 23
     width: 100
     height: 100
     borderLeft: 0
@@ -124,8 +124,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Bod_cicle03
-    x: 739
-    y: 397
+    x: 667
+    y: 57
     width: 48
     height: 48
     borderLeft: 0
@@ -137,8 +137,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Bod_cicle04
-    x: 101
-    y: 1
+    x: 640
+    y: 215
     width: 15
     height: 23
     borderLeft: 0
@@ -150,8 +150,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Grass_A01
-    x: 788
-    y: 410
+    x: 667
+    y: 21
     width: 50
     height: 35
     borderLeft: 0
@@ -176,8 +176,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 1
   - name: Grass_A03
-    x: 945
-    y: 369
+    x: 667
+    y: 106
     width: 50
     height: 63
     borderLeft: 0
@@ -202,8 +202,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: img_star01
-    x: 465
-    y: 21
+    x: 664
+    y: 170
     width: 68
     height: 68
     borderLeft: 0
@@ -214,9 +214,35 @@ MonoBehaviour:
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
+  - name: Light_01
+    x: 539
+    y: 237
+    width: 100
+    height: 275
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Light_02
+    x: 640
+    y: 239
+    width: 100
+    height: 273
+    borderLeft: 10
+    borderRight: 10
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
   - name: Line_01
-    x: 638
-    y: 446
+    x: 438
+    y: 124
     width: 225
     height: 66
     borderLeft: 0
@@ -228,8 +254,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Line_02
-    x: 202
-    y: 215
+    x: 718
+    y: 84
     width: 19
     height: 85
     borderLeft: 0
@@ -254,7 +280,7 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Tree_A00
-    x: 539
+    x: 741
     y: 263
     width: 98
     height: 249
@@ -280,7 +306,7 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Tree_A02
-    x: 539
+    x: 741
     y: 28
     width: 100
     height: 234
