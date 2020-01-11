@@ -27,27 +27,22 @@ public class JYPlayer : JYActor
 
     private void FixedUpdate()
     {
-       // DoMove();
+        Move();
     }
 
     private void Move()
     {
-        //Vector3 moveVelocity = Vector3.zero;
-
-        //if (Input.GetAxisRaw("Horizontal") < 0)
-        //    moveVelocity = Vector3.left;
-        //else if (Input.GetAxisRaw("Horizontal") > 0)
-        //    moveVelocity = Vector3.right;
-
-        //transform.position += moveVelocity * movePower * Time.deltaTime;
-        //mainCamera.position += transform.position;
+        if (Input.GetKeyDown(KeyCode.A))
+            DoMove(false);
+        if (Input.GetKeyDown(KeyCode.D))
+            DoMove(true);
     }
 
     private void Jump()
     {
         if (isJumping != true)
         {
-            rigid.AddForce(Vector3.up * jumpPower);
+            rigid.AddForce(Vector3.up * 100);
 
             isJumping = true;
 

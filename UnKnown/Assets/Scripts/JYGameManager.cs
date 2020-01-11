@@ -77,7 +77,7 @@ public class JYGameManager : MonoBehaviour
     void GameLoading()
     {
         //JYUIManager.Instance.Initialize();
-        DoActorLoad(JYDefines.ActorType.Character, "player", new Vector3(-1.5f, 0f,0f));
+        DoActorLoad(JYDefines.ActorType.Character, "player", new Vector3(-8f, 0f,0f));
     }
 
     void GameStart()

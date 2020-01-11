@@ -288,7 +288,7 @@ MonoBehaviour:
   smoothTimeY: 0.1
   velocity: {x: 0.1, y: 0.1}
   minPos: {x: -7.1, y: 0}
-  maxPos: {x: 7.1, y: 5}
+  maxPos: {x: 19.5, y: 5}
   bound: 1
 --- !u!1001 &807844718
 PrefabInstance:
