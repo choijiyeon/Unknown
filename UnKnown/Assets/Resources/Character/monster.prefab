@@ -61,7 +61,7 @@ MonoBehaviour:
     relative: 1
     absolute: 0
   updateAnchors: 1
-  mColor: {r: 1, g: 1, b: 1, a: 1}
+  mColor: {r: 0.5660378, g: 0.22694911, b: 0.22694911, a: 1}
   mPivot: 7
   mWidth: 240
   mHeight: 170
@@ -75,8 +75,8 @@ MonoBehaviour:
   mFillDirection: 4
   mFillAmount: 1
   mInvert: 0
-  mFlip: 0
-  mApplyGradient: 1
+  mFlip: 1
+  mApplyGradient: 0
   mGradientTop: {r: 1, g: 1, b: 1, a: 1}
   mGradientBottom: {r: 0.098039225, g: 0.48235297, b: 0.43529415, a: 1}
   centerType: 1
@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   frameIndex: 0
-  mFPS: 8
+  mFPS: 6
   mPrefix: 
   mLoop: 1
   mSnap: 1
@@ -114,11 +114,11 @@ GameObject:
   m_Component:
   - component: {fileID: 4127703959012892}
   - component: {fileID: 5179276464355413557}
-  - component: {fileID: 150381115}
-  - component: {fileID: 8665612791470708007}
+  - component: {fileID: 1695738046425698150}
+  - component: {fileID: 5873609812583708407}
   m_Layer: 0
-  m_Name: player
-  m_TagString: Player
+  m_Name: monster
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -164,7 +164,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!70 &150381115
+--- !u!70 &1695738046425698150
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -177,10 +177,10 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 33.5, y: 86.92}
-  m_Size: {x: 105.1, y: 175}
+  m_Offset: {x: -30.1, y: 87}
+  m_Size: {x: 105, y: 175}
   m_Direction: 0
---- !u!61 &8665612791470708007
+--- !u!61 &5873609812583708407
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -193,7 +193,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 16.24}
+  m_Offset: {x: 0, y: 7.09}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -204,7 +204,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 165.45, y: 20.68}
+  m_Size: {x: 164.8, y: 10.4}
   m_EdgeRadius: 0
 --- !u!1 &1975663286647741051
 GameObject:
@@ -267,7 +267,7 @@ MonoBehaviour:
     relative: 1
     absolute: 0
   updateAnchors: 1
-  mColor: {r: 1, g: 1, b: 1, a: 1}
+  mColor: {r: 0.5660378, g: 0.22694911, b: 0.22694911, a: 1}
   mPivot: 7
   mWidth: 170
   mHeight: 170
@@ -281,8 +281,8 @@ MonoBehaviour:
   mFillDirection: 4
   mFillAmount: 1
   mInvert: 0
-  mFlip: 0
-  mApplyGradient: 1
+  mFlip: 1
+  mApplyGradient: 0
   mGradientTop: {r: 1, g: 1, b: 1, a: 1}
   mGradientBottom: {r: 0.098039225, g: 0.48235297, b: 0.43529415, a: 1}
   centerType: 1
@@ -371,7 +371,7 @@ MonoBehaviour:
     relative: 1
     absolute: 0
   updateAnchors: 1
-  mColor: {r: 1, g: 1, b: 1, a: 1}
+  mColor: {r: 0.5660378, g: 0.22694911, b: 0.22694911, a: 1}
   mPivot: 7
   mWidth: 170
   mHeight: 170
@@ -385,8 +385,8 @@ MonoBehaviour:
   mFillDirection: 4
   mFillAmount: 1
   mInvert: 0
-  mFlip: 0
-  mApplyGradient: 1
+  mFlip: 1
+  mApplyGradient: 0
   mGradientTop: {r: 1, g: 1, b: 1, a: 1}
   mGradientBottom: {r: 0.098039225, g: 0.48235297, b: 0.43529415, a: 1}
   centerType: 1
@@ -475,7 +475,7 @@ MonoBehaviour:
     relative: 1
     absolute: 0
   updateAnchors: 1
-  mColor: {r: 1, g: 1, b: 1, a: 1}
+  mColor: {r: 0.5660378, g: 0.22694911, b: 0.22694911, a: 1}
   mPivot: 7
   mWidth: 190
   mHeight: 170
@@ -489,8 +489,8 @@ MonoBehaviour:
   mFillDirection: 4
   mFillAmount: 1
   mInvert: 0
-  mFlip: 0
-  mApplyGradient: 1
+  mFlip: 1
+  mApplyGradient: 0
   mGradientTop: {r: 1, g: 1, b: 1, a: 1}
   mGradientBottom: {r: 0.098039225, g: 0.48235297, b: 0.43529415, a: 1}
   centerType: 1
@@ -579,7 +579,7 @@ MonoBehaviour:
     relative: 1
     absolute: 0
   updateAnchors: 1
-  mColor: {r: 1, g: 1, b: 1, a: 1}
+  mColor: {r: 0.5660378, g: 0.22694911, b: 0.22694911, a: 1}
   mPivot: 7
   mWidth: 250
   mHeight: 152
@@ -593,8 +593,8 @@ MonoBehaviour:
   mFillDirection: 4
   mFillAmount: 1
   mInvert: 0
-  mFlip: 0
-  mApplyGradient: 1
+  mFlip: 1
+  mApplyGradient: 0
   mGradientTop: {r: 1, g: 1, b: 1, a: 1}
   mGradientBottom: {r: 0.098039225, g: 0.48235297, b: 0.43529415, a: 1}
   centerType: 1
@@ -683,7 +683,7 @@ MonoBehaviour:
     relative: 1
     absolute: 0
   updateAnchors: 1
-  mColor: {r: 1, g: 1, b: 1, a: 1}
+  mColor: {r: 0.5660378, g: 0.22694911, b: 0.22694911, a: 1}
   mPivot: 7
   mWidth: 240
   mHeight: 170
@@ -697,8 +697,8 @@ MonoBehaviour:
   mFillDirection: 4
   mFillAmount: 1
   mInvert: 0
-  mFlip: 0
-  mApplyGradient: 1
+  mFlip: 1
+  mApplyGradient: 0
   mGradientTop: {r: 1, g: 1, b: 1, a: 1}
   mGradientBottom: {r: 0.098039225, g: 0.48235297, b: 0.43529415, a: 1}
   centerType: 1
@@ -722,7 +722,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   frameIndex: 0
-  mFPS: 12
+  mFPS: 10
   mPrefix: 
   mLoop: 1
   mSnap: 1
