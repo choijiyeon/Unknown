@@ -74,7 +74,7 @@ public class JYMonster : JYActor
             DoMove(true);
         }
 
-        transform.position += moveVelocity * movePower * Time.deltaTime;
+        transform.position += moveVelocity * movePower * 0.11f;
 
         if(transform.position.x <= dirLeft.position.x)
             curDirection = SetDirection(curDirection);
