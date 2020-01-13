@@ -758,11 +758,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: UImain
       objectReference: {fileID: 0}
-    - target: {fileID: 2727692877786907668, guid: f8986cc4052f45848a490eb996388863,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6611778905184617300, guid: f8986cc4052f45848a490eb996388863,
         type: 3}
       propertyPath: m_LocalPosition.x

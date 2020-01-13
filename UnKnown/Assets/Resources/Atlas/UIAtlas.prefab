@@ -45,9 +45,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 2100000, guid: f174306f618752b4f8a436ea84790b9a, type: 2}
   mSprites:
+  - name: Btn_base
+    x: 686
+    y: 312
+    width: 200
+    height: 200
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
   - name: Btn_start
     x: 686
-    y: 444
+    y: 243
     width: 192
     height: 68
     borderLeft: 0
@@ -60,7 +73,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: house
     x: 879
-    y: 404
+    y: 203
     width: 87
     height: 108
     borderLeft: 0
@@ -72,8 +85,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Img_hp
-    x: 686
-    y: 371
+    x: 887
+    y: 440
     width: 80
     height: 72
     borderLeft: 0
@@ -89,6 +102,32 @@ MonoBehaviour:
     y: 295
     width: 685
     height: 217
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Txt_attack
+    x: 0
+    y: 260
+    width: 150
+    height: 34
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Txt_jump
+    x: 151
+    y: 260
+    width: 150
+    height: 34
     borderLeft: 0
     borderRight: 0
     borderTop: 0
