@@ -114,7 +114,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4127703959012892}
   - component: {fileID: 5179276464355413557}
-  - component: {fileID: 4148264333698867242}
+  - component: {fileID: 2058680120}
+  - component: {fileID: 2377508775102166991}
+  - component: {fileID: 8904931995404099681}
   m_Layer: 0
   m_Name: monster01
   m_TagString: Untagged
@@ -163,7 +165,23 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &4148264333698867242
+--- !u!70 &2058680120
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1452823491425636}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 1.8, y: 103.8}
+  m_Size: {x: 135.4, y: 207.5}
+  m_Direction: 0
+--- !u!61 &2377508775102166991
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -176,7 +194,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 86}
+  m_Offset: {x: 11.3, y: 7.09}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -187,7 +205,33 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 170, y: 170}
+  m_Size: {x: 66.3, y: 10.4}
+  m_EdgeRadius: 0
+--- !u!61 &8904931995404099681
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1452823491425636}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -124.2, y: 102.7}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 17.1, y: 182.6}
   m_EdgeRadius: 0
 --- !u!1 &1975663286647741051
 GameObject:
@@ -740,7 +784,7 @@ MonoBehaviour:
   bottomType: 1
   topType: 1
   mAtlas: {fileID: 4767870988789707355, guid: ba7e26bbf9f64604b86e0a390f45224f, type: 3}
-  mSpriteName: monB_attack_01
+  mSpriteName: monB_attack_02
   mFillCenter: 1
 --- !u!114 &2605651916469794241
 MonoBehaviour:
