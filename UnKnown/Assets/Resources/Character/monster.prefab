@@ -39,7 +39,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 526133523}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1b3dc54f924693f41b5cbecb267e647a, type: 3}
   m_Name: 
@@ -61,22 +61,22 @@ MonoBehaviour:
     relative: 1
     absolute: 0
   updateAnchors: 1
-  mColor: {r: 0.5660378, g: 0.22694911, b: 0.22694911, a: 1}
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 7
-  mWidth: 240
+  mWidth: 170
   mHeight: 170
   mDepth: 10
   mMat: {fileID: 0}
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
-  keepAspectRatio: 1
-  aspectRatio: 1.4117647
-  mType: 1
+  keepAspectRatio: 0
+  aspectRatio: 1
+  mType: 0
   mFillDirection: 4
   mFillAmount: 1
   mInvert: 0
-  mFlip: 1
-  mApplyGradient: 0
+  mFlip: 0
+  mApplyGradient: 1
   mGradientTop: {r: 1, g: 1, b: 1, a: 1}
   mGradientBottom: {r: 0.098039225, g: 0.48235297, b: 0.43529415, a: 1}
   centerType: 1
@@ -84,8 +84,8 @@ MonoBehaviour:
   rightType: 1
   bottomType: 1
   topType: 1
-  mAtlas: {fileID: 4215747582270847156, guid: 150f848b09de3cc40a7d7dce8567f3ce, type: 3}
-  mSpriteName: player_jump01
+  mAtlas: {fileID: 3853434764499788943, guid: 0ba1caa284d298e4c8a904d6e15988a7, type: 3}
+  mSpriteName: player_idle_01
   mFillCenter: 1
 --- !u!114 &526133525
 MonoBehaviour:
@@ -223,7 +223,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &959953867291255661
 Transform:
   m_ObjectHideFlags: 0
@@ -267,22 +267,22 @@ MonoBehaviour:
     relative: 1
     absolute: 0
   updateAnchors: 1
-  mColor: {r: 0.5660378, g: 0.22694911, b: 0.22694911, a: 1}
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 7
-  mWidth: 170
+  mWidth: 204
   mHeight: 170
   mDepth: 10
   mMat: {fileID: 0}
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 1
-  mType: 1
+  aspectRatio: 1.2
+  mType: 0
   mFillDirection: 4
   mFillAmount: 1
   mInvert: 0
-  mFlip: 1
-  mApplyGradient: 0
+  mFlip: 0
+  mApplyGradient: 1
   mGradientTop: {r: 1, g: 1, b: 1, a: 1}
   mGradientBottom: {r: 0.098039225, g: 0.48235297, b: 0.43529415, a: 1}
   centerType: 1
@@ -290,8 +290,8 @@ MonoBehaviour:
   rightType: 1
   bottomType: 1
   topType: 1
-  mAtlas: {fileID: 896383231396000035, guid: 40b177f6dbe336c4aa1e38dfce789969, type: 3}
-  mSpriteName: player_run_01
+  mAtlas: {fileID: 7943514594206960936, guid: 68ddea2ed8f7bd841845795c3dba4f08, type: 3}
+  mSpriteName: monA_run_01
   mFillCenter: 1
 --- !u!114 &7543859237513697649
 MonoBehaviour:
@@ -306,7 +306,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   frameIndex: 0
-  mFPS: 8
+  mFPS: 4
   mPrefix: 
   mLoop: 1
   mSnap: 1
@@ -327,7 +327,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8279674022174301193
 Transform:
   m_ObjectHideFlags: 0
@@ -371,22 +371,22 @@ MonoBehaviour:
     relative: 1
     absolute: 0
   updateAnchors: 1
-  mColor: {r: 0.5660378, g: 0.22694911, b: 0.22694911, a: 1}
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 7
-  mWidth: 170
+  mWidth: 204
   mHeight: 170
   mDepth: 10
   mMat: {fileID: 0}
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 1
-  mType: 1
+  aspectRatio: 1.2
+  mType: 0
   mFillDirection: 4
   mFillAmount: 1
   mInvert: 0
-  mFlip: 1
-  mApplyGradient: 0
+  mFlip: 0
+  mApplyGradient: 1
   mGradientTop: {r: 1, g: 1, b: 1, a: 1}
   mGradientBottom: {r: 0.098039225, g: 0.48235297, b: 0.43529415, a: 1}
   centerType: 1
@@ -394,8 +394,8 @@ MonoBehaviour:
   rightType: 1
   bottomType: 1
   topType: 1
-  mAtlas: {fileID: 3853434764499788943, guid: 0ba1caa284d298e4c8a904d6e15988a7, type: 3}
-  mSpriteName: player_idle_01
+  mAtlas: {fileID: 7943514594206960936, guid: 68ddea2ed8f7bd841845795c3dba4f08, type: 3}
+  mSpriteName: monA_run_01
   mFillCenter: 1
 --- !u!114 &4158836963217516584
 MonoBehaviour:
@@ -475,22 +475,22 @@ MonoBehaviour:
     relative: 1
     absolute: 0
   updateAnchors: 1
-  mColor: {r: 0.5660378, g: 0.22694911, b: 0.22694911, a: 1}
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 7
-  mWidth: 190
+  mWidth: 204
   mHeight: 170
   mDepth: 10
   mMat: {fileID: 0}
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 1.117647
-  mType: 1
+  aspectRatio: 1.2
+  mType: 0
   mFillDirection: 4
   mFillAmount: 1
   mInvert: 0
-  mFlip: 1
-  mApplyGradient: 0
+  mFlip: 0
+  mApplyGradient: 1
   mGradientTop: {r: 1, g: 1, b: 1, a: 1}
   mGradientBottom: {r: 0.098039225, g: 0.48235297, b: 0.43529415, a: 1}
   centerType: 1
@@ -498,8 +498,8 @@ MonoBehaviour:
   rightType: 1
   bottomType: 1
   topType: 1
-  mAtlas: {fileID: 4102293666333612167, guid: 228feba523f22f44d8663dd5a456e112, type: 3}
-  mSpriteName: player_damage_01
+  mAtlas: {fileID: 3740607203783951359, guid: 60c33521e6dd12640bf86498083bda7d, type: 3}
+  mSpriteName: monA_damage_01
   mFillCenter: 1
 --- !u!114 &4749115208178077052
 MonoBehaviour:
@@ -514,7 +514,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   frameIndex: 0
-  mFPS: 10
+  mFPS: 4
   mPrefix: 
   mLoop: 1
   mSnap: 1
@@ -529,6 +529,7 @@ GameObject:
   - component: {fileID: 1431210600326755999}
   - component: {fileID: 2611925718990168411}
   - component: {fileID: 2469101429612581746}
+  - component: {fileID: 1783912629}
   m_Layer: 0
   m_Name: dead
   m_TagString: Untagged
@@ -579,22 +580,22 @@ MonoBehaviour:
     relative: 1
     absolute: 0
   updateAnchors: 1
-  mColor: {r: 0.5660378, g: 0.22694911, b: 0.22694911, a: 1}
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 7
-  mWidth: 250
-  mHeight: 152
+  mWidth: 204
+  mHeight: 170
   mDepth: 10
   mMat: {fileID: 0}
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
-  keepAspectRatio: 1
-  aspectRatio: 1.6470588
-  mType: 1
+  keepAspectRatio: 0
+  aspectRatio: 1.2
+  mType: 0
   mFillDirection: 4
   mFillAmount: 1
   mInvert: 0
-  mFlip: 1
-  mApplyGradient: 0
+  mFlip: 0
+  mApplyGradient: 1
   mGradientTop: {r: 1, g: 1, b: 1, a: 1}
   mGradientBottom: {r: 0.098039225, g: 0.48235297, b: 0.43529415, a: 1}
   centerType: 1
@@ -602,8 +603,8 @@ MonoBehaviour:
   rightType: 1
   bottomType: 1
   topType: 1
-  mAtlas: {fileID: 5971402100480432816, guid: 9c6e54a193050ad41958a5df7c51dc71, type: 3}
-  mSpriteName: player_dead_01
+  mAtlas: {fileID: 110453329304130090, guid: 59c9a0d0f1f4e314682fdb1e398d6cc6, type: 3}
+  mSpriteName: monA_dead_01
   mFillCenter: 1
 --- !u!114 &2469101429612581746
 MonoBehaviour:
@@ -618,10 +619,59 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   frameIndex: 0
-  mFPS: 10
+  mFPS: 6
   mPrefix: 
   mLoop: 1
   mSnap: 1
+--- !u!114 &1783912629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4047444220779983837}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e2747e3775af504da1a4d5a46c5a1ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  method: 0
+  style: 0
+  animationCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  ignoreTimeScale: 1
+  delay: 0
+  duration: 2
+  steeperCurves: 0
+  tweenGroup: 0
+  useFixedUpdate: 0
+  onFinished: []
+  eventReceiver: {fileID: 0}
+  callWhenFinished: 
+  from: 1
+  to: 0
 --- !u!1 &5184201930789050067
 GameObject:
   m_ObjectHideFlags: 0
@@ -683,22 +733,22 @@ MonoBehaviour:
     relative: 1
     absolute: 0
   updateAnchors: 1
-  mColor: {r: 0.5660378, g: 0.22694911, b: 0.22694911, a: 1}
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 7
-  mWidth: 240
+  mWidth: 204
   mHeight: 170
   mDepth: 10
   mMat: {fileID: 0}
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 1.4117647
-  mType: 1
+  aspectRatio: 1.2
+  mType: 0
   mFillDirection: 4
   mFillAmount: 1
   mInvert: 0
-  mFlip: 1
-  mApplyGradient: 0
+  mFlip: 0
+  mApplyGradient: 1
   mGradientTop: {r: 1, g: 1, b: 1, a: 1}
   mGradientBottom: {r: 0.098039225, g: 0.48235297, b: 0.43529415, a: 1}
   centerType: 1
@@ -706,8 +756,8 @@ MonoBehaviour:
   rightType: 1
   bottomType: 1
   topType: 1
-  mAtlas: {fileID: 4585978259269059605, guid: 9d4f577d39d4c8c408b3d1c40336a02b, type: 3}
-  mSpriteName: player_attack_01
+  mAtlas: {fileID: 3095208742729467140, guid: d9a41035703f7a1439e1668c9a15fcd1, type: 3}
+  mSpriteName: monA_damage_01
   mFillCenter: 1
 --- !u!114 &2605651916469794241
 MonoBehaviour:
@@ -722,7 +772,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   frameIndex: 0
-  mFPS: 10
+  mFPS: 4
   mPrefix: 
   mLoop: 1
   mSnap: 1
