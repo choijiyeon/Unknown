@@ -14,7 +14,7 @@ public class JYActor : MonoBehaviour
     int m_Level = 0;
     public float m_Defence = 0;
     public float m_Attack = 0;
-    public float m_Hp = 100;
+    public float m_Hp = 90;
     protected enum UseType
     {
         None,
@@ -83,19 +83,19 @@ public class JYActor : MonoBehaviour
         if (m_ActorState == JYDefines.ActorState.Damage && m_ActorState == JYDefines.ActorState.Die)
             return;
 
-        m_Hp -= aDamageValue;
-        if (m_Hp <= 0)
-        {
-            //죽음.
-            DoDie();
-        }
-        else
-        {
-            //m_ActorState = JYDefines.ActorState.Damage;
-            //m_ActorAnimator.SetInteger("animation", (int)m_ActorState);
-            StopCoroutine("SetState");
-            StartCoroutine("SetState", JYDefines.ActorState.Damage);
-        }
+        //m_Hp -= aDamageValue;
+        //if (m_Hp <= 0)
+        //{
+        //    //죽음.
+        //    DoDie();
+        //}
+        //else
+        //{
+        //    //m_ActorState = JYDefines.ActorState.Damage;
+        //    //m_ActorAnimator.SetInteger("animation", (int)m_ActorState);
+        //    StopCoroutine("SetState");
+        //    StartCoroutine("SetState", JYDefines.ActorState.Damage);
+        //}
     }
 
     IEnumerator SetState(JYDefines.ActorState aActorState)
@@ -114,12 +114,11 @@ public class JYActor : MonoBehaviour
        // m_ActorAnimator.SetInteger("animation", (int)m_ActorState);
     }
 
-    public virtual IEnumerator DoDie()
+    public virtual void DoDie()
     {
         m_ActorState = JYDefines.ActorState.Die;
         //m_ActorAnimator.SetInteger("animation", (int)m_ActorState);
-        yield return null;
-        DestroyObject(gameObject);
+        Destroy(gameObject);
     }
 
     public void Call_DoIdle()

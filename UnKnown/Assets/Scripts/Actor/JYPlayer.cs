@@ -9,7 +9,9 @@ public class JYPlayer : JYActor
     private Rigidbody2D rigid;
     private Vector3 movement;
     private JYDefines.ActorAniSpriteState playerCurState = JYDefines.ActorAniSpriteState.idle;
-
+    private int playerLifeCount = 3;
+    private Vector3 deadPosition = Vector3.zero;
+    private bool isDamage = false;
   
 
     private void Start()
@@ -42,7 +44,7 @@ public class JYPlayer : JYActor
     {
         if (isJumping != true)
         {
-            rigid.AddForce(Vector3.up * 100);
+            rigid.AddForce(Vector3.up * 160);
 
             isJumping = true;
 
@@ -56,6 +58,7 @@ public class JYPlayer : JYActor
         {
             SetACurrentAniSprite(this.gameObject, JYDefines.ActorAniSpriteState.idle);
             playerCurState = JYDefines.ActorAniSpriteState.idle;
+            isDamage = false;
         }
     }
     public override void DoMove(bool isRight)
@@ -106,13 +109,81 @@ public class JYPlayer : JYActor
             playerCurState = JYDefines.ActorAniSpriteState.attack;
         }
     }
-    private void OnCollisionEnter2D()
+
+    public override void DoDamage(float aDamageValue)
+    {
+        base.DoDamage(aDamageValue);
+        m_Hp -= aDamageValue;
+        if (m_Hp <= 0)
+        {
+            //죽음.
+            if (playerLifeCount > 0)
+            {
+                playerLifeCount--;
+
+                DoDie();
+                RespawnPlayer();
+            }
+            else
+            {
+                //showResult;
+            }
+        }
+        else
+        {
+            if (playerCurState != JYDefines.ActorAniSpriteState.damage)
+            {
+                SetACurrentAniSprite(this.gameObject, JYDefines.ActorAniSpriteState.damage);
+                playerCurState = JYDefines.ActorAniSpriteState.damage;
+            }
+        }
+    }
+
+    public override void DoDie()
+    {
+        base.DoDie();
+        if (playerCurState != JYDefines.ActorAniSpriteState.dead)
+        {
+            SetACurrentAniSprite(this.gameObject, JYDefines.ActorAniSpriteState.dead);
+            playerCurState = JYDefines.ActorAniSpriteState.dead;
+        }
+    }
+
+    private void RespawnPlayer()
+    {
+        JYGameManager.instance.DoActorLoad(JYDefines.ActorType.Character, "player", JYGameManager.instance.m_CharacterRoot.position);
+    }
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "Monster")
+        {
+            if (isDamage == false)
+            {
+                DoDamage(30f);
+                isDamage = true;
+            }
+        }
+    }
+    private void OnCollisionEnter2D(Collision2D other)
     {
         isJumping = false;
         if (playerCurState != JYDefines.ActorAniSpriteState.idle)
         {
             SetACurrentAniSprite(this.gameObject, JYDefines.ActorAniSpriteState.idle);
             playerCurState = JYDefines.ActorAniSpriteState.idle;
+        }
+        if (other.gameObject.tag == "DeadZone")
+        {
+            DoDie();
+            RespawnPlayer();
+            if (playerLifeCount > 0)
+            {
+                playerLifeCount--;
+            }
+            else
+            {
+                //showResult;
+            }
         }
     }
 }

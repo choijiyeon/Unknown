@@ -543,7 +543,7 @@ MonoBehaviour:
   frameIndex: 0
   mFPS: 10
   mPrefix: 
-  mLoop: 1
+  mLoop: 0
   mSnap: 1
 --- !u!1 &4047444220779983837
 GameObject:
