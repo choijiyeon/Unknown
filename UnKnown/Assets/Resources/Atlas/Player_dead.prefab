@@ -46,7 +46,7 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: 112255e45de8cf547b4891066f059689, type: 2}
   mSprites:
   - name: player_dead_01
-    x: 562
+    x: 0
     y: 342
     width: 280
     height: 170
@@ -59,8 +59,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: player_dead_02
-    x: 0
-    y: 171
+    x: 562
+    y: 342
     width: 280
     height: 170
     borderLeft: 0
@@ -73,7 +73,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: player_dead_03
     x: 281
-    y: 171
+    y: 342
     width: 280
     height: 170
     borderLeft: 0
@@ -85,8 +85,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: player_dead_04
-    x: 0
-    y: 342
+    x: 281
+    y: 171
     width: 280
     height: 170
     borderLeft: 0
@@ -98,8 +98,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: player_dead_05
-    x: 281
-    y: 342
+    x: 0
+    y: 171
     width: 280
     height: 170
     borderLeft: 0

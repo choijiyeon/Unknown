@@ -47,7 +47,7 @@ MonoBehaviour:
   mSprites:
   - name: player_damage_01
     x: 0
-    y: 342
+    y: 171
     width: 190
     height: 170
     borderLeft: 0
@@ -59,7 +59,7 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: player_damage_02
-    x: 191
+    x: 0
     y: 342
     width: 190
     height: 170
@@ -72,21 +72,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: player_damage_03
-    x: 0
-    y: 171
-    width: 190
-    height: 170
-    borderLeft: 0
-    borderRight: 0
-    borderTop: 0
-    borderBottom: 0
-    paddingLeft: 0
-    paddingRight: 0
-    paddingTop: 0
-    paddingBottom: 0
-  - name: player_damage_04
     x: 191
-    y: 171
+    y: 342
     width: 190
     height: 170
     borderLeft: 0
