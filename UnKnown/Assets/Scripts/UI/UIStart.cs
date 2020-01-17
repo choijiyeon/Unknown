@@ -7,7 +7,15 @@ public class UIStart : MonoBehaviour
 {
     public void OnClickStart()
     {
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("Easy");
     }
-	
+    public void OnClickStartNormal()
+    {
+        SceneManager.LoadScene("Normal");
+    }
+    public void OnClickStartHard()
+    {
+        SceneManager.LoadScene("Hard");
+    }
+
 }
