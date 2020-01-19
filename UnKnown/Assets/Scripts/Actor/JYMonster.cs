@@ -25,38 +25,13 @@ public class JYMonster : JYActor
     }
     private void Start()
     {
-        switch (this.gameObject.name)
+        for (int i = 0; i < JYGameManager.instance.m_MonsterPos.Length; i++)
         {
-            case "0":
-                {
-                    dirLeft = JYGameManager.instance.m_MonsterPos[0].gameObject.transform.Find("Left").transform;
-                    dirRight = JYGameManager.instance.m_MonsterPos[0].gameObject.transform.Find("Right").transform;
-                }
-                break;
-            case "1":
-                {
-                    dirLeft = JYGameManager.instance.m_MonsterPos[1].gameObject.transform.Find("Left").transform;
-                    dirRight = JYGameManager.instance.m_MonsterPos[1].gameObject.transform.Find("Right").transform;
-                }
-                break;
-            case "2":
-                {
-                    dirLeft = JYGameManager.instance.m_MonsterPos[2].gameObject.transform.Find("Left").transform;
-                    dirRight = JYGameManager.instance.m_MonsterPos[2].gameObject.transform.Find("Right").transform;
-                }
-                break;
-            case "3":
-                {
-                    dirLeft = JYGameManager.instance.m_MonsterPos[3].gameObject.transform.Find("Left").transform;
-                    dirRight = JYGameManager.instance.m_MonsterPos[3].gameObject.transform.Find("Right").transform;
-                }
-                break;
-            case "4":
-                {
-                    dirLeft = JYGameManager.instance.m_MonsterPos[4].gameObject.transform.Find("Left").transform;
-                    dirRight = JYGameManager.instance.m_MonsterPos[4].gameObject.transform.Find("Right").transform;
-                }
-                break;
+            if (this.gameObject.name == i.ToString())
+            {
+                dirLeft = JYGameManager.instance.m_MonsterPos[i].gameObject.transform.Find("Left").transform;
+                dirRight = JYGameManager.instance.m_MonsterPos[i].gameObject.transform.Find("Right").transform;
+            }
         }
     }
     private void Move()
@@ -100,7 +75,9 @@ public class JYMonster : JYActor
                 sprite.transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
             }
             else
+            {
                 sprite.transform.rotation = Quaternion.Euler(new Vector3(0, 180, 0));
+            }
         }
 
 
