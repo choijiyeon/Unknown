@@ -43,6 +43,11 @@ public class JYUIManager : MonoBehaviour
        
     }
 
+    public void CallFunc(JYDefines.UISection uISection)
+    {
+
+    }
+
     public void Initialize()
     {
         PreLoadUIObjectList();
@@ -50,8 +55,8 @@ public class JYUIManager : MonoBehaviour
 
     private void PreLoadUIObjectList()
     {
-        LoadUIObject(JYDefines.UISection.UIPad);
-        LoadUIObject(JYDefines.UISection.UIPlayerHP);
+      //  LoadUIObject(JYDefines.UISection.UIPad);
+       // LoadUIObject(JYDefines.UISection.UIPlayerHP);
     }
 
     string GetPathNameByUISection(JYDefines.UISection aUISection)

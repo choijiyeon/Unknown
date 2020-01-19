@@ -126,10 +126,9 @@ public class JYPlayer : JYActor
             //죽음.
             if (playerLifeCount > 0)
             {
-                playerLifeCount--;
-
                 DoDie();
                 RespawnPlayer();
+                UpdatePlayerLife();
             }
             else
             {
@@ -178,6 +177,13 @@ public class JYPlayer : JYActor
 
         yield return null;
     }
+
+    private void UpdatePlayerLife()
+    {
+        playerLifeCount--;
+        //JYUIManager.Instance.RemoveLife(playerLifeCount);
+
+    }
     private void RespawnPlayer()
     {
         JYGameManager.instance.DoActorLoad(JYDefines.ActorType.Character, "player", JYGameManager.instance.m_CharacterRoot.position);
@@ -207,7 +213,7 @@ public class JYPlayer : JYActor
             RespawnPlayer();
             if (playerLifeCount > 0)
             {
-                playerLifeCount--;
+                UpdatePlayerLife();
             }
             else
             {

@@ -246,6 +246,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiRoot: {fileID: 0}
+  lifeObj: []
 --- !u!1 &1804838964210020539
 GameObject:
   m_ObjectHideFlags: 0
@@ -319,7 +320,7 @@ MonoBehaviour:
   anchorOffset: 0
   softBorderPadding: 1
   renderQueue: 0
-  startingRenderQueue: 3011
+  startingRenderQueue: 3007
   mClipTexture: {fileID: 0}
   mAlpha: 1
   mClipping: 0
@@ -491,6 +492,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiRoot: {fileID: 0}
+  lifeObj: []
 --- !u!114 &2727466227631716221
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -580,7 +582,7 @@ MonoBehaviour:
   anchorOffset: 0
   softBorderPadding: 1
   renderQueue: 0
-  startingRenderQueue: 3012
+  startingRenderQueue: 3008
   mClipTexture: {fileID: 0}
   mAlpha: 1
   mClipping: 0
@@ -604,6 +606,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiRoot: {fileID: 0}
+  lifeObj:
+  - {fileID: 3491636470731171279}
+  - {fileID: 4072760816289213734}
+  - {fileID: 3650651853599635647}
 --- !u!54 &4522566869575519252
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1925,6 +1931,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiRoot: {fileID: 0}
+  lifeObj: []
 --- !u!1 &5866635810962306765
 GameObject:
   m_ObjectHideFlags: 0

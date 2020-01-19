@@ -41,8 +41,8 @@ public class JYDefines
     public enum UISection
     {
         None,
-        UIStart,    //임시
-        UIPad,        //패드
-        UIPlayerHP,
+        UIStart,
+        UIMain,
+        UIResult,
     }
 }
