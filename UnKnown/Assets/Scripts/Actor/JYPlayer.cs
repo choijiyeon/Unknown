@@ -63,8 +63,9 @@ public class JYPlayer : JYActor
     }
     public override void DoMove(bool isRight)
     {
+        if (isDamage == true) return;
         base.DoMove(isRight);
-        
+
         UISprite sprite = this.gameObject.transform.Find(JYDefines.ActorAniSpriteState.run.ToString()).GetComponent<UISprite>();
         if (sprite != null)
         {
@@ -114,6 +115,12 @@ public class JYPlayer : JYActor
     {
         base.DoDamage(aDamageValue);
         m_Hp -= aDamageValue;
+
+        Vector2 dieVelocity = new Vector2(-1.5f, 1f);
+        rigid.AddForce(dieVelocity, ForceMode2D.Impulse);
+
+        StartCoroutine("DamageChangeColor");
+
         if (m_Hp <= 0)
         {
             //죽음.
@@ -149,6 +156,28 @@ public class JYPlayer : JYActor
         }
     }
 
+    IEnumerator DamageChangeColor()
+    {
+        int countTime = 0;
+
+        UISprite sprite = this.gameObject.transform.Find(JYDefines.ActorAniSpriteState.idle.ToString()).GetComponent<UISprite>();
+        while (countTime < 6)
+        {
+            if (countTime % 2 == 0)
+                sprite.alpha = 0.2f;
+            else
+                sprite.alpha = 1f;
+
+            yield return new WaitForSeconds(0.2f);
+
+            countTime++;
+        }
+        sprite.alpha = 1f;
+
+        isDamage = false;
+
+        yield return null;
+    }
     private void RespawnPlayer()
     {
         JYGameManager.instance.DoActorLoad(JYDefines.ActorType.Character, "player", JYGameManager.instance.m_CharacterRoot.position);

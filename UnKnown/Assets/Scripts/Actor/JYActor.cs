@@ -82,20 +82,6 @@ public class JYActor : MonoBehaviour
     {
         if (m_ActorState == JYDefines.ActorState.Damage && m_ActorState == JYDefines.ActorState.Die)
             return;
-
-        //m_Hp -= aDamageValue;
-        //if (m_Hp <= 0)
-        //{
-        //    //죽음.
-        //    DoDie();
-        //}
-        //else
-        //{
-        //    //m_ActorState = JYDefines.ActorState.Damage;
-        //    //m_ActorAnimator.SetInteger("animation", (int)m_ActorState);
-        //    StopCoroutine("SetState");
-        //    StartCoroutine("SetState", JYDefines.ActorState.Damage);
-        //}
     }
 
     IEnumerator SetState(JYDefines.ActorState aActorState)
