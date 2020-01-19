@@ -107,6 +107,7 @@ public class JYGameManager : MonoBehaviour
                         GameObject actor = GameObject.Instantiate(go, aPos, Quaternion.identity, m_MonsterRoot);
                         actor.name = index.ToString();
                         JYMonster character = actor.AddComponent<JYMonster>();
+                        character.monsterType = JYMonster.MonsterType.MOVER;
                         character.DoCreate();
                     }
                 }

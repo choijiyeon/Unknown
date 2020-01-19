@@ -6,15 +6,15 @@ public class JYActor : MonoBehaviour
 {
     protected JYDefines.ActorState m_ActorState = JYDefines.ActorState.Idle;
     protected float m_Rot = 0;
-    public float m_Speed = 0.03f;
+    protected float m_Speed = 0.03f;
 
     private float movePower = 0.7f;
     //-------------------------------------------------------------------------
     protected JYDefines.ActorType m_ActorType = JYDefines.ActorType.None;
-    int m_Level = 0;
-    public float m_Defence = 0;
-    public float m_Attack = 0;
-    public float m_Hp = 90;
+    protected int m_Level = 0;
+    protected float m_Defence = 0;
+    protected float m_Attack = 0;
+    protected float m_Hp = 90;
     protected enum UseType
     {
         None,

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class JYMonster : JYActor
 {
+    public MonsterType monsterType;
     private Rigidbody2D rigid;
     private Vector3 movement;
     private bool isTracing;
@@ -17,7 +18,11 @@ public class JYMonster : JYActor
     {
         LEFT,
         RIGHT,
-
+    }
+    public enum MonsterType
+    {
+        MOVER,
+        ATTACKER,
     }
     void Update()
     {
