@@ -401,11 +401,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stage01
       objectReference: {fileID: 0}
-    - target: {fileID: 1568290012564628489, guid: d4ad51df6804f464095fcded54e964c6,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5870370641415510172, guid: d4ad51df6804f464095fcded54e964c6,
         type: 3}
       propertyPath: m_LocalPosition.x

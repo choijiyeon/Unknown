@@ -2569,11 +2569,11 @@ MonoBehaviour:
   leftAnchor:
     target: {fileID: 8829020028910974394}
     relative: 0
-    absolute: 35
+    absolute: 81
   rightAnchor:
     target: {fileID: 8829020028910974394}
     relative: 1
-    absolute: -42
+    absolute: -87
   bottomAnchor:
     target: {fileID: 8829020028910974394}
     relative: 0
@@ -2585,14 +2585,14 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 0, g: 0.8713031, b: 1, a: 0}
   mPivot: 1
-  mWidth: 169
+  mWidth: 78
   mHeight: 8
   mDepth: 1
   mMat: {fileID: 0}
-  autoResizeBoxCollider: 1
+  autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 21.125
+  aspectRatio: 9.75
   mType: 0
   mFillDirection: 4
   mFillAmount: 1
@@ -2622,7 +2622,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -4}
+  m_Offset: {x: 70.49, y: -4}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -2633,7 +2633,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 169, y: 8}
+  m_Size: {x: 78, y: 8}
   m_EdgeRadius: 0
 --- !u!1 &1703585445
 GameObject:
@@ -27695,7 +27695,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7498097284335550777}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 39, y: -360, z: 0}
+  m_LocalPosition: {x: 278, y: -360, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 9011357142282290409}
@@ -27734,15 +27734,15 @@ MonoBehaviour:
     absolute: 0
   updateAnchors: 1
   mColor: {r: 0, g: 0, b: 0, a: 1}
-  mPivot: 6
-  mWidth: 239
+  mPivot: 8
+  mWidth: 300
   mHeight: 398
   mDepth: 1
   mMat: {fileID: 0}
   autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 0.6005025
+  aspectRatio: 0.75376886
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
@@ -27772,7 +27772,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 119.5, y: 199}
+  m_Offset: {x: -150, y: 199}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -27783,7 +27783,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 239, y: 398}
+  m_Size: {x: 300, y: 398}
   m_EdgeRadius: 0
 --- !u!1 &7545270881823330236
 GameObject:
@@ -29588,8 +29588,8 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   ignoreTimeScale: 1
-  delay: 1
-  duration: 3
+  delay: 0
+  duration: 5
   steeperCurves: 0
   tweenGroup: 0
   useFixedUpdate: 0

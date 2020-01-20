@@ -873,6 +873,11 @@ PrefabInstance:
       propertyPath: uiRoot
       value: 
       objectReference: {fileID: 997392225}
+    - target: {fileID: 4381730054303008030, guid: f8986cc4052f45848a490eb996388863,
+        type: 3}
+      propertyPath: aspectRatio
+      value: 1.6857142
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f8986cc4052f45848a490eb996388863, type: 3}
 --- !u!1001 &8828376911487989929
