@@ -6015,6 +6015,106 @@ MonoBehaviour:
   mShader: {fileID: 4800000, guid: e75727d9555d9d14ca51d91908c681bc, type: 3}
   mBorder: {x: 0, y: 0, z: 0, w: 0}
   mFixedAspect: 0
+--- !u!1 &2204935078603963692
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4959740226200296163}
+  - component: {fileID: 7651451467748847398}
+  m_Layer: 5
+  m_Name: Label
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4959740226200296163
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2204935078603963692}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -339.1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5072624647163879153}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7651451467748847398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2204935078603963692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9d0b5f3bbe925a408bd595c79d0bf63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftAnchor:
+    target: {fileID: 0}
+    relative: 0
+    absolute: 0
+  rightAnchor:
+    target: {fileID: 0}
+    relative: 1
+    absolute: 0
+  bottomAnchor:
+    target: {fileID: 0}
+    relative: 0
+    absolute: 0
+  topAnchor:
+    target: {fileID: 0}
+    relative: 1
+    absolute: 0
+  updateAnchors: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
+  mPivot: 4
+  mWidth: 412
+  mHeight: 20
+  mDepth: 6
+  mMat: {fileID: 0}
+  autoResizeBoxCollider: 0
+  hideIfOffScreen: 0
+  keepAspectRatio: 0
+  aspectRatio: 20.6
+  keepCrispWhenShrunk: 1
+  mTrueTypeFont: {fileID: 0}
+  mFont: {fileID: 11400000, guid: 16a2d4ace59bac64dbcf4085964b38eb, type: 3}
+  mText: Team.Unknown.2020
+  mFontSize: 38
+  mFontStyle: 1
+  mAlignment: 0
+  mEncoding: 1
+  mMaxLineCount: 0
+  mEffectStyle: 0
+  mEffectColor: {r: 0, g: 0, b: 0, a: 1}
+  mSymbols: 1
+  mEffectDistance: {x: 1, y: 1}
+  mOverflow: 0
+  mApplyGradient: 1
+  mGradientTop: {r: 1, g: 1, b: 1, a: 1}
+  mGradientBottom: {r: 0.7, g: 0.7, b: 0.7, a: 1}
+  mSpacingX: 0
+  mSpacingY: 0
+  mUseFloatSpacing: 0
+  mFloatSpacingX: 0
+  mFloatSpacingY: 0
+  mOverflowEllipsis: 0
+  mOverflowWidth: 0
+  mModifier: 0
+  mShrinkToFit: 0
+  mMaxLineWidth: 0
+  mMaxLineHeight: 0
+  mLineWidth: 0
+  mMultiline: 1
 --- !u!1 &3933446930132906478
 GameObject:
   m_ObjectHideFlags: 0
@@ -6122,6 +6222,7 @@ GameObject:
   - component: {fileID: 3933446932142093698}
   - component: {fileID: 3933446932142093699}
   - component: {fileID: 3933446932142093695}
+  - component: {fileID: 330564885}
   m_Layer: 5
   m_Name: StartBtn
   m_TagString: Untagged
@@ -6137,7 +6238,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3933446932142093697}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -267, y: -194, z: 0}
+  m_LocalPosition: {x: -250, y: -165.99998, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5072624647163879153}
@@ -6172,7 +6273,7 @@ MonoBehaviour:
     relative: 1
     absolute: 0
   updateAnchors: 1
-  mColor: {r: 0.66433185, g: 0.8773585, b: 0, a: 1}
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
   mWidth: 192
   mHeight: 68
@@ -6196,7 +6297,7 @@ MonoBehaviour:
   bottomType: 1
   topType: 1
   mAtlas: {fileID: 114167718928944546, guid: 8c5fede059296744ba7a7b32d7f1e4fa, type: 3}
-  mSpriteName: Btn_start
+  mSpriteName: Btn_easy
   mFillCenter: 1
 --- !u!65 &3933446932142093693
 BoxCollider:
@@ -6224,13 +6325,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tweenTarget: {fileID: 3933446932142093697}
-  hover: {r: 1, g: 0.80729437, b: 0, a: 1}
-  pressed: {r: 1, g: 0.8078432, b: 0, a: 1}
+  hover: {r: 0.61268723, g: 1, b: 0, a: 1}
+  pressed: {r: 0.61268723, g: 1, b: 0, a: 1}
   disabledColor: {r: 0.4245283, g: 0.4245283, b: 0.4245283, a: 1}
   duration: 0.2
   dragHighlight: 0
   hoverSprite: 
-  pressedSprite: Btn_start
+  pressedSprite: 
   disabledSprite: 
   hoverSprite2D: {fileID: 0}
   pressedSprite2D: {fileID: 0}
@@ -6269,6 +6370,83 @@ MonoBehaviour:
   hover: {x: 1, y: 1, z: 1}
   pressed: {x: 0.9, y: 0.9, z: 0.9}
   duration: 0.2
+--- !u!114 &330564885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3933446932142093697}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75e7459110b9666449485c40f25362a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  method: 0
+  style: 2
+  animationCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: -0.0037131894
+      outSlope: -0.0037131894
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.7937142
+      value: -0.0029472113
+      inSlope: 0.011277331
+      outSlope: 0.011277331
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.45051444
+    - serializedVersion: 3
+      time: 0.90450585
+      value: 1.0097558
+      inSlope: 3.2833433
+      outSlope: 3.2833433
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.9465773
+      value: 0.39799142
+      inSlope: 4.0654306
+      outSlope: 4.0654306
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.696963
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 11.268781
+      outSlope: 11.268781
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  ignoreTimeScale: 1
+  delay: 3
+  duration: 4
+  steeperCurves: 0
+  tweenGroup: 0
+  useFixedUpdate: 0
+  onFinished: []
+  eventReceiver: {fileID: 0}
+  callWhenFinished: 
+  from: {x: 1, y: 1, z: 1}
+  to: {x: 1.2, y: 1.1, z: 1}
+  updateTable: 0
 --- !u!1 &6208031645965231140
 GameObject:
   m_ObjectHideFlags: 0
@@ -6369,6 +6547,7 @@ GameObject:
   - component: {fileID: 7438846729813594419}
   - component: {fileID: 2742665273598827078}
   - component: {fileID: 9020238587353092523}
+  - component: {fileID: 1199899665}
   m_Layer: 5
   m_Name: StartBtn_normal
   m_TagString: Untagged
@@ -6384,7 +6563,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6761555900695366514}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 41, y: -194, z: 0}
+  m_LocalPosition: {x: 0, y: -166, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5072624647163879153}
@@ -6443,7 +6622,7 @@ MonoBehaviour:
   bottomType: 1
   topType: 1
   mAtlas: {fileID: 114167718928944546, guid: 8c5fede059296744ba7a7b32d7f1e4fa, type: 3}
-  mSpriteName: Btn_start
+  mSpriteName: Btn_normal
   mFillCenter: 1
 --- !u!65 &8236586718017993309
 BoxCollider:
@@ -6477,7 +6656,7 @@ MonoBehaviour:
   duration: 0.2
   dragHighlight: 0
   hoverSprite: 
-  pressedSprite: Btn_start
+  pressedSprite: 
   disabledSprite: 
   hoverSprite2D: {fileID: 0}
   pressedSprite2D: {fileID: 0}
@@ -6516,6 +6695,83 @@ MonoBehaviour:
   hover: {x: 1, y: 1, z: 1}
   pressed: {x: 0.9, y: 0.9, z: 0.9}
   duration: 0.2
+--- !u!114 &1199899665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6761555900695366514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75e7459110b9666449485c40f25362a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  method: 0
+  style: 2
+  animationCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: -0.0037131894
+      outSlope: -0.0037131894
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.7937142
+      value: -0.0029472113
+      inSlope: 0.011277331
+      outSlope: 0.011277331
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.45051444
+    - serializedVersion: 3
+      time: 0.90450585
+      value: 1.0097558
+      inSlope: 3.2833433
+      outSlope: 3.2833433
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.9465773
+      value: 0.39799142
+      inSlope: 4.0654306
+      outSlope: 4.0654306
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.696963
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 11.268781
+      outSlope: 11.268781
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  ignoreTimeScale: 1
+  delay: 0
+  duration: 4
+  steeperCurves: 0
+  tweenGroup: 0
+  useFixedUpdate: 0
+  onFinished: []
+  eventReceiver: {fileID: 0}
+  callWhenFinished: 
+  from: {x: 1, y: 1, z: 1}
+  to: {x: 1.2, y: 1.1, z: 1}
+  updateTable: 0
 --- !u!1 &7262108858480928871
 GameObject:
   m_ObjectHideFlags: 0
@@ -6712,6 +6968,7 @@ GameObject:
   - component: {fileID: 703334731952581756}
   - component: {fileID: 9091260429141658787}
   - component: {fileID: 5452436843489930990}
+  - component: {fileID: 337447222}
   m_Layer: 5
   m_Name: StartBtn_hard
   m_TagString: Untagged
@@ -6727,7 +6984,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7897417133231656597}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 361, y: -194, z: 0}
+  m_LocalPosition: {x: 250, y: -165.99998, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5072624647163879153}
@@ -6762,7 +7019,7 @@ MonoBehaviour:
     relative: 1
     absolute: 0
   updateAnchors: 1
-  mColor: {r: 1, g: 0.5707547, b: 0.5707547, a: 1}
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
   mWidth: 192
   mHeight: 68
@@ -6786,7 +7043,7 @@ MonoBehaviour:
   bottomType: 1
   topType: 1
   mAtlas: {fileID: 114167718928944546, guid: 8c5fede059296744ba7a7b32d7f1e4fa, type: 3}
-  mSpriteName: Btn_start
+  mSpriteName: Btn_hard
   mFillCenter: 1
 --- !u!65 &1916145571799695407
 BoxCollider:
@@ -6814,13 +7071,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tweenTarget: {fileID: 7897417133231656597}
-  hover: {r: 1, g: 0.80729437, b: 0, a: 1}
-  pressed: {r: 1, g: 0.8078432, b: 0, a: 1}
+  hover: {r: 1, g: 0.081506744, b: 0, a: 1}
+  pressed: {r: 1, g: 0.081506744, b: 0, a: 1}
   disabledColor: {r: 0.4245283, g: 0.4245283, b: 0.4245283, a: 1}
   duration: 0.2
   dragHighlight: 0
   hoverSprite: 
-  pressedSprite: Btn_start
+  pressedSprite: 
   disabledSprite: 
   hoverSprite2D: {fileID: 0}
   pressedSprite2D: {fileID: 0}
@@ -6859,6 +7116,83 @@ MonoBehaviour:
   hover: {x: 1, y: 1, z: 1}
   pressed: {x: 0.9, y: 0.9, z: 0.9}
   duration: 0.2
+--- !u!114 &337447222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7897417133231656597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75e7459110b9666449485c40f25362a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  method: 0
+  style: 2
+  animationCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: -0.0037131894
+      outSlope: -0.0037131894
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.7937142
+      value: -0.0029472113
+      inSlope: 0.011277331
+      outSlope: 0.011277331
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.45051444
+    - serializedVersion: 3
+      time: 0.90450585
+      value: 1.0097558
+      inSlope: 3.2833433
+      outSlope: 3.2833433
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.9465773
+      value: 0.39799142
+      inSlope: 4.0654306
+      outSlope: 4.0654306
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.696963
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 11.268781
+      outSlope: 11.268781
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  ignoreTimeScale: 1
+  delay: 6
+  duration: 4
+  steeperCurves: 0
+  tweenGroup: 0
+  useFixedUpdate: 0
+  onFinished: []
+  eventReceiver: {fileID: 0}
+  callWhenFinished: 
+  from: {x: 1, y: 1, z: 1}
+  to: {x: 1.2, y: 1.1, z: 1}
+  updateTable: 0
 --- !u!1 &8535416208534855851
 GameObject:
   m_ObjectHideFlags: 0
@@ -6895,6 +7229,7 @@ Transform:
   - {fileID: 27426413313997270}
   - {fileID: 1517476521556294644}
   - {fileID: 6513050557437406359}
+  - {fileID: 4959740226200296163}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
