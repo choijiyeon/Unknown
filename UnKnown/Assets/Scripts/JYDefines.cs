@@ -45,4 +45,10 @@ public class JYDefines
         UIMain,
         UIResult,
     }
+    public enum UISectionFun
+    {
+        None,
+        InitUIData,
+        RemoveLife,
+    }
 }

@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UIContents;
 using UnityEngine;
 
 public class JYPlayer : JYActor
@@ -9,7 +10,7 @@ public class JYPlayer : JYActor
     private Rigidbody2D rigid;
     private Vector3 movement;
     private JYDefines.ActorAniSpriteState playerCurState = JYDefines.ActorAniSpriteState.idle;
-    private int playerLifeCount = 3;
+    private int savedplayerLifeCount;
     private Vector3 deadPosition = Vector3.zero;
     private bool isDamage = false;
   
@@ -17,7 +18,6 @@ public class JYPlayer : JYActor
     private void Start()
     {
         rigid = gameObject.GetComponent<Rigidbody2D>();
-
         DoIdle();
     }
 
@@ -124,7 +124,7 @@ public class JYPlayer : JYActor
         if (m_Hp <= 0)
         {
             //죽음.
-            if (playerLifeCount > 0)
+            if (JYGameManager.instance.playerLifeCount > 0)
             {
                 DoDie();
                 RespawnPlayer();
@@ -180,9 +180,16 @@ public class JYPlayer : JYActor
 
     private void UpdatePlayerLife()
     {
-        playerLifeCount--;
-        //JYUIManager.Instance.RemoveLife(playerLifeCount);
+        JYGameManager.instance.playerLifeCount--;
+        JYUIManager.Instance.Notify(JYDefines.UISectionFun.RemoveLife, JYGameManager.instance.playerLifeCount);
+        //JYUIManager.Instance.Notify(JYDefines.UISectionFun.RemoveLife, playerLifeCount);
 
+    }
+    private int SaveCurLifeCount(int count)
+    {
+        if (count == 0) savedplayerLifeCount = 3;
+        savedplayerLifeCount = count;
+        return savedplayerLifeCount;
     }
     private void RespawnPlayer()
     {
@@ -208,10 +215,10 @@ public class JYPlayer : JYActor
             playerCurState = JYDefines.ActorAniSpriteState.idle;
         }
         if (other.gameObject.tag == "DeadZone")
-        {
+        { 
             DoDie();
             RespawnPlayer();
-            if (playerLifeCount > 0)
+            if (JYGameManager.instance.playerLifeCount > 0)
             {
                 UpdatePlayerLife();
             }

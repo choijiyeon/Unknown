@@ -117,7 +117,11 @@ MonoBehaviour:
   pressedSprite2D: {fileID: 0}
   disabledSprite2D: {fileID: 0}
   pixelSnap: 0
-  onClick: []
+  onClick:
+  - mTarget: {fileID: 6407276398400009587}
+    mMethodName: CallGameExit
+    mParameters: []
+    oneShot: 0
 --- !u!65 &144345210
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -795,7 +799,11 @@ MonoBehaviour:
   pressedSprite2D: {fileID: 0}
   disabledSprite2D: {fileID: 0}
   pixelSnap: 0
-  onClick: []
+  onClick:
+  - mTarget: {fileID: 6407276398400009587}
+    mMethodName: CallGoMain
+    mParameters: []
+    oneShot: 0
 --- !u!65 &707277204
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1867,7 +1875,11 @@ MonoBehaviour:
   pressedSprite2D: {fileID: 0}
   disabledSprite2D: {fileID: 0}
   pixelSnap: 0
-  onClick: []
+  onClick:
+  - mTarget: {fileID: 6407276398400009587}
+    mMethodName: CallOptionExit
+    mParameters: []
+    oneShot: 0
 --- !u!65 &1811042463
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2143,7 +2155,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiRoot: {fileID: 0}
-  lifeObj: []
 --- !u!1 &1756049068254508884
 GameObject:
   m_ObjectHideFlags: 0
@@ -2489,7 +2500,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiRoot: {fileID: 0}
-  lifeObj: []
 --- !u!114 &2727466227631716221
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2512,8 +2522,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6611778905184617300}
   - component: {fileID: 4641056192291806905}
-  - component: {fileID: 7729252160861553825}
   - component: {fileID: 4522566869575519252}
+  - component: {fileID: 6407276398400009587}
   m_Layer: 0
   m_Name: UImain
   m_TagString: Untagged
@@ -2592,23 +2602,6 @@ MonoBehaviour:
   mSortingLayerName: 
   mClipOffset: {x: 0, y: 0}
   useSortingOrder: 0
---- !u!114 &7729252160861553825
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2727692877786907668}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03d44e22e9036ba448bbd7e9667248f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  uiRoot: {fileID: 0}
-  lifeObj:
-  - {fileID: 3491636470731171279}
-  - {fileID: 4072760816289213734}
-  - {fileID: 3650651853599635647}
 --- !u!54 &4522566869575519252
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2625,6 +2618,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &6407276398400009587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2727692877786907668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02294bb307e8224439a48ab3451b4d34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeObjRoot: {fileID: 1804838964210020539}
+  uiRoot: {fileID: 0}
 --- !u!1 &2969294986966077854
 GameObject:
   m_ObjectHideFlags: 0
@@ -2742,7 +2749,7 @@ MonoBehaviour:
   disabledSprite2D: {fileID: 0}
   pixelSnap: 0
   onClick:
-  - mTarget: {fileID: 7729252160861553825}
+  - mTarget: {fileID: 6407276398400009587}
     mMethodName: CallJumpBtn
     mParameters: []
     oneShot: 0
@@ -2973,7 +2980,7 @@ GameObject:
   - component: {fileID: 6404985246030370411}
   - component: {fileID: 861607845}
   m_Layer: 0
-  m_Name: 01
+  m_Name: 0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3176,7 +3183,11 @@ MonoBehaviour:
   pressedSprite2D: {fileID: 0}
   disabledSprite2D: {fileID: 0}
   pixelSnap: 0
-  onClick: []
+  onClick:
+  - mTarget: {fileID: 6407276398400009587}
+    mMethodName: CallOption
+    mParameters: []
+    oneShot: 0
 --- !u!65 &4059479621621735824
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3218,7 +3229,7 @@ GameObject:
   - component: {fileID: 5186271854178760197}
   - component: {fileID: 7740083240946717272}
   m_Layer: 0
-  m_Name: 03
+  m_Name: 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3595,7 +3606,7 @@ GameObject:
   - component: {fileID: 7009490268056359441}
   - component: {fileID: 1450358955653060684}
   m_Layer: 0
-  m_Name: 02
+  m_Name: 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4158,7 +4169,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiRoot: {fileID: 0}
-  lifeObj: []
 --- !u!1 &5866635810962306765
 GameObject:
   m_ObjectHideFlags: 0
