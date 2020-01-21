@@ -59,8 +59,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Btn_easy
-    x: 0
-    y: 226
+    x: 686
+    y: 243
     width: 192
     height: 68
     borderLeft: 0
@@ -72,8 +72,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Btn_hard
-    x: 686
-    y: 243
+    x: 0
+    y: 226
     width: 192
     height: 68
     borderLeft: 0
@@ -111,8 +111,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: house
-    x: 579
-    y: 186
+    x: 879
+    y: 203
     width: 87
     height: 108
     borderLeft: 0
@@ -124,8 +124,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Img_arrow
-    x: 960
-    y: 402
+    x: 887
+    y: 329
     width: 48
     height: 48
     borderLeft: 0
@@ -136,11 +136,50 @@ MonoBehaviour:
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
+  - name: Img_bod01
+    x: 579
+    y: 199
+    width: 100
+    height: 95
+    borderLeft: 40
+    borderRight: 40
+    borderTop: 40
+    borderBottom: 40
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Img_bod02
+    x: 968
+    y: 462
+    width: 50
+    height: 50
+    borderLeft: 25
+    borderRight: 25
+    borderTop: 25
+    borderBottom: 10
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
   - name: Img_hp
-    x: 879
-    y: 239
+    x: 887
+    y: 440
     width: 80
     height: 72
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Img_option
+    x: 936
+    y: 335
+    width: 42
+    height: 42
     borderLeft: 0
     borderRight: 0
     borderTop: 0
@@ -163,7 +202,7 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Txt_attack
-    x: 667
+    x: 680
     y: 208
     width: 150
     height: 34
@@ -177,7 +216,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: Txt_clear
     x: 887
-    y: 482
+    y: 409
     width: 132
     height: 30
     borderLeft: 0
@@ -190,7 +229,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: Txt_fail
     x: 887
-    y: 451
+    y: 378
     width: 132
     height: 30
     borderLeft: 0
@@ -202,8 +241,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Txt_jump
-    x: 818
-    y: 204
+    x: 680
+    y: 173
     width: 150
     height: 34
     borderLeft: 0
