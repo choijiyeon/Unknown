@@ -13,7 +13,8 @@ public class JYMonster : JYActor
     private MoveDirection curDirection = MoveDirection.RIGHT;
     private Transform dirLeft;
     private Transform dirRight;
-
+    private Transform attackerDirLeft;
+    private Transform attackerDirRight;
     enum MoveDirection
     {
         LEFT,
@@ -30,14 +31,34 @@ public class JYMonster : JYActor
     }
     private void Start()
     {
-        for (int i = 0; i < JYGameManager.instance.m_MonsterPos.Length; i++)
+        switch(monsterType)
         {
-            if (this.gameObject.name == i.ToString())
-            {
-                dirLeft = JYGameManager.instance.m_MonsterPos[i].gameObject.transform.Find("Left").transform;
-                dirRight = JYGameManager.instance.m_MonsterPos[i].gameObject.transform.Find("Right").transform;
-            }
+            case MonsterType.MOVER:
+                {
+                    for (int i = 0; i < JYGameManager.instance.m_MonsterPos.Length; i++)
+                    {
+                        if (this.gameObject.name == i.ToString())
+                        {
+                            dirLeft = JYGameManager.instance.m_MonsterPos[i].gameObject.transform.Find("Left").transform;
+                            dirRight = JYGameManager.instance.m_MonsterPos[i].gameObject.transform.Find("Right").transform;
+                        }
+                    }
+                }
+                break;
+            case MonsterType.ATTACKER:
+                {
+                    for (int i = 0; i < JYGameManager.instance.m_AttackMonsterPos.Length; i++)
+                    {
+                        if (this.gameObject.name == i.ToString())
+                        {
+                            attackerDirLeft = JYGameManager.instance.m_AttackMonsterPos[i].gameObject.transform.Find("Left").transform;
+                            attackerDirRight = JYGameManager.instance.m_AttackMonsterPos[i].gameObject.transform.Find("Right").transform;
+                        }
+                    }
+                }
+                break;
         }
+      
     }
     private void Move()
     {
@@ -55,11 +76,25 @@ public class JYMonster : JYActor
         }
 
         transform.position += moveVelocity * movePower * 0.11f;
-
-        if(transform.position.x <= dirLeft.position.x)
-            curDirection = SetDirection(curDirection);
-        if (transform.position.x >= dirRight.position.x)
-            curDirection = SetDirection(curDirection);
+        switch (monsterType)
+        {
+            case MonsterType.MOVER:
+                {
+                    if (transform.position.x <= dirLeft.position.x)
+                        curDirection = SetDirection(curDirection);
+                    if (transform.position.x >= dirRight.position.x)
+                        curDirection = SetDirection(curDirection);
+                }
+                break;
+            case MonsterType.ATTACKER:
+                {
+                    if (transform.position.x <= attackerDirLeft.position.x)
+                        curDirection = SetDirection(curDirection);
+                    if (transform.position.x >= attackerDirRight.position.x)
+                        curDirection = SetDirection(curDirection);
+                }
+                break;
+        }
     }
     public override void DoIdle()
     {

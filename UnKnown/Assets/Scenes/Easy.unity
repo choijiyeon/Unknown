@@ -770,6 +770,8 @@ MonoBehaviour:
   - {fileID: 15694711}
   - {fileID: 15694710}
   - {fileID: 15694709}
+  m_AttackMonsterRoot: {fileID: 0}
+  m_AttackMonsterPos: []
   m_MainActor: {fileID: 0}
   playerLifeCount: 3
 --- !u!4 &1793003767
