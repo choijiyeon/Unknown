@@ -15,6 +15,11 @@ public class JYMonster : JYActor
     private Transform dirRight;
     private Transform attackerDirLeft;
     private Transform attackerDirRight;
+    private GameObject traceTarget;
+    private int movementFlag = 0;
+
+    private bool isAttack = false;
+
     enum MoveDirection
     {
         LEFT,
@@ -27,11 +32,40 @@ public class JYMonster : JYActor
     }
     void Update()
     {
-        Move();
+        switch(monsterType)
+        {
+            case MonsterType.MOVER:
+                Move();
+                break;
+            case MonsterType.ATTACKER:
+                {
+                    if(traceTarget == null)
+                        traceTarget = this.transform.parent.parent.Find("CharacterRoot/player(Clone)").gameObject;
+
+                    if (traceTarget != null)
+                    {
+                        Vector3 playerPos = traceTarget.transform.position;
+                        float distance = Vector3.Distance(playerPos, this.transform.position);
+                        if (distance <= 0.5f)
+                        {
+                            isAttack = true;
+                            DoAttack();
+                        }
+                        else
+                        {
+                            isAttack = false;
+                            Move();
+                        }
+                    }
+                }
+                break;
+        }
     }
     private void Start()
     {
-        switch(monsterType)
+        traceTarget = this.transform.parent.parent.Find("CharacterRoot/player(Clone)").gameObject;
+
+        switch (monsterType)
         {
             case MonsterType.MOVER:
                 {
@@ -58,12 +92,24 @@ public class JYMonster : JYActor
                 }
                 break;
         }
-      
+
     }
     private void Move()
     {
         Vector3 moveVelocity = Vector3.zero;
 
+        //if(isAttack == true && monsterType == MonsterType.ATTACKER)
+        //{
+        //    Vector3 playerPos = traceTarget.transform.position;
+
+        //    if (playerPos.x < transform.position.x)
+        //        curDirection = MoveDirection.LEFT;
+        //    else if (playerPos.x > transform.position.x)
+        //        curDirection = MoveDirection.RIGHT;
+
+        //    DoAttack();
+        //}
+        if (isAttack == true) return;
         if (curDirection == MoveDirection.RIGHT)
         {
             moveVelocity = Vector3.right;
@@ -76,6 +122,8 @@ public class JYMonster : JYActor
         }
 
         transform.position += moveVelocity * movePower * 0.11f;
+
+       
         switch (monsterType)
         {
             case MonsterType.MOVER:
@@ -96,6 +144,8 @@ public class JYMonster : JYActor
                 break;
         }
     }
+
+    
     public override void DoIdle()
     {
         base.DoIdle();
@@ -111,16 +161,10 @@ public class JYMonster : JYActor
         if (sprite != null)
         {
             if (isRight == true)
-            {
                 sprite.transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
-            }
             else
-            {
                 sprite.transform.rotation = Quaternion.Euler(new Vector3(0, 180, 0));
-            }
         }
-
-
         if (monsterCurState != JYDefines.ActorAniSpriteState.run)
         {
             SetACurrentAniSprite(this.gameObject, JYDefines.ActorAniSpriteState.run);
@@ -136,36 +180,47 @@ public class JYMonster : JYActor
         else
             return MoveDirection.RIGHT;
     }
-
-    //void OnTriggerEnter2D(Collider2D other)
+    public override void DoAttack()
+    {
+        base.DoAttack();
+        if (monsterCurState != JYDefines.ActorAniSpriteState.attack)
+        {
+            UISprite sprite = this.gameObject.transform.Find(JYDefines.ActorAniSpriteState.attack.ToString()).GetComponent<UISprite>();
+            if (sprite != null)
+            {
+                if (curDirection == MoveDirection.RIGHT)
+                    sprite.transform.rotation = Quaternion.Euler(new Vector3(0, 180, 0));
+                else
+                    sprite.transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
+            }
+            SetACurrentAniSprite(this.gameObject, JYDefines.ActorAniSpriteState.attack);
+            monsterCurState = JYDefines.ActorAniSpriteState.attack;
+        }
+    }
+    //void OnCollisionEnter2D(Collision2D other)
     //{
-
     //    if (other.gameObject.tag == "Player")
     //    {
+    //        isAttack = true;
     //        traceTarget = other.gameObject;
-
-    //        StopCoroutine("ChangeMovement");
     //    }
     //}
-    //void OnTriggerStay2D(Collider2D other)
+    //void OnCollisionStay2D(Collision2D other)
     //{
-
     //    if (other.gameObject.tag == "Player")
     //    {
-    //        isTracing = true;
-
-
+    //        isAttack = true;
+    //        traceTarget = other.gameObject;
     //    }
 
 
     //}
-    //void OnTriggerExit2D(Collider2D other)
+    //void OnCollisionExit2D(Collision2D other)
     //{
-
     //    if (other.gameObject.tag == "Player")
     //    {
-    //        isTracing = false;
-    //        Move();
+    //        isAttack = false;
+    //        traceTarget = other.gameObject;
     //    }
     //}
 }

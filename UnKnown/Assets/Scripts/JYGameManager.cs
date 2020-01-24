@@ -64,7 +64,6 @@ public class JYGameManager : MonoBehaviour
 
     void GameLoading()
     {
-        //JYUIManager.Instance.Initialize();
         DoActorLoad(JYDefines.ActorType.Character, "player", m_CharacterRoot.position);
         for (int i = 0; i < m_MonsterPos.Length; i++)
         {
