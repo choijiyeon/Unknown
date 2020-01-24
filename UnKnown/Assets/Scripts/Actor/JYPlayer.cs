@@ -124,7 +124,7 @@ public class JYPlayer : JYActor
         if (m_Hp <= 0)
         {
             //죽음.
-            if (JYGameManager.instance.playerLifeCount > 0)
+            if ((JYGameManager.instance.playerLifeCount -1) > 0)
             {
                 DoDie();
                 RespawnPlayer();
@@ -132,7 +132,7 @@ public class JYPlayer : JYActor
             }
             else
             {
-                //showResult;
+                JYUIManager.Instance.Notify(JYDefines.UISectionFun.ShowResult, false);
             }
         }
         else
@@ -218,13 +218,13 @@ public class JYPlayer : JYActor
         { 
             DoDie();
             RespawnPlayer();
-            if (JYGameManager.instance.playerLifeCount > 0)
+            if ((JYGameManager.instance.playerLifeCount - 1) > 0)
             {
                 UpdatePlayerLife();
             }
             else
             {
-                //showResult;
+                JYUIManager.Instance.Notify(JYDefines.UISectionFun.ShowResult, false);
             }
         }
     }

@@ -50,5 +50,6 @@ public class JYDefines
         None,
         InitUIData,
         RemoveLife,
+        ShowResult,
     }
 }
