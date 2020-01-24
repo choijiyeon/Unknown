@@ -227,5 +227,9 @@ public class JYPlayer : JYActor
                 JYUIManager.Instance.Notify(JYDefines.UISectionFun.ShowResult, false);
             }
         }
+        else if (other.gameObject.tag == "ClearZone")
+        {
+            JYUIManager.Instance.Notify(JYDefines.UISectionFun.ShowResult, true) ;
+        }
     }
 }
