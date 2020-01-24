@@ -13,6 +13,7 @@ public class JYPlayer : JYActor
     private int savedplayerLifeCount;
     private Vector3 deadPosition = Vector3.zero;
     private bool isDamage = false;
+    private bool isLeft = false;
   
 
     private void Start()
@@ -44,6 +45,15 @@ public class JYPlayer : JYActor
     {
         if (isJumping != true)
         {
+            UISprite sprite = this.gameObject.transform.Find(JYDefines.ActorAniSpriteState.jump.ToString()).GetComponent<UISprite>();
+            if (sprite != null)
+            {
+                if (isLeft == true)
+                    sprite.transform.rotation = Quaternion.Euler(new Vector3(0, 180, 0));
+                else
+                    sprite.transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
+
+            }
             rigid.AddForce(Vector3.up * 160);
 
             isJumping = true;
@@ -56,6 +66,7 @@ public class JYPlayer : JYActor
         base.DoIdle();
         if (playerCurState != JYDefines.ActorAniSpriteState.idle)
         {
+            isLeft = false;
             SetACurrentAniSprite(this.gameObject, JYDefines.ActorAniSpriteState.idle);
             playerCurState = JYDefines.ActorAniSpriteState.idle;
             isDamage = false;
@@ -71,10 +82,14 @@ public class JYPlayer : JYActor
         {
             if (isRight == true)
             {
+                isLeft = false;
                 sprite.transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
             }
             else
+            {
+                isLeft = true;
                 sprite.transform.rotation = Quaternion.Euler(new Vector3(0, 180, 0));
+            }
         }
                 
 
@@ -90,6 +105,15 @@ public class JYPlayer : JYActor
         base.DoJump();
         if (isJumping != true)
         {
+            UISprite sprite = this.gameObject.transform.Find(JYDefines.ActorAniSpriteState.jump.ToString()).GetComponent<UISprite>();
+            if (sprite != null)
+            {
+                if (isLeft == true)
+                    sprite.transform.rotation = Quaternion.Euler(new Vector3(0, 180, 0));
+                else
+                    sprite.transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
+
+            }
             rigid.AddForce(Vector3.up * jumpPower);
 
             isJumping = true;
@@ -106,6 +130,14 @@ public class JYPlayer : JYActor
         base.DoAttack();
         if (playerCurState != JYDefines.ActorAniSpriteState.attack)
         {
+            UISprite sprite = this.gameObject.transform.Find(JYDefines.ActorAniSpriteState.attack.ToString()).GetComponent<UISprite>();
+            if (sprite != null)
+            {
+                if (isLeft == true)
+                    sprite.transform.rotation = Quaternion.Euler(new Vector3(0, 180, 0));
+                else
+                    sprite.transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
+            }
             SetACurrentAniSprite(this.gameObject, JYDefines.ActorAniSpriteState.attack);
             playerCurState = JYDefines.ActorAniSpriteState.attack;
         }
