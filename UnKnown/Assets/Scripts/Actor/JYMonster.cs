@@ -17,6 +17,7 @@ public class JYMonster : JYActor
     private Transform attackerDirRight;
     private GameObject traceTarget;
     private int movementFlag = 0;
+    private bool isDamage = false;
 
     private bool isAttack = false;
 
@@ -98,17 +99,6 @@ public class JYMonster : JYActor
     {
         Vector3 moveVelocity = Vector3.zero;
 
-        //if(isAttack == true && monsterType == MonsterType.ATTACKER)
-        //{
-        //    Vector3 playerPos = traceTarget.transform.position;
-
-        //    if (playerPos.x < transform.position.x)
-        //        curDirection = MoveDirection.LEFT;
-        //    else if (playerPos.x > transform.position.x)
-        //        curDirection = MoveDirection.RIGHT;
-
-        //    DoAttack();
-        //}
         if (isAttack == true) return;
         if (curDirection == MoveDirection.RIGHT)
         {
@@ -153,10 +143,12 @@ public class JYMonster : JYActor
         {
             SetACurrentAniSprite(this.gameObject, JYDefines.ActorAniSpriteState.idle);
             monsterCurState = JYDefines.ActorAniSpriteState.idle;
+            ChangeCurMonsterState();
         }
     }
     public override void DoMove(bool isRight)
     {
+        if (isDamage == true) return;
         UISprite sprite = this.gameObject.transform.Find(JYDefines.ActorAniSpriteState.run.ToString()).GetComponent<UISprite>();
         if (sprite != null)
         {
@@ -169,6 +161,7 @@ public class JYMonster : JYActor
         {
             SetACurrentAniSprite(this.gameObject, JYDefines.ActorAniSpriteState.run);
             monsterCurState = JYDefines.ActorAniSpriteState.run;
+            ChangeCurMonsterState();
         }
     }
     private MoveDirection SetDirection(MoveDirection direction)
@@ -195,6 +188,85 @@ public class JYMonster : JYActor
             }
             SetACurrentAniSprite(this.gameObject, JYDefines.ActorAniSpriteState.attack);
             monsterCurState = JYDefines.ActorAniSpriteState.attack;
+            ChangeCurMonsterState();
+        }
+    }
+    public override void DoDamage(float aDamageValue)
+    {
+        base.DoDamage(aDamageValue);
+        m_Hp -= aDamageValue;
+
+        StartCoroutine("DamageChangeColor");
+
+        if (m_Hp <= 0)
+        {
+            //죽음.
+            DoDie();
+        }
+        else
+        {
+            if (monsterCurState != JYDefines.ActorAniSpriteState.damage)
+            {
+                SetACurrentAniSprite(this.gameObject, JYDefines.ActorAniSpriteState.damage);
+                monsterCurState = JYDefines.ActorAniSpriteState.damage;
+                ChangeCurMonsterState();
+                isDamage = false;
+            }
+        }
+    }
+    public override void DoDie()
+    {
+        base.DoDie();
+        if (monsterCurState != JYDefines.ActorAniSpriteState.dead)
+        {
+            SetACurrentAniSprite(this.gameObject, JYDefines.ActorAniSpriteState.dead);
+            monsterCurState = JYDefines.ActorAniSpriteState.dead;
+            ChangeCurMonsterState();
+
+            Invoke("GoDestroy", 1f);
+        }
+    }
+
+    private void GoDestroy()
+    {
+        Destroy(this.gameObject);
+    }
+    IEnumerator DamageChangeColor()
+    {
+        int countTime = 0;
+
+        UISprite sprite = this.gameObject.transform.Find(JYDefines.ActorAniSpriteState.damage.ToString()).GetComponent<UISprite>();
+        while (countTime < 6)
+        {
+            if (countTime % 2 == 0)
+                sprite.alpha = 0.2f;
+            else
+                sprite.alpha = 1f;
+
+            yield return new WaitForSeconds(0.2f);
+
+            countTime++;
+        }
+        sprite.alpha = 1f;
+
+        isDamage = false;
+
+        yield return null;
+    }
+    public void ChangeCurMonsterState()
+    {
+        JYGameManager.instance.AttackMonsterCurState = monsterCurState;
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "PlayerAttack")
+        {
+            if (isDamage == false && JYGameManager.instance.PlayerCurState == JYDefines.ActorAniSpriteState.attack)
+            {
+                isDamage = true;
+                DoDamage(30f);
+            }
         }
     }
     //void OnCollisionEnter2D(Collision2D other)

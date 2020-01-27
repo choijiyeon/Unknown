@@ -9,7 +9,7 @@ public class JYPlayer : JYActor
     private float jumpPower = 160f;
     private Rigidbody2D rigid;
     private Vector3 movement;
-    private JYDefines.ActorAniSpriteState playerCurState = JYDefines.ActorAniSpriteState.idle;
+    public JYDefines.ActorAniSpriteState playerCurState = JYDefines.ActorAniSpriteState.idle;
     private int savedplayerLifeCount;
     private Vector3 deadPosition = Vector3.zero;
     private bool isDamage = false;
@@ -69,6 +69,7 @@ public class JYPlayer : JYActor
             isLeft = false;
             SetACurrentAniSprite(this.gameObject, JYDefines.ActorAniSpriteState.idle);
             playerCurState = JYDefines.ActorAniSpriteState.idle;
+            ChangeCurPlayerState();
             isDamage = false;
         }
     }
@@ -97,6 +98,7 @@ public class JYPlayer : JYActor
         {
             SetACurrentAniSprite(this.gameObject, JYDefines.ActorAniSpriteState.run);
             playerCurState = JYDefines.ActorAniSpriteState.run;
+            ChangeCurPlayerState();
         }
     }
 
@@ -121,6 +123,7 @@ public class JYPlayer : JYActor
             {
                 SetACurrentAniSprite(this.gameObject, JYDefines.ActorAniSpriteState.jump);
                 playerCurState = JYDefines.ActorAniSpriteState.jump;
+                ChangeCurPlayerState();
             }
         }
     }
@@ -140,6 +143,7 @@ public class JYPlayer : JYActor
             }
             SetACurrentAniSprite(this.gameObject, JYDefines.ActorAniSpriteState.attack);
             playerCurState = JYDefines.ActorAniSpriteState.attack;
+            ChangeCurPlayerState();
         }
     }
 
@@ -173,6 +177,7 @@ public class JYPlayer : JYActor
             {
                 SetACurrentAniSprite(this.gameObject, JYDefines.ActorAniSpriteState.damage);
                 playerCurState = JYDefines.ActorAniSpriteState.damage;
+                ChangeCurPlayerState();
             }
         }
     }
@@ -184,6 +189,7 @@ public class JYPlayer : JYActor
         {
             SetACurrentAniSprite(this.gameObject, JYDefines.ActorAniSpriteState.dead);
             playerCurState = JYDefines.ActorAniSpriteState.dead;
+            ChangeCurPlayerState();
         }
     }
 
@@ -227,9 +233,23 @@ public class JYPlayer : JYActor
     {
         JYGameManager.instance.DoActorLoad(JYDefines.ActorType.Character, "player", JYGameManager.instance.m_CharacterRoot.position);
     }
+
+    public void ChangeCurPlayerState()
+    {
+        JYGameManager.instance.PlayerCurState = playerCurState;
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.tag == "Monster")
+        {
+            if (isDamage == false)
+            {
+                DoDamage(30f);
+                isDamage = true;
+            }
+        }
+        else if (other.gameObject.tag == "AttackMonster" && JYGameManager.instance.AttackMonsterCurState == JYDefines.ActorAniSpriteState.attack)
         {
             if (isDamage == false)
             {

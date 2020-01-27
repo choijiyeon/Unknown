@@ -55,6 +55,9 @@ public class JYGameManager : MonoBehaviour
     public JYPlayer m_MainActor = null; //유저.
     public int playerLifeCount = 3;
 
+    public JYDefines.ActorAniSpriteState PlayerCurState = JYDefines.ActorAniSpriteState.idle;
+    public JYDefines.ActorAniSpriteState AttackMonsterCurState = JYDefines.ActorAniSpriteState.idle;
+
     void Start()
     {
         JYMainSystem.Instance.m_gameState = JYMainSystem.GameState.Ingame;
