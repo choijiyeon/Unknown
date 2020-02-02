@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class JYMonster : JYActor
 {
+    [SerializeField]
     public MonsterType monsterType;
+    public bool isDamage = false;
+
     private Rigidbody2D rigid;
     private Vector3 movement;
     private bool isTracing;
@@ -17,8 +20,6 @@ public class JYMonster : JYActor
     private Transform attackerDirRight;
     private GameObject traceTarget;
     private int movementFlag = 0;
-    private bool isDamage = false;
-
     private bool isAttack = false;
 
     enum MoveDirection
@@ -99,7 +100,7 @@ public class JYMonster : JYActor
     {
         Vector3 moveVelocity = Vector3.zero;
 
-        if (isAttack == true) return;
+        if (isAttack == true && isDamage == true) return;
         if (curDirection == MoveDirection.RIGHT)
         {
             moveVelocity = Vector3.right;
@@ -195,7 +196,6 @@ public class JYMonster : JYActor
     {
         base.DoDamage(aDamageValue);
         m_Hp -= aDamageValue;
-
         StartCoroutine("DamageChangeColor");
 
         if (m_Hp <= 0)
@@ -208,11 +208,17 @@ public class JYMonster : JYActor
             if (monsterCurState != JYDefines.ActorAniSpriteState.damage)
             {
                 SetACurrentAniSprite(this.gameObject, JYDefines.ActorAniSpriteState.damage);
+
                 monsterCurState = JYDefines.ActorAniSpriteState.damage;
                 ChangeCurMonsterState();
-                isDamage = false;
+                Invoke("ChangeDamageState", 1.5f);
             }
         }
+    }
+
+    private void ChangeDamageState()
+    {
+        isDamage = false;
     }
     public override void DoDie()
     {
@@ -223,7 +229,7 @@ public class JYMonster : JYActor
             monsterCurState = JYDefines.ActorAniSpriteState.dead;
             ChangeCurMonsterState();
 
-            Invoke("GoDestroy", 1f);
+            Invoke("GoDestroy", 1.5f);
         }
     }
 
@@ -249,6 +255,8 @@ public class JYMonster : JYActor
         }
         sprite.alpha = 1f;
 
+        yield return new WaitForSeconds(1f);
+
         isDamage = false;
 
         yield return null;
@@ -258,17 +266,17 @@ public class JYMonster : JYActor
         JYGameManager.instance.AttackMonsterCurState = monsterCurState;
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.gameObject.tag == "PlayerAttack")
-        {
-            if (isDamage == false && JYGameManager.instance.PlayerCurState == JYDefines.ActorAniSpriteState.attack)
-            {
-                isDamage = true;
-                DoDamage(30f);
-            }
-        }
-    }
+    //private void OnTriggerEnter2D(Collider2D other)
+    //{
+    //    if (other.gameObject.tag == "PlayerAttack")
+    //    {
+    //        if (isDamage == false && JYGameManager.instance.PlayerCurState == JYDefines.ActorAniSpriteState.attack)
+    //        {
+    //            isDamage = true;
+    //            DoDamage(30f);
+    //        }
+    //    }
+    //}
     //void OnCollisionEnter2D(Collision2D other)
     //{
     //    if (other.gameObject.tag == "Player")

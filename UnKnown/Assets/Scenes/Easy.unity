@@ -774,6 +774,8 @@ MonoBehaviour:
   m_AttackMonsterPos: []
   m_MainActor: {fileID: 0}
   playerLifeCount: 3
+  PlayerCurState: 0
+  AttackMonsterCurState: 0
 --- !u!4 &1793003767
 Transform:
   m_ObjectHideFlags: 0

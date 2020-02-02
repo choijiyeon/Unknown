@@ -57,10 +57,11 @@ public class JYGameManager : MonoBehaviour
 
     public JYDefines.ActorAniSpriteState PlayerCurState = JYDefines.ActorAniSpriteState.idle;
     public JYDefines.ActorAniSpriteState AttackMonsterCurState = JYDefines.ActorAniSpriteState.idle;
+    public bool isPlayerAttack = false;
 
     void Start()
     {
-        JYMainSystem.Instance.m_gameState = JYMainSystem.GameState.Ingame;
+        //JYMainSystem.Instance.m_gameState = JYMainSystem.GameState.Ingame;
         GameStart();
         GameLoading();
     }

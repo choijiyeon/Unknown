@@ -592,6 +592,9 @@ MonoBehaviour:
   - {fileID: 931760690232750266}
   m_MainActor: {fileID: 0}
   playerLifeCount: 3
+  PlayerCurState: 0
+  AttackMonsterCurState: 0
+  isPlayerAttack: 0
 --- !u!4 &1793003767
 Transform:
   m_ObjectHideFlags: 0

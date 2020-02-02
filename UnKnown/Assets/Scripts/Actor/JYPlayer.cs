@@ -31,6 +31,14 @@ public class JYPlayer : JYActor
     private void FixedUpdate()
     {
         Move();
+
+        if(JYGameManager.instance.isPlayerAttack == true)
+        {
+            Vector2 dieVelocity = new Vector2(2f, 1.5f);
+            rigid.AddForce(dieVelocity, ForceMode2D.Impulse);
+
+            JYGameManager.instance.isPlayerAttack = false;
+        }
     }
 
     private void Move()
@@ -178,8 +186,13 @@ public class JYPlayer : JYActor
                 SetACurrentAniSprite(this.gameObject, JYDefines.ActorAniSpriteState.damage);
                 playerCurState = JYDefines.ActorAniSpriteState.damage;
                 ChangeCurPlayerState();
+                Invoke("ChangeDamageState", 1.5f);
             }
         }
+    }
+    private void ChangeDamageState()
+    {
+        isDamage = false;
     }
 
     public override void DoDie()
