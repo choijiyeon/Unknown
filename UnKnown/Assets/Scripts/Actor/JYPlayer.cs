@@ -202,6 +202,7 @@ public class JYPlayer : JYActor
             playerCurState = JYDefines.ActorAniSpriteState.dead;
             ChangeCurPlayerState();
         }
+        Destroy(this.gameObject);
     }
 
     IEnumerator DamageChangeColor()

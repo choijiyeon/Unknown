@@ -19,6 +19,7 @@ public class JYMonster : JYActor
     private Transform invincivilityDirRight;
     private GameObject traceTarget;
     private bool isAttack = false;
+    private bool isDead = false;
 
     enum MoveDirection
     {
@@ -111,8 +112,8 @@ public class JYMonster : JYActor
     private void Move()
     {
         Vector3 moveVelocity = Vector3.zero;
-
-        if (isAttack == true && isDamage == true) return;
+        if (monsterCurState == JYDefines.ActorAniSpriteState.dead) return;
+        if (isAttack == true && isDamage == true && isDead == true) return;
         if (curDirection == MoveDirection.RIGHT)
         {
             moveVelocity = Vector3.right;
@@ -169,7 +170,7 @@ public class JYMonster : JYActor
     }
     public override void DoMove(bool isRight)
     {
-        if (isDamage == true) return;
+        if (isDamage == true && isDead == true) return;
         UISprite sprite = this.gameObject.transform.Find(JYDefines.ActorAniSpriteState.run.ToString()).GetComponent<UISprite>();
         if (sprite != null)
         {
@@ -215,23 +216,30 @@ public class JYMonster : JYActor
     public override void DoDamage(float aDamageValue)
     {
         base.DoDamage(aDamageValue);
-        m_Hp -= aDamageValue;
-        StartCoroutine("DamageChangeColor");
-
-        if (m_Hp <= 0)
+        if (this.gameObject.tag == "Monster")
         {
-            //죽음.
             DoDie();
         }
         else
         {
-            if (monsterCurState != JYDefines.ActorAniSpriteState.damage)
-            {
-                SetACurrentAniSprite(this.gameObject, JYDefines.ActorAniSpriteState.damage);
+            m_Hp -= aDamageValue;
+            StartCoroutine("DamageChangeColor");
 
-                monsterCurState = JYDefines.ActorAniSpriteState.damage;
-                ChangeCurMonsterState();
-                Invoke("ChangeDamageState", 1.5f);
+            if (m_Hp <= 0)
+            {
+                //죽음.
+                DoDie();
+            }
+            else
+            {
+                if (monsterCurState != JYDefines.ActorAniSpriteState.damage)
+                {
+                    SetACurrentAniSprite(this.gameObject, JYDefines.ActorAniSpriteState.damage);
+
+                    monsterCurState = JYDefines.ActorAniSpriteState.damage;
+                    ChangeCurMonsterState();
+                    Invoke("ChangeDamageState", 1.5f);
+                }
             }
         }
     }
@@ -242,6 +250,7 @@ public class JYMonster : JYActor
     }
     public override void DoDie()
     {
+        isDead = true;
         base.DoDie();
         if (monsterCurState != JYDefines.ActorAniSpriteState.dead)
         {

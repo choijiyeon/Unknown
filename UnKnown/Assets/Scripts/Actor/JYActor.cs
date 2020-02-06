@@ -103,7 +103,6 @@ public class JYActor : MonoBehaviour
     {
         m_ActorState = JYDefines.ActorState.Die;
         //m_ActorAnimator.SetInteger("animation", (int)m_ActorState);
-        Destroy(gameObject);
     }
 
     public void Call_DoIdle()
