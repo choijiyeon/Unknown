@@ -15,6 +15,8 @@ public class JYMonster : JYActor
     private Transform dirRight;
     private Transform attackerDirLeft;
     private Transform attackerDirRight;
+    private Transform invincivilityDirLeft;
+    private Transform invincivilityDirRight;
     private GameObject traceTarget;
     private bool isAttack = false;
 
@@ -27,12 +29,14 @@ public class JYMonster : JYActor
     {
         MOVER,
         ATTACKER,
+        INVINCIVILITY,
     }
     void Update()
     {
         switch(monsterType)
         {
             case MonsterType.MOVER:
+            case MonsterType.INVINCIVILITY:
                 Move();
                 break;
             case MonsterType.ATTACKER:
@@ -89,6 +93,18 @@ public class JYMonster : JYActor
                     }
                 }
                 break;
+            case MonsterType.INVINCIVILITY:
+                {
+                    for (int i = 0; i < JYGameManager.instance.m_InvincibilityMonsterPos.Length; i++)
+                    {
+                        if (this.gameObject.name == i.ToString())
+                        {
+                            invincivilityDirLeft = JYGameManager.instance.m_InvincibilityMonsterPos[i].gameObject.transform.Find("Left").transform;
+                            invincivilityDirRight = JYGameManager.instance.m_InvincibilityMonsterPos[i].gameObject.transform.Find("Right").transform;
+                        }
+                    }
+                }
+                break;
         }
 
     }
@@ -126,6 +142,14 @@ public class JYMonster : JYActor
                     if (transform.position.x <= attackerDirLeft.position.x)
                         curDirection = SetDirection(curDirection);
                     if (transform.position.x >= attackerDirRight.position.x)
+                        curDirection = SetDirection(curDirection);
+                }
+                break;
+            case MonsterType.INVINCIVILITY:
+                {
+                    if (transform.position.x <= invincivilityDirLeft.position.x)
+                        curDirection = SetDirection(curDirection);
+                    if (transform.position.x >= invincivilityDirRight.position.x)
                         curDirection = SetDirection(curDirection);
                 }
                 break;
@@ -261,42 +285,4 @@ public class JYMonster : JYActor
     {
         JYGameManager.instance.AttackMonsterCurState = monsterCurState;
     }
-
-    //private void OnTriggerEnter2D(Collider2D other)
-    //{
-    //    if (other.gameObject.tag == "PlayerAttack")
-    //    {
-    //        if (isDamage == false && JYGameManager.instance.PlayerCurState == JYDefines.ActorAniSpriteState.attack)
-    //        {
-    //            isDamage = true;
-    //            DoDamage(30f);
-    //        }
-    //    }
-    //}
-    //void OnCollisionEnter2D(Collision2D other)
-    //{
-    //    if (other.gameObject.tag == "Player")
-    //    {
-    //        isAttack = true;
-    //        traceTarget = other.gameObject;
-    //    }
-    //}
-    //void OnCollisionStay2D(Collision2D other)
-    //{
-    //    if (other.gameObject.tag == "Player")
-    //    {
-    //        isAttack = true;
-    //        traceTarget = other.gameObject;
-    //    }
-
-
-    //}
-    //void OnCollisionExit2D(Collision2D other)
-    //{
-    //    if (other.gameObject.tag == "Player")
-    //    {
-    //        isAttack = false;
-    //        traceTarget = other.gameObject;
-    //    }
-    //}
 }

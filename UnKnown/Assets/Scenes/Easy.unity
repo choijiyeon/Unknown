@@ -187,6 +187,36 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4180502549265574548, guid: 8026ef78939c08a4ab99ebe3cf8f2992,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -250
+      objectReference: {fileID: 0}
+    - target: {fileID: 4180502549846159265, guid: 8026ef78939c08a4ab99ebe3cf8f2992,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3060.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4180502549846159265, guid: 8026ef78939c08a4ab99ebe3cf8f2992,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6220463792514734908, guid: 8026ef78939c08a4ab99ebe3cf8f2992,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -436
+      objectReference: {fileID: 0}
+    - target: {fileID: 6188705546940604571, guid: 8026ef78939c08a4ab99ebe3cf8f2992,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -262
+      objectReference: {fileID: 0}
+    - target: {fileID: 2070838614151419147, guid: 8026ef78939c08a4ab99ebe3cf8f2992,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 62.2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8026ef78939c08a4ab99ebe3cf8f2992, type: 3}
 --- !u!1 &15694709 stripped
@@ -773,6 +803,8 @@ MonoBehaviour:
   - {fileID: 15694709}
   m_AttackMonsterRoot: {fileID: 0}
   m_AttackMonsterPos: []
+  m_InvincibilityMonsterRoot: {fileID: 0}
+  m_InvincibilityMonsterPos: []
   m_MainActor: {fileID: 0}
   playerLifeCount: 3
   PlayerCurState: 0

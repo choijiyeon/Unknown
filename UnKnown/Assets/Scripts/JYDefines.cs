@@ -37,6 +37,7 @@ public class JYDefines
         Character,
         Monster,
         AttackMonster,
+        InvincibilityMonster,
     }
 
     public enum UISection

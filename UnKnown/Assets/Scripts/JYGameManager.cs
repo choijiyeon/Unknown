@@ -29,6 +29,8 @@ public class JYGameManager : MonoBehaviour
     public GameObject[] m_MonsterPos = new GameObject[4];
     public Transform m_AttackMonsterRoot = null;
     public GameObject[] m_AttackMonsterPos = new GameObject[1];
+    public Transform m_InvincibilityMonsterRoot = null;
+    public GameObject[] m_InvincibilityMonsterPos = new GameObject[1];
 
     //-------------------------------------------------------------------------
     //몬스터 생성 컨트롤러.
@@ -77,6 +79,10 @@ public class JYGameManager : MonoBehaviour
         for (int i = 0; i < m_AttackMonsterPos.Length; i++)
         {
             DoActorLoad(JYDefines.ActorType.AttackMonster, "monster01", m_AttackMonsterPos[i].gameObject.transform.position, i);
+        }
+        for (int i = 0; i < m_InvincibilityMonsterPos.Length; i++)
+        {
+            DoActorLoad(JYDefines.ActorType.InvincibilityMonster, "monster02", m_InvincibilityMonsterPos[i].gameObject.transform.position, i);
         }
     }
 
@@ -132,6 +138,19 @@ public class JYGameManager : MonoBehaviour
                         actor.name = index.ToString();
                         JYMonster character = actor.AddComponent<JYMonster>();
                         character.monsterType = JYMonster.MonsterType.ATTACKER;
+                        character.DoCreate();
+                    }
+                }
+                break;
+            case JYDefines.ActorType.InvincibilityMonster:
+                {
+                    GameObject go = Resources.Load("Character/" + aResName) as GameObject;
+                    if (null != go)
+                    {
+                        GameObject actor = GameObject.Instantiate(go, aPos, Quaternion.identity, m_InvincibilityMonsterRoot);
+                        actor.name = index.ToString();
+                        JYMonster character = actor.AddComponent<JYMonster>();
+                        character.monsterType = JYMonster.MonsterType.INVINCIVILITY;
                         character.DoCreate();
                     }
                 }
