@@ -8,10 +8,7 @@ public class JYMonster : JYActor
     public MonsterType monsterType;
     public bool isDamage = false;
 
-    private Rigidbody2D rigid;
-    private Vector3 movement;
-    private bool isTracing;
-    private float movePower = 0.2f;
+    private float monMovePower = 0.2f;
     private JYDefines.ActorAniSpriteState monsterCurState = JYDefines.ActorAniSpriteState.idle;
     private MoveDirection curDirection = MoveDirection.RIGHT;
     private Transform dirLeft;
@@ -19,7 +16,6 @@ public class JYMonster : JYActor
     private Transform attackerDirLeft;
     private Transform attackerDirRight;
     private GameObject traceTarget;
-    private int movementFlag = 0;
     private bool isAttack = false;
 
     enum MoveDirection
@@ -112,7 +108,7 @@ public class JYMonster : JYActor
             DoMove(true);
         }
 
-        transform.position += moveVelocity * movePower * 0.11f;
+        transform.position += moveVelocity * monMovePower * 0.11f;
 
        
         switch (monsterType)

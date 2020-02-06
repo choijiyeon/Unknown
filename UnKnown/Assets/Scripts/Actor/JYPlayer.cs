@@ -8,10 +8,8 @@ public class JYPlayer : JYActor
     private bool isJumping = false;
     private float jumpPower = 160f;
     private Rigidbody2D rigid;
-    private Vector3 movement;
     public JYDefines.ActorAniSpriteState playerCurState = JYDefines.ActorAniSpriteState.idle;
     private int savedplayerLifeCount;
-    private Vector3 deadPosition = Vector3.zero;
     private bool isDamage = false;
     private bool isLeft = false;
   

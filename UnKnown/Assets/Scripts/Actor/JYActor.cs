@@ -6,9 +6,8 @@ public class JYActor : MonoBehaviour
 {
     protected JYDefines.ActorState m_ActorState = JYDefines.ActorState.Idle;
     protected float m_Rot = 0;
-    protected float m_Speed = 0.03f;
-
-    private float movePower = 0.7f;
+    protected float m_Speed = 0.05f;
+    private float movePower = 1f;
     //-------------------------------------------------------------------------
     protected JYDefines.ActorType m_ActorType = JYDefines.ActorType.None;
     protected int m_Level = 0;
