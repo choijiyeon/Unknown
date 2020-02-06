@@ -5,6 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class UIStart : MonoBehaviour
 {
+    private void Start()
+    {
+        Screen.SetResolution(1280, 720, true);
+    }
     public void OnClickStart()
     {
         SceneManager.LoadScene("Easy");

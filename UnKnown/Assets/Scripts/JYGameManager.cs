@@ -65,6 +65,8 @@ public class JYGameManager : MonoBehaviour
     {
         //JYMainSystem.Instance.m_gameState = JYMainSystem.GameState.Ingame;
         JYUIManager.Instance.Notify(JYDefines.UISectionFun.ShowTutorial);
+        Screen.SetResolution(1280, 720, true);
+
         GameStart();
         GameLoading();
     }
