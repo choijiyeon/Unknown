@@ -46,8 +46,8 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: f174306f618752b4f8a436ea84790b9a, type: 2}
   mSprites:
   - name: Btn_base
-    x: 686
-    y: 110
+    x: 0
+    y: 94
     width: 200
     height: 200
     borderLeft: 0
@@ -59,8 +59,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Btn_closed
-    x: 0
-    y: 41
+    x: 201
+    y: 40
     width: 192
     height: 68
     borderLeft: 0
@@ -72,8 +72,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Btn_easy
-    x: 193
-    y: 41
+    x: 0
+    y: 25
     width: 192
     height: 68
     borderLeft: 0
@@ -85,8 +85,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Btn_hard
-    x: 386
-    y: 41
+    x: 394
+    y: 40
     width: 192
     height: 68
     borderLeft: 0
@@ -98,8 +98,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Btn_main
-    x: 579
-    y: 41
+    x: 587
+    y: 40
     width: 192
     height: 68
     borderLeft: 0
@@ -111,8 +111,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Btn_normal
-    x: 772
-    y: 41
+    x: 780
+    y: 40
     width: 192
     height: 68
     borderLeft: 0
@@ -124,7 +124,7 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Btn_start
-    x: 0
+    x: 201
     y: 226
     width: 192
     height: 68
@@ -137,8 +137,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: house
-    x: 929
-    y: 404
+    x: 201
+    y: 117
     width: 87
     height: 108
     borderLeft: 0
@@ -150,8 +150,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Img_arrow
-    x: 965
-    y: 53
+    x: 573
+    y: 215
     width: 48
     height: 48
     borderLeft: 0
@@ -163,8 +163,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Img_bod01
-    x: 887
-    y: 215
+    x: 394
+    y: 199
     width: 100
     height: 95
     borderLeft: 40
@@ -176,8 +176,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Img_bod02
-    x: 965
-    y: 102
+    x: 628
+    y: 244
     width: 50
     height: 50
     borderLeft: 25
@@ -189,6 +189,19 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Img_clear
+    x: 686
+    y: 109
+    width: 242
+    height: 201
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Img_clear2
     x: 686
     y: 311
     width: 242
@@ -202,8 +215,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Img_hp
-    x: 929
-    y: 331
+    x: 289
+    y: 153
     width: 80
     height: 72
     borderLeft: 0
@@ -215,8 +228,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Img_option
-    x: 965
-    y: 10
+    x: 495
+    y: 221
     width: 42
     height: 42
     borderLeft: 0
@@ -241,8 +254,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Txt_attack
-    x: 0
-    y: 6
+    x: 289
+    y: 118
     width: 150
     height: 34
     borderLeft: 0
@@ -254,8 +267,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Txt_clear
-    x: 887
-    y: 153
+    x: 495
+    y: 264
     width: 132
     height: 30
     borderLeft: 0
@@ -267,8 +280,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Txt_fail
-    x: 887
-    y: 184
+    x: 440
+    y: 133
     width: 132
     height: 30
     borderLeft: 0
@@ -280,8 +293,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Txt_jump
-    x: 151
-    y: 6
+    x: 370
+    y: 164
     width: 150
     height: 34
     borderLeft: 0
