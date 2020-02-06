@@ -62,6 +62,7 @@ public class JYGameManager : MonoBehaviour
     void Start()
     {
         //JYMainSystem.Instance.m_gameState = JYMainSystem.GameState.Ingame;
+        JYUIManager.Instance.Notify(JYDefines.UISectionFun.ShowTutorial);
         GameStart();
         GameLoading();
     }
