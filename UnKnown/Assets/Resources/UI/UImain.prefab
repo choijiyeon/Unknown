@@ -214,7 +214,7 @@ MonoBehaviour:
   mColor: {r: 0.627451, g: 0.8000001, b: 0.3254902, a: 0.8039216}
   mPivot: 1
   mWidth: 281
-  mHeight: 36
+  mHeight: 50
   mDepth: 160
   mMat: {fileID: 0}
   autoResizeBoxCollider: 0
@@ -1218,7 +1218,7 @@ MonoBehaviour:
   mColor: {r: 0.627451, g: 0.8000001, b: 0.3254902, a: 0.8039216}
   mPivot: 1
   mWidth: 281
-  mHeight: 36
+  mHeight: 50
   mDepth: 160
   mMat: {fileID: 0}
   autoResizeBoxCollider: 0
@@ -1737,7 +1737,7 @@ MonoBehaviour:
   mColor: {r: 0.9686275, g: 0.82745105, b: 0.19215688, a: 1}
   mPivot: 1
   mWidth: 281
-  mHeight: 36
+  mHeight: 50
   mDepth: 160
   mMat: {fileID: 0}
   autoResizeBoxCollider: 0
@@ -2328,7 +2328,7 @@ MonoBehaviour:
   anchorOffset: 0
   softBorderPadding: 1
   renderQueue: 0
-  startingRenderQueue: 3007
+  startingRenderQueue: 3010
   mClipTexture: {fileID: 0}
   mAlpha: 1
   mClipping: 0
@@ -2369,7 +2369,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1957465493606399518}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 547, y: -260, z: 0}
+  m_LocalPosition: {x: -354, y: -260, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3144966072195632809}
@@ -2591,7 +2591,7 @@ MonoBehaviour:
   anchorOffset: 0
   softBorderPadding: 1
   renderQueue: 0
-  startingRenderQueue: 3008
+  startingRenderQueue: 3011
   mClipTexture: {fileID: 0}
   mAlpha: 1
   mClipping: 0
@@ -2660,7 +2660,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2969294986966077854}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -537, y: -256, z: 0}
+  m_LocalPosition: {x: 537, y: -256, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7404920143120456847}
@@ -4038,7 +4038,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5853361941463373431}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 352, y: -260, z: 0}
+  m_LocalPosition: {x: -537, y: -260, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7940693143978824046}
