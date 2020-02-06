@@ -1128,7 +1128,7 @@ PrefabInstance:
       propertyPath: uiRoot
       value: 
       objectReference: {fileID: 997392225}
-    - target: {fileID: 7729252160861553825, guid: f8986cc4052f45848a490eb996388863,
+    - target: {fileID: 6407276398400009587, guid: f8986cc4052f45848a490eb996388863,
         type: 3}
       propertyPath: uiRoot
       value: 
