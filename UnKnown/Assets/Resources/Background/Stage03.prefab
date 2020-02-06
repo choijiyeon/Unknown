@@ -37281,7 +37281,7 @@ GameObject:
   - component: {fileID: 8102704322214732993}
   m_Layer: 0
   m_Name: Deadzone
-  m_TagString: Untagged
+  m_TagString: DeadZone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37324,6 +37324,7 @@ GameObject:
   - component: {fileID: 1966854276573700987}
   - component: {fileID: 5349174053102745286}
   - component: {fileID: 5447057367683760291}
+  - component: {fileID: 4827079104140862119}
   m_Layer: 0
   m_Name: Stage03
   m_TagString: Untagged
@@ -37425,6 +37426,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &4827079104140862119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6917452065365237742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d44bc69c2ca5f943b845318866dc1bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioClip: {fileID: 8300000, guid: 27c563d15d23a414ca4e8dbae0712a3b, type: 3}
+  trigger: 6
+  volume: 1
+  pitch: 1
 --- !u!1 &6939593610483450556
 GameObject:
   m_ObjectHideFlags: 0
