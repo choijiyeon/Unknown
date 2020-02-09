@@ -60,6 +60,7 @@ public class JYGameManager : MonoBehaviour
     public JYDefines.ActorAniSpriteState PlayerCurState = JYDefines.ActorAniSpriteState.idle;
     public JYDefines.ActorAniSpriteState AttackMonsterCurState = JYDefines.ActorAniSpriteState.idle;
     public bool isPlayerAttack = false;
+    public JYDefines.CurrentMode currentMode = JYDefines.CurrentMode.easy;
 
     void Start()
     {

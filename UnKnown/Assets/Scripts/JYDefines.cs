@@ -5,6 +5,12 @@ using UnityEngine;
 public class JYDefines
 {
     public const string mainCamera = "MainCamera";
+    public enum CurrentMode
+    {
+        easy = 0,
+        normal,
+        hard,
+    }
 
     public enum Layer
     {

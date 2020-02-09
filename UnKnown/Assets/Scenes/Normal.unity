@@ -944,6 +944,7 @@ MonoBehaviour:
   PlayerCurState: 0
   AttackMonsterCurState: 0
   isPlayerAttack: 0
+  currentMode: 1
 --- !u!4 &1793003767
 Transform:
   m_ObjectHideFlags: 0
@@ -1555,6 +1556,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7391208666359475348, guid: ac045fc58057d1649ab015316acdc929,
+        type: 3}
+      propertyPath: m_TagString
+      value: Moveland
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac045fc58057d1649ab015316acdc929, type: 3}

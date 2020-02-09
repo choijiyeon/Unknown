@@ -14,11 +14,21 @@ public class JYPlayer : JYActor
     private bool isLeft = false;
     private bool isDestroy = false;
     private bool isUnrivaled = false;
+    private bool isMoveland = false;
+    private GameObject moveLandObj;
+
+    private Vector3 accVlaue = Vector3.zero;
+    private Vector3 curPos = Vector3.zero;
+    private Vector3 prevPos = Vector3.zero;
 
     private void Start()
     {
         rigid = gameObject.GetComponent<Rigidbody2D>();
         DoIdle();
+        if(JYGameManager.instance.currentMode == JYDefines.CurrentMode.easy)
+            moveLandObj = this.transform.parent.parent.Find("Stage01/Field01/Bg_Down/Moveland").gameObject;
+        else if (JYGameManager.instance.currentMode == JYDefines.CurrentMode.normal)
+            moveLandObj = this.transform.parent.parent.Find("Stage02/Bg_Down/Land2").gameObject;
     }
 
     private void Update()
@@ -37,6 +47,17 @@ public class JYPlayer : JYActor
             rigid.AddForce(dieVelocity, ForceMode2D.Impulse);
 
             JYGameManager.instance.isPlayerAttack = false;
+        }
+
+        if (moveLandObj != null)
+        {
+            curPos = moveLandObj.transform.position;
+            accVlaue = (curPos - prevPos) / Time.deltaTime;
+            prevPos = curPos;
+        }
+        if(isMoveland == true)
+        {
+            this.gameObject.transform.position += accVlaue * Time.deltaTime;
         }
     }
 
@@ -111,6 +132,7 @@ public class JYPlayer : JYActor
     public override void DoJump()
     {
         base.DoJump();
+        isMoveland = false;
         if (isJumping != true)
         {
             UISprite sprite = this.gameObject.transform.Find(JYDefines.ActorAniSpriteState.jump.ToString()).GetComponent<UISprite>();
@@ -295,6 +317,11 @@ public class JYPlayer : JYActor
         else if (other.gameObject.tag == "ClearZone")
         {
             JYUIManager.Instance.Notify(JYDefines.UISectionFun.ShowResult, true) ;
+        }
+        else if(other.gameObject.tag == "Moveland")
+        {
+            isMoveland = true;
+            moveLandObj = other.gameObject;
         }
     }
 }

@@ -638,6 +638,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1201758069070479700, guid: d4ad51df6804f464095fcded54e964c6,
+        type: 3}
+      propertyPath: m_TagString
+      value: Moveland
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d4ad51df6804f464095fcded54e964c6, type: 3}
 --- !u!4 &674221975 stripped
@@ -1110,6 +1115,7 @@ MonoBehaviour:
   PlayerCurState: 0
   AttackMonsterCurState: 0
   isPlayerAttack: 0
+  currentMode: 0
 --- !u!4 &1793003767
 Transform:
   m_ObjectHideFlags: 0

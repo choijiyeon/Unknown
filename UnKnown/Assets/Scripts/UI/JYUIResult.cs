@@ -46,6 +46,18 @@ namespace UIContents
         public void CallReplay(GameObject obj)
         {
             SceneManager.LoadScene(obj.name);
+            switch(obj.name)
+            {
+                case "easy":
+                    JYGameManager.instance.currentMode = JYDefines.CurrentMode.easy;
+                    break;
+                case "normal":
+                    JYGameManager.instance.currentMode = JYDefines.CurrentMode.normal;
+                    break;
+                case "hard":
+                    JYGameManager.instance.currentMode = JYDefines.CurrentMode.hard;
+                    break;
+            }
         }
     }
 }

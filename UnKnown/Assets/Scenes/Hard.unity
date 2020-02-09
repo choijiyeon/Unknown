@@ -1155,6 +1155,7 @@ MonoBehaviour:
   PlayerCurState: 0
   AttackMonsterCurState: 0
   isPlayerAttack: 0
+  currentMode: 2
 --- !u!4 &1793003767
 Transform:
   m_ObjectHideFlags: 0
