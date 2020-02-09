@@ -8,6 +8,7 @@ TagManager:
   - DeadZone
   - Monster
   - ClearZone
+  - Moveland
   layers:
   - Default
   - TransparentFX
