@@ -2799,6 +2799,7 @@ GameObject:
   - component: {fileID: 8701843875211952860}
   - component: {fileID: 2349390405602270842}
   - component: {fileID: 3317192456502816709}
+  - component: {fileID: 9105753401684580441}
   m_Layer: 0
   m_Name: Btn_jump
   m_TagString: Untagged
@@ -2902,11 +2903,7 @@ MonoBehaviour:
   pressedSprite2D: {fileID: 0}
   disabledSprite2D: {fileID: 0}
   pixelSnap: 0
-  onClick:
-  - mTarget: {fileID: 6407276398400009587}
-    mMethodName: CallJumpBtn
-    mParameters: []
-    oneShot: 0
+  onClick: []
 --- !u!65 &8701843875211952860
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2952,6 +2949,19 @@ MonoBehaviour:
   trigger: 3
   volume: 0.3
   pitch: 1
+--- !u!114 &9105753401684580441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2969294986966077854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ab47da27547d754299818cd71f81f68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uiRoot: {fileID: 0}
 --- !u!1 &3096258704799571735
 GameObject:
   m_ObjectHideFlags: 0

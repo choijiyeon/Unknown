@@ -62,9 +62,9 @@ namespace UIContents
         /// </summary>
         public void CallJumpBtn()
         {
-            if (player == null)
-                FindPlayer();
-            player.DoJump();
+            //if (player == null)
+            //    FindPlayer();
+            //player.DoJump();
         }
         public void CallOption()
         {
