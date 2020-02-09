@@ -43,5 +43,9 @@ namespace UIContents
         {
             SceneManager.LoadScene("Start");
         }
+        public void CallReplay(GameObject obj)
+        {
+            SceneManager.LoadScene(obj.name);
+        }
     }
 }
