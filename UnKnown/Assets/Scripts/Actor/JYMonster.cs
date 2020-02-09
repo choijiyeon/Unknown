@@ -125,7 +125,7 @@ public class JYMonster : JYActor
             DoMove(true);
         }
 
-        transform.position += moveVelocity * monMovePower * 0.11f;
+        transform.position += moveVelocity * monMovePower * 0.08f;
 
        
         switch (monsterType)
