@@ -33,7 +33,7 @@ namespace UIContents
         private void Start()
         {
             JYUIManager.Instance.AttachUISection(JYDefines.UISectionFun.RemoveLife, this);
-            lifeObj = new GameObject[3];
+            lifeObj = new GameObject[5];
             for (int i = 0; i < lifeObj.Length; i++)
             {
                 lifeObj[i] = lifeObjRoot.transform.Find(i.ToString()).gameObject;

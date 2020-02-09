@@ -640,7 +640,7 @@ MonoBehaviour:
   - {fileID: 4729191001727424315}
   - {fileID: 4729191001727424314}
   m_MainActor: {fileID: 0}
-  playerLifeCount: 3
+  playerLifeCount: 5
   PlayerCurState: 0
   AttackMonsterCurState: 0
   isPlayerAttack: 0

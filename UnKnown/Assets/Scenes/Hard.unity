@@ -978,7 +978,7 @@ MonoBehaviour:
   - {fileID: 5381020513941971145}
   - {fileID: 5381020513941971144}
   m_MainActor: {fileID: 0}
-  playerLifeCount: 3
+  playerLifeCount: 5
   PlayerCurState: 0
   AttackMonsterCurState: 0
   isPlayerAttack: 0

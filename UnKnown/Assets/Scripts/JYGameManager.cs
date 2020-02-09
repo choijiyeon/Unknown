@@ -55,7 +55,7 @@ public class JYGameManager : MonoBehaviour
     //-------------------------------------------------------------------------
     [HideInInspector]
     public JYPlayer m_MainActor = null; //유저.
-    public int playerLifeCount = 3;
+    public int playerLifeCount = 5;
 
     public JYDefines.ActorAniSpriteState PlayerCurState = JYDefines.ActorAniSpriteState.idle;
     public JYDefines.ActorAniSpriteState AttackMonsterCurState = JYDefines.ActorAniSpriteState.idle;

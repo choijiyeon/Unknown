@@ -12,7 +12,8 @@ public class JYPlayer : JYActor
     private int savedplayerLifeCount;
     private bool isDamage = false;
     private bool isLeft = false;
-  
+    private bool isDestroy = false;
+    private bool isUnrivaled = false;
 
     private void Start()
     {
@@ -81,7 +82,6 @@ public class JYPlayer : JYActor
     }
     public override void DoMove(bool isRight)
     {
-        if (isDamage == true) return;
         base.DoMove(isRight);
 
         UISprite sprite = this.gameObject.transform.Find(JYDefines.ActorAniSpriteState.run.ToString()).GetComponent<UISprite>();
@@ -155,42 +155,39 @@ public class JYPlayer : JYActor
 
     public override void DoDamage(float aDamageValue)
     {
+        if (isUnrivaled == true) return;
         base.DoDamage(aDamageValue);
-        m_Hp -= aDamageValue;
 
         Vector2 dieVelocity = new Vector2(-1.5f, 1f);
         rigid.AddForce(dieVelocity, ForceMode2D.Impulse);
 
         StartCoroutine("DamageChangeColor");
 
-        if (m_Hp <= 0)
+        //죽음.
+        if ((JYGameManager.instance.playerLifeCount -1) > 0)
         {
-            //죽음.
-            if ((JYGameManager.instance.playerLifeCount -1) > 0)
-            {
-                DoDie();
-                RespawnPlayer();
-                UpdatePlayerLife();
-            }
-            else
-            {
-                JYUIManager.Instance.Notify(JYDefines.UISectionFun.ShowResult, false);
-            }
-        }
-        else
-        {
+            isUnrivaled = true;
+            DoDie();
+            //RespawnPlayer();
+            UpdatePlayerLife();
+
             if (playerCurState != JYDefines.ActorAniSpriteState.damage)
             {
                 SetACurrentAniSprite(this.gameObject, JYDefines.ActorAniSpriteState.damage);
                 playerCurState = JYDefines.ActorAniSpriteState.damage;
                 ChangeCurPlayerState();
-                Invoke("ChangeDamageState", 1.5f);
+                Invoke("ChangeDamageState", 2.5f);
             }
+        }
+        else
+        {
+            JYUIManager.Instance.Notify(JYDefines.UISectionFun.ShowResult, false);
         }
     }
     private void ChangeDamageState()
     {
         isDamage = false;
+        isUnrivaled = false;
     }
 
     public override void DoDie()
@@ -202,7 +199,8 @@ public class JYPlayer : JYActor
             playerCurState = JYDefines.ActorAniSpriteState.dead;
             ChangeCurPlayerState();
         }
-        Destroy(this.gameObject);
+        if(isDestroy == true)
+            Destroy(this.gameObject);
     }
 
     IEnumerator DamageChangeColor()
@@ -237,7 +235,7 @@ public class JYPlayer : JYActor
     }
     private int SaveCurLifeCount(int count)
     {
-        if (count == 0) savedplayerLifeCount = 3;
+        if (count == 0) savedplayerLifeCount = 5;
         savedplayerLifeCount = count;
         return savedplayerLifeCount;
     }
@@ -259,6 +257,7 @@ public class JYPlayer : JYActor
             {
                 DoDamage(30f);
                 isDamage = true;
+                isUnrivaled = true;
             }
         }
         else if (other.gameObject.tag == "AttackMonster" && JYGameManager.instance.AttackMonsterCurState == JYDefines.ActorAniSpriteState.attack)
@@ -267,6 +266,7 @@ public class JYPlayer : JYActor
             {
                 DoDamage(30f);
                 isDamage = true;
+                isUnrivaled = true;
             }
         }
     }
@@ -279,7 +279,8 @@ public class JYPlayer : JYActor
             playerCurState = JYDefines.ActorAniSpriteState.idle;
         }
         if (other.gameObject.tag == "DeadZone")
-        { 
+        {
+            isDestroy = true;
             DoDie();
             RespawnPlayer();
             if ((JYGameManager.instance.playerLifeCount - 1) > 0)
