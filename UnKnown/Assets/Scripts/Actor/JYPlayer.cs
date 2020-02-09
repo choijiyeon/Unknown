@@ -207,7 +207,7 @@ public class JYPlayer : JYActor
     {
         int countTime = 0;
 
-        UISprite sprite = this.gameObject.transform.Find(JYDefines.ActorAniSpriteState.idle.ToString()).GetComponent<UISprite>();
+        UISprite sprite = this.gameObject.transform.Find(playerCurState.ToString()).GetComponent<UISprite>();
         while (countTime < 6)
         {
             if (countTime % 2 == 0)
