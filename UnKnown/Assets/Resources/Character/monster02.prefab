@@ -303,7 +303,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 5, y: 155.1}
+  m_Offset: {x: -1.2, y: 141.8}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -314,7 +314,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 100, y: 13.3}
+  m_Size: {x: 72.7, y: 13.3}
   m_EdgeRadius: 0
 --- !u!114 &2580311540887405870
 MonoBehaviour:
@@ -549,7 +549,6 @@ GameObject:
   - component: {fileID: 8968723962141020168}
   - component: {fileID: 3179341950881927515}
   - component: {fileID: 7643861380563331274}
-  - component: {fileID: 699620074540790612}
   m_Layer: 0
   m_Name: monster02
   m_TagString: Monster
@@ -612,8 +611,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 18.2, y: 70.1}
-  m_Size: {x: 123.88, y: 143.85}
+  m_Offset: {x: 2.6, y: 74.9}
+  m_Size: {x: 82.7, y: 143.85}
   m_Direction: 0
 --- !u!61 &7643861380563331274
 BoxCollider2D:
@@ -628,7 +627,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 12.9, y: 71.8}
+  m_Offset: {x: 0, y: 9}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -639,33 +638,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 88.56, y: 143.2}
-  m_EdgeRadius: 0
---- !u!61 &699620074540790612
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4292523330031954777}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -40.9, y: 74.8}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 41.9, y: 54.3}
+  m_Size: {x: 92, y: 10}
   m_EdgeRadius: 0
 --- !u!1 &4293956209693505326
 GameObject:

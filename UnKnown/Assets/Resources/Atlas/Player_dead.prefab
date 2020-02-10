@@ -47,7 +47,7 @@ MonoBehaviour:
   mSprites:
   - name: player_dead_01
     x: 0
-    y: 342
+    y: 171
     width: 280
     height: 170
     borderLeft: 0
@@ -85,8 +85,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: player_dead_04
-    x: 281
-    y: 171
+    x: 0
+    y: 342
     width: 280
     height: 170
     borderLeft: 0
@@ -98,7 +98,7 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: player_dead_05
-    x: 0
+    x: 281
     y: 171
     width: 280
     height: 170

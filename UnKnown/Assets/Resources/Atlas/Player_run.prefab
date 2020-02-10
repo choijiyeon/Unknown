@@ -46,10 +46,10 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: c97dd7c4a8a734e4894c01940e607600, type: 2}
   mSprites:
   - name: player_run_01
-    x: 0
-    y: 171
-    width: 170
-    height: 170
+    x: 321
+    y: 96
+    width: 106
+    height: 160
     borderLeft: 0
     borderRight: 0
     borderTop: 0
@@ -59,10 +59,10 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: player_run_02
-    x: 171
-    y: 342
-    width: 170
-    height: 170
+    x: 0
+    y: 96
+    width: 106
+    height: 160
     borderLeft: 0
     borderRight: 0
     borderTop: 0
@@ -72,10 +72,10 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: player_run_03
-    x: 0
-    y: 342
-    width: 170
-    height: 170
+    x: 107
+    y: 96
+    width: 106
+    height: 160
     borderLeft: 0
     borderRight: 0
     borderTop: 0
@@ -85,10 +85,10 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: player_run_04
-    x: 171
-    y: 171
-    width: 170
-    height: 170
+    x: 214
+    y: 96
+    width: 106
+    height: 160
     borderLeft: 0
     borderRight: 0
     borderTop: 0
