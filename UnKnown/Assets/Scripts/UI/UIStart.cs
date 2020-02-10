@@ -21,5 +21,9 @@ public class UIStart : MonoBehaviour
     {
         SceneManager.LoadScene("Hard");
     }
+    public void CallTutorial()
+    {
+        JYUIManager.Instance.Notify(JYDefines.UISectionFun.ShowTutorial);
+    }
 
 }
