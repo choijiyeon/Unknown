@@ -94,7 +94,15 @@ public class JYPlayer : JYActor
         base.DoIdle();
         if (playerCurState != JYDefines.ActorAniSpriteState.idle)
         {
-            isLeft = false;
+            UISprite sprite = this.gameObject.transform.Find(JYDefines.ActorAniSpriteState.idle.ToString()).GetComponent<UISprite>();
+            if (sprite != null)
+            {
+                if (isLeft == true)
+                    sprite.transform.rotation = Quaternion.Euler(new Vector3(0, 180, 0));
+                else
+                    sprite.transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
+
+            }
             SetACurrentAniSprite(this.gameObject, JYDefines.ActorAniSpriteState.idle);
             playerCurState = JYDefines.ActorAniSpriteState.idle;
             ChangeCurPlayerState();
