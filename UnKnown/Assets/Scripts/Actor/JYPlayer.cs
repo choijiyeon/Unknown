@@ -28,7 +28,7 @@ public class JYPlayer : JYActor
         if(JYGameManager.instance.currentMode == JYDefines.CurrentMode.easy)
             moveLandObj = this.transform.parent.parent.Find("Stage01/Field01/Bg_Down/Moveland").gameObject;
         else if (JYGameManager.instance.currentMode == JYDefines.CurrentMode.normal)
-            moveLandObj = this.transform.parent.parent.Find("Stage02/Bg_Down/Land2").gameObject;
+            moveLandObj = this.transform.parent.parent.Find("Stage02/Field02/Bg_Down/Land2").gameObject;
     }
 
     private void Update()
