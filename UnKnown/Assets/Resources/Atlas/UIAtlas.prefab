@@ -45,9 +45,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 2100000, guid: f174306f618752b4f8a436ea84790b9a, type: 2}
   mSprites:
+  - name: Btn_again
+    x: 0
+    y: 46
+    width: 192
+    height: 68
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
   - name: Btn_base
     x: 686
-    y: 115
+    y: 312
     width: 200
     height: 200
     borderLeft: 0
@@ -59,7 +72,7 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Btn_closed
-    x: 579
+    x: 193
     y: 46
     width: 192
     height: 68
@@ -85,7 +98,7 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Btn_hard
-    x: 0
+    x: 579
     y: 46
     width: 192
     height: 68
@@ -98,7 +111,7 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Btn_main
-    x: 193
+    x: 772
     y: 46
     width: 192
     height: 68
@@ -124,8 +137,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Btn_start
-    x: 772
-    y: 46
+    x: 0
+    y: 157
     width: 192
     height: 68
     borderLeft: 0
@@ -137,8 +150,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Img_arrow
-    x: 982
-    y: 334
+    x: 965
+    y: 45
     width: 41
     height: 35
     borderLeft: 0
@@ -151,7 +164,7 @@ MonoBehaviour:
     paddingBottom: 6
   - name: Img_bod01
     x: 879
-    y: 419
+    y: 218
     width: 98
     height: 93
     borderLeft: 15
@@ -164,7 +177,7 @@ MonoBehaviour:
     paddingBottom: 1
   - name: Img_bod02
     x: 948
-    y: 370
+    y: 169
     width: 48
     height: 48
     borderLeft: 15
@@ -177,7 +190,7 @@ MonoBehaviour:
     paddingBottom: 1
   - name: Img_clear2
     x: 686
-    y: 316
+    y: 115
     width: 192
     height: 196
     borderLeft: 0
@@ -190,7 +203,7 @@ MonoBehaviour:
     paddingBottom: 2
   - name: Img_hp
     x: 879
-    y: 356
+    y: 155
     width: 68
     height: 62
     borderLeft: 0
@@ -202,8 +215,8 @@ MonoBehaviour:
     paddingTop: 5
     paddingBottom: 5
   - name: Img_option
-    x: 978
-    y: 470
+    x: 965
+    y: 81
     width: 42
     height: 42
     borderLeft: 0
@@ -229,7 +242,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: Txt_attack
     x: 0
-    y: 15
+    y: 126
     width: 147
     height: 30
     borderLeft: 0
@@ -241,8 +254,8 @@ MonoBehaviour:
     paddingTop: 2
     paddingBottom: 2
   - name: Txt_clear
-    x: 887
-    y: 294
+    x: 879
+    y: 124
     width: 132
     height: 30
     borderLeft: 0
@@ -255,7 +268,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: Txt_fail
     x: 887
-    y: 263
+    y: 482
     width: 88
     height: 30
     borderLeft: 0
@@ -267,8 +280,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Txt_jump
-    x: 879
-    y: 325
+    x: 148
+    y: 126
     width: 102
     height: 30
     borderLeft: 0
