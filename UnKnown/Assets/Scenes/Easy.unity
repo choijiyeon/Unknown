@@ -429,7 +429,7 @@ MonoBehaviour:
   bottomType: 1
   topType: 1
   mAtlas: {fileID: 114167718928944546, guid: 8c5fede059296744ba7a7b32d7f1e4fa, type: 3}
-  mSpriteName: Btn_start
+  mSpriteName: Btn_again
   mFillCenter: 1
 --- !u!1 &610524483
 GameObject:
@@ -1068,7 +1068,7 @@ MonoBehaviour:
   bottomType: 1
   topType: 1
   mAtlas: {fileID: 114167718928944546, guid: 8c5fede059296744ba7a7b32d7f1e4fa, type: 3}
-  mSpriteName: Btn_start
+  mSpriteName: Btn_next
   mFillCenter: 1
 --- !u!1 &1793003765
 GameObject:
