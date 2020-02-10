@@ -643,6 +643,16 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Moveland
       objectReference: {fileID: 0}
+    - target: {fileID: 822630845944192615, guid: d4ad51df6804f464095fcded54e964c6,
+        type: 3}
+      propertyPath: audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 22b36d3693dfc9d4ba23b32717cfc9df, type: 3}
+    - target: {fileID: 822630845944192615, guid: d4ad51df6804f464095fcded54e964c6,
+        type: 3}
+      propertyPath: volume
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d4ad51df6804f464095fcded54e964c6, type: 3}
 --- !u!4 &674221975 stripped
@@ -1197,12 +1207,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1066000763, guid: 6c20899e614d25142974d6f957edf1b2, type: 3}
+    - target: {fileID: 6395623994321537455, guid: 6c20899e614d25142974d6f957edf1b2,
+        type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6395623994321537455, guid: 6c20899e614d25142974d6f957edf1b2,
-        type: 3}
+    - target: {fileID: 1066000763, guid: 6c20899e614d25142974d6f957edf1b2, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}

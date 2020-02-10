@@ -11553,9 +11553,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d44bc69c2ca5f943b845318866dc1bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioClip: {fileID: 8300000, guid: 27c563d15d23a414ca4e8dbae0712a3b, type: 3}
+  audioClip: {fileID: 8300000, guid: 22b36d3693dfc9d4ba23b32717cfc9df, type: 3}
   trigger: 6
-  volume: 0.134
+  volume: 0.5
   pitch: 1
 --- !u!1 &1569437169055100797
 GameObject:

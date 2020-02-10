@@ -47,7 +47,7 @@ MonoBehaviour:
   mSprites:
   - name: Btn_again
     x: 0
-    y: 226
+    y: 41
     width: 192
     height: 68
     borderLeft: 0
@@ -72,7 +72,7 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Btn_closed
-    x: 579
+    x: 193
     y: 41
     width: 192
     height: 68
@@ -99,7 +99,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: Btn_hard
     x: 0
-    y: 41
+    y: 226
     width: 192
     height: 68
     borderLeft: 0
@@ -124,8 +124,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Btn_next
-    x: 193
-    y: 226
+    x: 386
+    y: 41
     width: 192
     height: 68
     borderLeft: 0
@@ -137,7 +137,7 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Btn_normal
-    x: 386
+    x: 579
     y: 41
     width: 192
     height: 68
@@ -151,7 +151,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: Btn_start
     x: 193
-    y: 41
+    y: 226
     width: 192
     height: 68
     borderLeft: 0
@@ -254,7 +254,7 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Txt_attack
-    x: 0
+    x: 151
     y: 122
     width: 150
     height: 34
@@ -293,7 +293,7 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Txt_jump
-    x: 151
+    x: 0
     y: 122
     width: 150
     height: 34
