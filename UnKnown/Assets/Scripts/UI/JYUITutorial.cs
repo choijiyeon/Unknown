@@ -32,10 +32,9 @@ namespace UIContents
         private void ShowTutorial()
         {
             TutorialObj.SetActive(true);
-            Invoke("DisableTutorial", 3f);
         }
 
-        private void DisableTutorial()
+        public void DisableTutorial()
         {
             TutorialObj.SetActive(false);
         }

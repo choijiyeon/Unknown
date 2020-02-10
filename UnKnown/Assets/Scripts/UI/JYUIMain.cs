@@ -82,5 +82,9 @@ namespace UIContents
         {
             Application.Quit();
         }
+        public void CallTutorial()
+        {
+            JYUIManager.Instance.Notify(JYDefines.UISectionFun.ShowTutorial);
+        }
     }
 }
