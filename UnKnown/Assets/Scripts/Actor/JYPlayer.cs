@@ -44,6 +44,12 @@ public class JYPlayer : JYActor
         if(JYGameManager.instance.isPlayerAttack == true)
         {
             Vector2 dieVelocity = new Vector2(1f, 0.9f);
+
+            if (isLeft == true)
+                dieVelocity = new Vector2(-1f, 0.9f);
+            else
+                dieVelocity = new Vector2(1f, 0.9f);
+
             rigid.AddForce(dieVelocity, ForceMode2D.Impulse);
 
             JYGameManager.instance.isPlayerAttack = false;
@@ -188,7 +194,13 @@ public class JYPlayer : JYActor
         if (isUnrivaled == true) return;
         base.DoDamage(aDamageValue);
 
-        Vector2 dieVelocity = new Vector2(-1f, 0.9f);
+        Vector2 dieVelocity = new Vector2(1f, 0.9f);
+
+        if (isLeft == true)
+            dieVelocity = new Vector2(1f, 0.9f);
+        else
+            dieVelocity = new Vector2(-1f, 0.9f);
+
         rigid.AddForce(dieVelocity, ForceMode2D.Impulse);
 
         StartCoroutine("DamageChangeColor");
@@ -237,19 +249,27 @@ public class JYPlayer : JYActor
     {
         int countTime = 0;
 
-        UISprite sprite = this.gameObject.transform.Find(playerCurState.ToString()).GetComponent<UISprite>();
+        UISprite sprite = this.gameObject.transform.Find(JYDefines.ActorAniSpriteState.idle.ToString()).GetComponent<UISprite>();
+        UISprite spritemove = this.gameObject.transform.Find(JYDefines.ActorAniSpriteState.run.ToString()).GetComponent<UISprite>();
         while (countTime < 6)
         {
             if (countTime % 2 == 0)
+            {
                 sprite.alpha = 0.2f;
+                spritemove.alpha = 0.2f;
+            }
             else
+            {
                 sprite.alpha = 1f;
+                spritemove.alpha = 1f;
+            }
 
             yield return new WaitForSeconds(0.2f);
 
             countTime++;
         }
         sprite.alpha = 1f;
+        spritemove.alpha = 1f;
 
         isDamage = false;
 
@@ -290,7 +310,7 @@ public class JYPlayer : JYActor
                 isUnrivaled = true;
             }
         }
-        else if (other.gameObject.tag == "AttackMonster" && JYGameManager.instance.AttackMonsterCurState == JYDefines.ActorAniSpriteState.attack)
+        else if (other.gameObject.tag == "AttackMonsterAttack" && JYGameManager.instance.AttackMonsterCurState == JYDefines.ActorAniSpriteState.attack)
         {
             if (isDamage == false)
             {
