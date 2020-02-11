@@ -15,7 +15,8 @@ public class JYMonsterHitControl : MonoBehaviour
             {
                 monsterSc.isDamage = true;
                 JYGameManager.instance.isPlayerAttack = true;
-                monsterSc.DoDamage(30f);
+                //monsterSc.DoDamage(30f);
+                monsterSc.DoDie();
             }
         }
     }

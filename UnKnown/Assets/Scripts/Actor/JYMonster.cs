@@ -51,6 +51,7 @@ public class JYMonster : JYActor
                         float distance = Vector3.Distance(playerPos, this.transform.position);
                         if (distance <= 0.5f)
                         {
+                            if (isDamage == true || isDead == true) return;
                             isAttack = true;
                             DoAttack();
                         }
@@ -223,7 +224,6 @@ public class JYMonster : JYActor
         else
         {
             m_Hp -= aDamageValue;
-            StartCoroutine("DamageChangeColor");
 
             if (m_Hp <= 0)
             {
@@ -232,12 +232,16 @@ public class JYMonster : JYActor
             }
             else
             {
+                isDamage = true;
+                StartCoroutine("DamageChangeColor");
+
                 if (monsterCurState != JYDefines.ActorAniSpriteState.damage)
                 {
                     SetACurrentAniSprite(this.gameObject, JYDefines.ActorAniSpriteState.damage);
 
                     monsterCurState = JYDefines.ActorAniSpriteState.damage;
                     ChangeCurMonsterState();
+
                     Invoke("ChangeDamageState", 1.5f);
                 }
             }

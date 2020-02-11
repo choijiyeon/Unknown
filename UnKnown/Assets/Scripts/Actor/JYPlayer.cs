@@ -43,7 +43,7 @@ public class JYPlayer : JYActor
 
         if(JYGameManager.instance.isPlayerAttack == true)
         {
-            Vector2 dieVelocity = new Vector2(2f, 1.5f);
+            Vector2 dieVelocity = new Vector2(1f, 0.9f);
             rigid.AddForce(dieVelocity, ForceMode2D.Impulse);
 
             JYGameManager.instance.isPlayerAttack = false;
@@ -188,7 +188,7 @@ public class JYPlayer : JYActor
         if (isUnrivaled == true) return;
         base.DoDamage(aDamageValue);
 
-        Vector2 dieVelocity = new Vector2(-1.5f, 1f);
+        Vector2 dieVelocity = new Vector2(-1f, 0.9f);
         rigid.AddForce(dieVelocity, ForceMode2D.Impulse);
 
         StartCoroutine("DamageChangeColor");
