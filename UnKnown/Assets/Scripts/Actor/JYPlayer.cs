@@ -28,7 +28,7 @@ public class JYPlayer : JYActor
         if(JYGameManager.instance.currentMode == JYDefines.CurrentMode.easy)
             moveLandObj = this.transform.parent.parent.Find("Stage01/Field01/Bg_Down/Moveland").gameObject;
         else if (JYGameManager.instance.currentMode == JYDefines.CurrentMode.normal)
-            moveLandObj = this.transform.parent.parent.Find("Stage02/Field02/Bg_Down/Land2").gameObject;
+            moveLandObj = this.transform.parent.parent.Find("Stage02/Field05/Bg_Down/Land2").gameObject;
     }
 
     private void Update()
@@ -77,6 +77,7 @@ public class JYPlayer : JYActor
 
     private void Jump()
     {
+        isMoveland = false;
         if (isJumping != true)
         {
             UISprite sprite = this.gameObject.transform.Find(JYDefines.ActorAniSpriteState.jump.ToString()).GetComponent<UISprite>();
@@ -89,8 +90,6 @@ public class JYPlayer : JYActor
 
             }
             rigid.AddForce(Vector3.up * 160);
-
-            isJumping = true;
 
             SetACurrentAniSprite(this.gameObject, JYDefines.ActorAniSpriteState.jump);
         }
