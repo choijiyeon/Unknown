@@ -89,6 +89,7 @@ public class JYPlayer : JYActor
                     sprite.transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
 
             }
+            isJumping = true;
             rigid.AddForce(Vector3.up * 160);
 
             SetACurrentAniSprite(this.gameObject, JYDefines.ActorAniSpriteState.jump);
@@ -157,9 +158,9 @@ public class JYPlayer : JYActor
                     sprite.transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
 
             }
+            isJumping = true;
             rigid.AddForce(Vector3.up * jumpPower);
 
-            isJumping = true;
             if (playerCurState != JYDefines.ActorAniSpriteState.jump)
             {
                 SetACurrentAniSprite(this.gameObject, JYDefines.ActorAniSpriteState.jump);
@@ -321,7 +322,12 @@ public class JYPlayer : JYActor
     }
     private void OnCollisionEnter2D(Collision2D other)
     {
-        isJumping = false;
+        if (other.gameObject.transform.localPosition.y <= this.transform.transform.localPosition.y 
+            && other.gameObject.tag != "Monster" && other.gameObject.tag != "AttackMonster")
+        {
+            isJumping = false;
+        }
+
         if (playerCurState != JYDefines.ActorAniSpriteState.idle)
         {
             SetACurrentAniSprite(this.gameObject, JYDefines.ActorAniSpriteState.idle);
