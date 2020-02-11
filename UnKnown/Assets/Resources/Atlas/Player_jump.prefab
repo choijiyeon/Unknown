@@ -46,7 +46,7 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: 63725079982f00741ac4ed277f23b5ab, type: 2}
   mSprites:
   - name: player_jump01
-    x: 241
+    x: 119
     y: 86
     width: 118
     height: 170
@@ -61,7 +61,7 @@ MonoBehaviour:
   - name: player_jump02
     x: 0
     y: 86
-    width: 240
+    width: 118
     height: 170
     borderLeft: 0
     borderRight: 0
