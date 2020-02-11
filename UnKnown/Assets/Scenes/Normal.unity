@@ -692,7 +692,7 @@ MonoBehaviour:
   anchorOffset: 0
   softBorderPadding: 1
   renderQueue: 0
-  startingRenderQueue: 3001
+  startingRenderQueue: 3000
   mClipTexture: {fileID: 0}
   mAlpha: 1
   mClipping: 0
@@ -1076,12 +1076,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1066000763, guid: 6c20899e614d25142974d6f957edf1b2, type: 3}
+    - target: {fileID: 6395623994321537455, guid: 6c20899e614d25142974d6f957edf1b2,
+        type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6395623994321537455, guid: 6c20899e614d25142974d6f957edf1b2,
-        type: 3}
+    - target: {fileID: 1066000763, guid: 6c20899e614d25142974d6f957edf1b2, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
