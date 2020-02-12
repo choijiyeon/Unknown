@@ -328,6 +328,8 @@ public class JYPlayer : JYActor
             isJumping = false;
             Vector2 dieVelocity = new Vector2(0f, 0f);
             rigid.AddForce(dieVelocity, ForceMode2D.Impulse);
+            rigid.velocity = dieVelocity;
+            rigid.angularVelocity = 0f;
         }
 
         if (playerCurState != JYDefines.ActorAniSpriteState.idle)
