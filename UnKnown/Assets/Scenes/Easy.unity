@@ -638,11 +638,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1201758069070479700, guid: d4ad51df6804f464095fcded54e964c6,
-        type: 3}
-      propertyPath: m_TagString
-      value: Moveland
-      objectReference: {fileID: 0}
     - target: {fileID: 822630845944192615, guid: d4ad51df6804f464095fcded54e964c6,
         type: 3}
       propertyPath: audioClip
@@ -652,6 +647,11 @@ PrefabInstance:
         type: 3}
       propertyPath: volume
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1201758069070479700, guid: d4ad51df6804f464095fcded54e964c6,
+        type: 3}
+      propertyPath: m_TagString
+      value: Moveland
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d4ad51df6804f464095fcded54e964c6, type: 3}
