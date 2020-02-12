@@ -322,8 +322,7 @@ public class JYPlayer : JYActor
     }
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.transform.localPosition.y <= (this.transform.transform.localPosition.y + 1.5f)
-            && other.gameObject.tag != "Monster" && other.gameObject.tag != "AttackMonster")
+        if (other.gameObject.tag != "Monster" && other.gameObject.tag != "AttackMonster")
         {
             isJumping = false;
             Vector2 dieVelocity = new Vector2(0f, 0f);
