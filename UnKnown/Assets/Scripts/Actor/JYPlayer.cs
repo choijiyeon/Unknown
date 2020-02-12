@@ -326,7 +326,7 @@ public class JYPlayer : JYActor
             && other.gameObject.tag != "Monster" && other.gameObject.tag != "AttackMonster")
         {
             isJumping = false;
-            Vector2 dieVelocity = new Vector2(1f, 0f);
+            Vector2 dieVelocity = new Vector2(0f, 0f);
             rigid.AddForce(dieVelocity, ForceMode2D.Impulse);
         }
 
